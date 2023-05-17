@@ -146,6 +146,7 @@ public class BirdController : MonoBehaviour
             uiManager.countMushrooms++;
             uiManager.UpdateMushroomUiCount();
             Destroy(collision.gameObject, 0.3f);
+            Invoke("ShowVFXMush", 0.3f);
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
         }
@@ -173,12 +174,22 @@ public class BirdController : MonoBehaviour
             uiManager.UpdateMushroomUiCount();
             Destroy(collision.gameObject, 0.1f);
             catchMushroom = true;
+            Invoke("ShowVFXMush", 0.1f);
+            spriteRenderer.color = mushColor;
+            Invoke("ResetColor", 0.4f);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
         catchMushroom = false;
+    }
+
+    void ShowVFXMush()
+    {
+        GameObject vfxCatch = VFXManager.Instance.RequestVfx();
+        Vector3 vfxPos = new Vector3(-0.5f, 0, 0);
+        vfxCatch.transform.position = transform.position;
     }
 
     float SetJumpEnergy()
