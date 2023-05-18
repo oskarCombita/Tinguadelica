@@ -1,0 +1,1213 @@
+fileFormatVersion: 2
+guid: e7738997023ffe24cacdc371c1197492
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a9a0097f1718343b16bcf0d038176a
+      internalID: -1949343294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70980cc126423a4c9e1bf8901596c1f
+      internalID: -1407056466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_2
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f154a3e65abd94782179ff6ea22078
+      internalID: 1372770989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5237f17e8476e5b40add71c2829d489b
+      internalID: -400841703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d88cc5bd2f2fb248aa74aa4d56ac0a5
+      internalID: -1957463131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2108a6253ebfccd48a9e500fede41139
+      internalID: 1927187175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2735fff538eaad44e947a4c3d0b88cdd
+      internalID: -1011042270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd24d5cc1e917a041aea7fe5e4bf6e40
+      internalID: 1127300070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44811de7363b34b409a5a9f738ed173c
+      internalID: -269510404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_9
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b39211068ebc3f6469df1914d0f7b091
+      internalID: 267900436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_10
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfa63b497976b648a85ef15ef9c66ae
+      internalID: 1846631119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74350dd652c3b5b4fa7be6ee25fa9f8a
+      internalID: 835162407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_12
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a292604f7537af4c9a066d265d0f904
+      internalID: -146326225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f76977e19255e418f40cc6b43ce901
+      internalID: 2143914335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_14
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efe3cc4f22f79e347994a76322f4d0a6
+      internalID: 2145015973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_15
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b864d311e936744a8f9fba31ea2d4f5
+      internalID: 82227082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02c7d3694535634bb903c6c367e95f7
+      internalID: 1576361291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_17
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e5225cb8cb2ff438e61b6c537686be
+      internalID: -542253856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_18
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb2d851b3ff61a46b064a74046dfcf8
+      internalID: 462360167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_19
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9dfb111a7063823428ab1335740018bf
+      internalID: 888071551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ea8748579b16e4493928297356b7f8
+      internalID: -1135904777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140101a9f13955f41a42b8bb95f5a3c4
+      internalID: -1673495978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_22
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83baf106aace5fb49ba772b5c5c44074
+      internalID: 1012623627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_23
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3821c6b5b03b8b44f9f8497be5e5f79b
+      internalID: 330935193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad19fd5ead148994d8a536f44e50e0b9
+      internalID: 748328965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1223011514081e746b7a0ba4aeb56711
+      internalID: -1229967448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_26
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20ca6373a1dd4f4f831a19b1c7e3dfa
+      internalID: -1422759998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 601cbc69527fd90499570a1d74b0c784
+      internalID: -1934476615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2f794981e0fa642a058429c4baee49
+      internalID: -1302818182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7c31c4767bd51c42967fd5513498100
+      internalID: 1905414559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_30
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced0fd56294708642b3d64215ff96741
+      internalID: 2115689761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_31
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e93808eb1fd36524d82e3a749f212661
+      internalID: 62445367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894e0caff71a8a245b64fc4ff9487eba
+      internalID: 1074190281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_33
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a729fc3fb04ae4c419165719fd0decf1
+      internalID: 751882427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_34
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c3cf61f0748d94eb5c78b3e505e8db
+      internalID: 416919868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c9f5551fac36b4093e6d1687ad265f
+      internalID: 486805183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_36
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6834418a3c6d0164da12baa5cfc372df
+      internalID: 2109546824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518d11ddf78743f40bba78369e5a8b0d
+      internalID: -1853811065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_38
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c979394fb97624ba7f7331e2f137ba
+      internalID: 226821215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_39
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3794a0080caf7574da10ee5819540de7
+      internalID: 173149279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa8112cf193073478e1c7a9b02752b6
+      internalID: 1410992549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_41
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eda2769fe5cf5d4883f32ac8a3b5b39
+      internalID: -1646722622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_42
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f33fe020d06862b42a8ce06ea1d29c11
+      internalID: 121181998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_43
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb19d9cffaa73f44ba00120edf05666a
+      internalID: 114353409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fba56b6fe39bc34f84b969892174ece
+      internalID: 857065245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e95e73072cda19a4599aa2aee42cf765
+      internalID: 1395077923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_46
+      rect:
+        serializedVersion: 2
+        x: 2112
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d809c28e161a54b85d8ceecedfb469
+      internalID: -1894195788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_47
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2102d5512e849aa4da7166fce3cf4cf5
+      internalID: 1654942143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoAttackSheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a017bd05ee2cb4f87f58e189e94762
+      internalID: 1515808925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      352X452_TunjoAttackSheet_0: -1949343294
+      352X452_TunjoAttackSheet_1: -1407056466
+      352X452_TunjoAttackSheet_10: 1846631119
+      352X452_TunjoAttackSheet_11: 835162407
+      352X452_TunjoAttackSheet_12: -146326225
+      352X452_TunjoAttackSheet_13: 2143914335
+      352X452_TunjoAttackSheet_14: 2145015973
+      352X452_TunjoAttackSheet_15: 82227082
+      352X452_TunjoAttackSheet_16: 1576361291
+      352X452_TunjoAttackSheet_17: -542253856
+      352X452_TunjoAttackSheet_18: 462360167
+      352X452_TunjoAttackSheet_19: 888071551
+      352X452_TunjoAttackSheet_2: 1372770989
+      352X452_TunjoAttackSheet_20: -1135904777
+      352X452_TunjoAttackSheet_21: -1673495978
+      352X452_TunjoAttackSheet_22: 1012623627
+      352X452_TunjoAttackSheet_23: 330935193
+      352X452_TunjoAttackSheet_24: 748328965
+      352X452_TunjoAttackSheet_25: -1229967448
+      352X452_TunjoAttackSheet_26: -1422759998
+      352X452_TunjoAttackSheet_27: -1934476615
+      352X452_TunjoAttackSheet_28: -1302818182
+      352X452_TunjoAttackSheet_29: 1905414559
+      352X452_TunjoAttackSheet_3: -400841703
+      352X452_TunjoAttackSheet_30: 2115689761
+      352X452_TunjoAttackSheet_31: 62445367
+      352X452_TunjoAttackSheet_32: 1074190281
+      352X452_TunjoAttackSheet_33: 751882427
+      352X452_TunjoAttackSheet_34: 416919868
+      352X452_TunjoAttackSheet_35: 486805183
+      352X452_TunjoAttackSheet_36: 2109546824
+      352X452_TunjoAttackSheet_37: -1853811065
+      352X452_TunjoAttackSheet_38: 226821215
+      352X452_TunjoAttackSheet_39: 173149279
+      352X452_TunjoAttackSheet_4: -1957463131
+      352X452_TunjoAttackSheet_40: 1410992549
+      352X452_TunjoAttackSheet_41: -1646722622
+      352X452_TunjoAttackSheet_42: 121181998
+      352X452_TunjoAttackSheet_43: 114353409
+      352X452_TunjoAttackSheet_44: 857065245
+      352X452_TunjoAttackSheet_45: 1395077923
+      352X452_TunjoAttackSheet_46: -1894195788
+      352X452_TunjoAttackSheet_47: 1654942143
+      352X452_TunjoAttackSheet_48: 1515808925
+      352X452_TunjoAttackSheet_5: 1927187175
+      352X452_TunjoAttackSheet_6: -1011042270
+      352X452_TunjoAttackSheet_7: 1127300070
+      352X452_TunjoAttackSheet_8: -269510404
+      352X452_TunjoAttackSheet_9: 267900436
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
