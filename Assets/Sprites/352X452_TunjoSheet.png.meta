@@ -1,0 +1,1191 @@
+fileFormatVersion: 2
+guid: 19e1415c8f243354996e7eca707ce733
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3164
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01f1f802d1589184a9e4f0015eefd398
+      internalID: 793449906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 3164
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d8f05debc0177a418bc01ed0586b5bb
+      internalID: -1581254228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_2
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 3164
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56532715e5102914492ad28ec11f52dc
+      internalID: 1998034471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 3164
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f56cd9a089162d47872f60d8846ab05
+      internalID: 1990301710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 3164
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732ecece8e708f94584f183a1b8c02cc
+      internalID: -900579605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 3164
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c958c34b7ae4dd14c961bdce6fa97765
+      internalID: 1877589953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0878f66b04f9c9247951ee7f61d9e99f
+      internalID: -1331558915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_7
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1779f659ef6df14ca0a75b4c0bab948
+      internalID: 41151877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_8
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d71230004882a4b9a5bc4a2c6390dc
+      internalID: 1047459152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ddf3696b93cb2a448b13cf4b7e34996
+      internalID: -733773836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf18aeb9ebd253547956befcf5b29654
+      internalID: 1949600870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 2712
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e86de3f34383054b8272a73f7dc54ee
+      internalID: 2032430693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffec384925412774bb752dc9573cd0a5
+      internalID: 638131435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_13
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc80f886e527fb24d8086a204b1aa712
+      internalID: -1911678150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_14
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438a405339fad9242ab400ec9318c641
+      internalID: -1373431444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2626ccee69d25147ad00aa848d28351
+      internalID: -1443378131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af5e1e978f09cfa428cb2bb8218ff75f
+      internalID: 1953496402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 2260
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fe44500803666447af29e6b2f65dd0a
+      internalID: 1968621995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849a2df91eb36db45a943b569dd16f82
+      internalID: -932743799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_19
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9625f8739890f594e96a08f7185abee1
+      internalID: 1507772171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_20
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48dc1ff8bccb6af4180edff225bc387d
+      internalID: 444563096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe157cad705c40b4eb09faac9decccac
+      internalID: -257280965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbab660fb2c71a48acea932a3ed431f
+      internalID: -1716355396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1808
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb86b5d0323188946903c8e7f3f0babc
+      internalID: 1403315277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923eeaf39ece89a4793c8370ddc1503e
+      internalID: -1045685182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_25
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5a7f8a9aac8224aa427d14676e3e6a
+      internalID: 528734576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_26
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63576d910e30db4f8fc0da5037d5890
+      internalID: 926785380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 929f0d7d99a668643946fdc97301a760
+      internalID: -572341388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9976c6e27fb7a74fab85123b7103464
+      internalID: -1353817055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_29
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1356
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbebd576f651864ca50bc0efd984e65
+      internalID: 178182296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed945bc2441782d41a7523d86d247c02
+      internalID: -1105159383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_31
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8135e949e485407408399b5b6a5db3fb
+      internalID: -437043776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_32
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bb025533c14d7a40ba898c33dfe992a
+      internalID: -1352339743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c65f2e445f46244ebaf831410bdb379
+      internalID: -2005784515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebf7966bbcdcd140aa9df96036f73d6
+      internalID: -1696844083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_35
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 904
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b58abeecbb04e4da7483155df18200
+      internalID: 49458821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91617af6e337e1845ac1357a2b7219dc
+      internalID: 1703046496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_37
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c37819e399e7cc34daf6dabac9f10c5f
+      internalID: -1062213104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_38
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c55ffa5fb3765cd43ba089fa8932f963
+      internalID: -1140731872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1304df4bd48b59644958127dec929164
+      internalID: -386466598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41918f4f7efe67149b39a4f3d40062b0
+      internalID: -1139674389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_41
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 452
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e952e59153450c3439911959ded362e5
+      internalID: -1979825831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897e40adb47832642b7060ac8912d0d1
+      internalID: -1643415751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_43
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965348bf6e71bb0459c7d153e2ecaec3
+      internalID: -246631756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_44
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3f0cfe7b02acd489cd49f6b2685f83
+      internalID: 746874594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee9c0f12505afc4e97fce1ba26b0d79
+      internalID: 313652224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 0
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c1584556640764fbcc3b1c5a738748
+      internalID: -860415653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 352X452_TunjoSheet_47
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 352
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bbf74bccddefdc49853ce79e598f524
+      internalID: -498995473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      352X452_TunjoSheet_0: 793449906
+      352X452_TunjoSheet_1: -1581254228
+      352X452_TunjoSheet_10: 1949600870
+      352X452_TunjoSheet_11: 2032430693
+      352X452_TunjoSheet_12: 638131435
+      352X452_TunjoSheet_13: -1911678150
+      352X452_TunjoSheet_14: -1373431444
+      352X452_TunjoSheet_15: -1443378131
+      352X452_TunjoSheet_16: 1953496402
+      352X452_TunjoSheet_17: 1968621995
+      352X452_TunjoSheet_18: -932743799
+      352X452_TunjoSheet_19: 1507772171
+      352X452_TunjoSheet_2: 1998034471
+      352X452_TunjoSheet_20: 444563096
+      352X452_TunjoSheet_21: -257280965
+      352X452_TunjoSheet_22: -1716355396
+      352X452_TunjoSheet_23: 1403315277
+      352X452_TunjoSheet_24: -1045685182
+      352X452_TunjoSheet_25: 528734576
+      352X452_TunjoSheet_26: 926785380
+      352X452_TunjoSheet_27: -572341388
+      352X452_TunjoSheet_28: -1353817055
+      352X452_TunjoSheet_29: 178182296
+      352X452_TunjoSheet_3: 1990301710
+      352X452_TunjoSheet_30: -1105159383
+      352X452_TunjoSheet_31: -437043776
+      352X452_TunjoSheet_32: -1352339743
+      352X452_TunjoSheet_33: -2005784515
+      352X452_TunjoSheet_34: -1696844083
+      352X452_TunjoSheet_35: 49458821
+      352X452_TunjoSheet_36: 1703046496
+      352X452_TunjoSheet_37: -1062213104
+      352X452_TunjoSheet_38: -1140731872
+      352X452_TunjoSheet_39: -386466598
+      352X452_TunjoSheet_4: -900579605
+      352X452_TunjoSheet_40: -1139674389
+      352X452_TunjoSheet_41: -1979825831
+      352X452_TunjoSheet_42: -1643415751
+      352X452_TunjoSheet_43: -246631756
+      352X452_TunjoSheet_44: 746874594
+      352X452_TunjoSheet_45: 313652224
+      352X452_TunjoSheet_46: -860415653
+      352X452_TunjoSheet_47: -498995473
+      352X452_TunjoSheet_5: 1877589953
+      352X452_TunjoSheet_6: -1331558915
+      352X452_TunjoSheet_7: 41151877
+      352X452_TunjoSheet_8: 1047459152
+      352X452_TunjoSheet_9: -733773836
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

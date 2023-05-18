@@ -1,0 +1,1235 @@
+fileFormatVersion: 2
+guid: edf1cc310fbc45640992d8391a65e67c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4288
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b65c2aa5e03063489c3d4dd59087c10
+      internalID: -204079133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_1
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 4288
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 004bff3d2cad65e40b865b594931eb26
+      internalID: 124372470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_2
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 4288
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9508a57bf766c1141ab6e2eee45d87d3
+      internalID: -1314662215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 4288
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a252d0a04075e3489141d2a964a9b45
+      internalID: -613605032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 4288
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31d35b3073b7384ea47848b6adaebfa
+      internalID: 1033335855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_5
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 4288
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76088d9d911fffc49ac03acec6f457c4
+      internalID: 117412763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3752
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e1c05363f8bcd4197bc2a2d400ead8
+      internalID: -1283297608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_7
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 3752
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fffa283b6ea779d4391f690fc6dd3efd
+      internalID: -2035857674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_8
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 3752
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa90bad08b60d1c4a8aa28a5d9baafea
+      internalID: -811510427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 3752
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f84e29af338cc45439a2aafa821bdce9
+      internalID: 922280687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 3752
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccd18724df1e04142b086541742f4e48
+      internalID: -1437648044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_11
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 3752
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dded4ddc3c7512649bc3b643906dffbb
+      internalID: 1068634502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3216
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea919c65c8076dd4da8734a27f62dfb8
+      internalID: -1867097020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_13
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 3216
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e0e07785eb9b64881ad1d45b41c6a1
+      internalID: 820611817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_14
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 3216
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 660cf837cb00c274282d37731c8ce564
+      internalID: -1557901047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 3216
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d67bb469e580e40aef0056a7a692c5
+      internalID: -20981809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 3216
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68f4ded63ae8daf4eaaa93bd18c20028
+      internalID: -2055415430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_17
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 3216
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba8cc9354931eed41af8a2292b9b02fb
+      internalID: 2131127412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2680
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf55b3a2e636b8943ad8e1ffb1f08272
+      internalID: -893986722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_19
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 2680
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4472e7c572fc98442882afd168a37a40
+      internalID: 215226295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_20
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 2680
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faee8fd95aa2c404fb070062754190af
+      internalID: -1871612886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_21
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 2680
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d61452f85ba3a4a9c9100f33e965e3
+      internalID: -1867263793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_22
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 2680
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d2b0a8bdfa8f4428c2dcf1552b439b
+      internalID: -142274481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_23
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 2680
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275f9c70f77753f408930f789586b58c
+      internalID: -1817565532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2144
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7314796191f55b47bfeb3940bbf78ad
+      internalID: 98619097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_25
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 2144
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f58c8b76beee32042ac972f4823407f2
+      internalID: -555479398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_26
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 2144
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fea25f048e89c34eb8a79add0f113c5
+      internalID: 1302614603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_27
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 2144
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8457045b80f4bb4fb0edfb1effdf65e
+      internalID: -390957505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_28
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 2144
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73b0d23f44c0692419d49e95b0d75fa4
+      internalID: -866889055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_29
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 2144
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f0fa7764f698d41b3e9460eadc6e1c
+      internalID: 1079797710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1608
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f47b057bdcd1b5e4788e04a4e458ef0b
+      internalID: 1495425651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_31
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1608
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9f8e712646d9d240ae08cd13e932ea5
+      internalID: -1429504007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_32
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1608
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71662526ee8ae544fa11ea49644a41d4
+      internalID: -890519920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_33
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1608
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c2bc462db9b1f84dadc199f92e72de6
+      internalID: -1977966130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_34
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1608
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7dc5b46b04ea44999f8727de6018dd
+      internalID: 731310725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_35
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1608
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d599ece7db88324a9f849a100885597
+      internalID: -135072590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1072
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 650693ac7b5228c4da18b553d0af75a0
+      internalID: -1880264043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_37
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1072
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 269453473459b8648a5fa939c7ada123
+      internalID: -1700491499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_38
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1072
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0319b6395049d764c8316fd682b028d3
+      internalID: 1848365169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_39
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1072
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f975f1653854742a20eea38c121c55
+      internalID: -1909394772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_40
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1072
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e556650fd74aae48a494eacee700c8c
+      internalID: 179220443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_41
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1072
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860cde5c451cfc640932a84205acdb57
+      internalID: -1113258852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90b3101091c473b419881aca4bd1f699
+      internalID: -2042849347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_43
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 536
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc073b9bac78b1a4ea0343440a646079
+      internalID: 1993193461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_44
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 536
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf6f8bbde7fd77a4fb635e6b8c5d045f
+      internalID: 518818937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 536
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76e21ddee5846b4eb5a42cbc8d810bc
+      internalID: 1755050450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_46
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 536
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e1ed3f325a41e48a69fbe60e578708
+      internalID: 428820523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_47
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 536
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b108665e3e2a9514692094fa9eaad904
+      internalID: 398405179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4115b76ab5a944f89a1c61933a15e5
+      internalID: 419116734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x536_SnakeSheet_49
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 0
+        width: 484
+        height: 536
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8a550c5d71c7140877dcad940cf455
+      internalID: -334403786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      484x536_SnakeSheet_0: -204079133
+      484x536_SnakeSheet_1: 124372470
+      484x536_SnakeSheet_10: -1437648044
+      484x536_SnakeSheet_11: 1068634502
+      484x536_SnakeSheet_12: -1867097020
+      484x536_SnakeSheet_13: 820611817
+      484x536_SnakeSheet_14: -1557901047
+      484x536_SnakeSheet_15: -20981809
+      484x536_SnakeSheet_16: -2055415430
+      484x536_SnakeSheet_17: 2131127412
+      484x536_SnakeSheet_18: -893986722
+      484x536_SnakeSheet_19: 215226295
+      484x536_SnakeSheet_2: -1314662215
+      484x536_SnakeSheet_20: -1871612886
+      484x536_SnakeSheet_21: -1867263793
+      484x536_SnakeSheet_22: -142274481
+      484x536_SnakeSheet_23: -1817565532
+      484x536_SnakeSheet_24: 98619097
+      484x536_SnakeSheet_25: -555479398
+      484x536_SnakeSheet_26: 1302614603
+      484x536_SnakeSheet_27: -390957505
+      484x536_SnakeSheet_28: -866889055
+      484x536_SnakeSheet_29: 1079797710
+      484x536_SnakeSheet_3: -613605032
+      484x536_SnakeSheet_30: 1495425651
+      484x536_SnakeSheet_31: -1429504007
+      484x536_SnakeSheet_32: -890519920
+      484x536_SnakeSheet_33: -1977966130
+      484x536_SnakeSheet_34: 731310725
+      484x536_SnakeSheet_35: -135072590
+      484x536_SnakeSheet_36: -1880264043
+      484x536_SnakeSheet_37: -1700491499
+      484x536_SnakeSheet_38: 1848365169
+      484x536_SnakeSheet_39: -1909394772
+      484x536_SnakeSheet_4: 1033335855
+      484x536_SnakeSheet_40: 179220443
+      484x536_SnakeSheet_41: -1113258852
+      484x536_SnakeSheet_42: -2042849347
+      484x536_SnakeSheet_43: 1993193461
+      484x536_SnakeSheet_44: 518818937
+      484x536_SnakeSheet_45: 1755050450
+      484x536_SnakeSheet_46: 428820523
+      484x536_SnakeSheet_47: 398405179
+      484x536_SnakeSheet_48: 419116734
+      484x536_SnakeSheet_49: -334403786
+      484x536_SnakeSheet_5: 117412763
+      484x536_SnakeSheet_6: -1283297608
+      484x536_SnakeSheet_7: -2035857674
+      484x536_SnakeSheet_8: -811510427
+      484x536_SnakeSheet_9: 922280687
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
