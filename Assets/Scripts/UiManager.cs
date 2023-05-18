@@ -36,7 +36,7 @@ public class UiManager : MonoBehaviour
             newLiveImage.sprite = liveFull;
 
             RectTransform rectTransform = newLiveImage.GetComponent<RectTransform>();
-            rectTransform.anchoredPosition += new Vector2(i * -70, 0);
+            rectTransform.anchoredPosition += new Vector2(i * -65, 0);
         }
         liveImage.gameObject.SetActive(false);
     }
@@ -67,8 +67,8 @@ public class UiManager : MonoBehaviour
     }
 
     public void RecoverLife()
-    {        
-            Image[] lives = GetComponentsInChildren<Image>();
-            lives[birdController.live - 1].sprite = liveFull;        
+    {
+        Image[] lives = GetComponentsInChildren<Image>();
+        lives[birdController.live - 1].sprite = liveFull;        
     }
 }
