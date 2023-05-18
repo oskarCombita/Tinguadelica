@@ -10,6 +10,8 @@ public class SnakeMovement : MonoBehaviour
 
     [SerializeField] private float minDistance;
 
+    public string crash = "Snake golpeo al jugador";
+
     private int nextPoint = 0;
 
     private SpriteRenderer spriteRenderer;
@@ -51,6 +53,14 @@ public class SnakeMovement : MonoBehaviour
         {
             spriteRenderer.flipX = false;
         } 
-    
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+         Debug.Log(crash);
+        }
     }
 }
