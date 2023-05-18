@@ -3,9 +3,14 @@ using UnityEngine;
 
 public class VFXManager : MonoBehaviour
 {
-    [SerializeField] private GameObject[] vfxPrefabs;
+    [SerializeField] private GameObject vfxCatchPrefab;
+    [SerializeField] private GameObject vfxDamagePref;
+    [SerializeField] private GameObject vfxLivePref;
     private int poolSize = 1;
-    [SerializeField] private List<GameObject> vfxList;
+    [SerializeField] private List<GameObject> vfxCatchList;
+    [SerializeField] private List<GameObject> vfxDamageList;
+    [SerializeField] private List<GameObject> vfxLiveList;
+
 
     private static VFXManager instance;
 
@@ -25,33 +30,74 @@ public class VFXManager : MonoBehaviour
 
     void Start()
     {
-        AddVfxToPool(poolSize);
+        AddVfxCatchToPool(poolSize);
+        AddVfxDamageToPool(poolSize);
+        AddVfxLive();
     }
 
-    private void AddVfxToPool(int amount)
+    private void AddVfxCatchToPool(int amount)
     {
         for (int i = 0; i < amount; i++)
         {
-            GameObject vfxMush = Instantiate(vfxPrefabs[0]);
+            GameObject vfxMush = Instantiate(vfxCatchPrefab);
             vfxMush.SetActive(false);
-            vfxList.Add(vfxMush);
+            vfxCatchList.Add(vfxMush);
             vfxMush.transform.parent = transform;
         }
     }
 
-    public GameObject RequestVfx()
+    private void AddVfxDamageToPool(int amout)
     {
-        for (int i = 0; i < vfxList.Count; i++)
+        GameObject vfxDamage = Instantiate(vfxDamagePref);
+        vfxDamage.SetActive(false);
+        vfxDamageList.Add(vfxDamage);
+        vfxDamage.transform.parent = transform;
+    }
+
+    private void AddVfxLive()
+    {
+        GameObject vfxLive = Instantiate(vfxLivePref);
+        vfxLive.SetActive(false);
+        vfxLiveList.Add(vfxLive);
+        vfxLive.transform.parent = transform;
+
+    }
+
+    public GameObject RequestVfxCatch()
+    {
+        for (int i = 0; i < vfxCatchList.Count; i++)
         {
-            if (!vfxList[i].activeSelf)
+            if (!vfxCatchList[i].activeSelf)
             {
-                vfxList[i].SetActive(true);
-                return vfxList[i];
+                vfxCatchList[i].SetActive(true);
+                return vfxCatchList[i];
             }
         }
 
-        AddVfxToPool(1);
-        vfxList[vfxList.Count - 1].SetActive(true);
-        return vfxList[vfxList.Count - 1];
+        AddVfxCatchToPool(1);
+        vfxCatchList[vfxCatchList.Count - 1].SetActive(true);
+        return vfxCatchList[vfxCatchList.Count - 1];
+    }
+
+    public GameObject RequestVfxDamage()
+    {
+        for (int i = 0; i < vfxDamageList.Count; i++)
+        {
+            if (!vfxDamageList[i].activeSelf)
+            {
+                vfxDamageList[i].SetActive(true);
+                return vfxDamageList[i];
+            }
+        }
+
+        AddVfxDamageToPool(1);
+        vfxDamageList[vfxDamageList.Count - 1].SetActive(true);
+        return vfxDamageList[vfxDamageList.Count - 1];
+    }
+
+    public GameObject RequestVfxLive()
+    {
+        vfxLiveList[0].SetActive(true);
+        return vfxDamageList[0];
     }
 }

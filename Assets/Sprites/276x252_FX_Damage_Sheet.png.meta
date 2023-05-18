@@ -1,0 +1,807 @@
+fileFormatVersion: 2
+guid: ebb50075e08cafd4ea934ffe800025e3
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1008
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54728a901bae7f498ff64a5f1590f13
+      internalID: 1826939496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1008
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84b5248940efe4b48a1f31c1d38600e1
+      internalID: 201590329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1008
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ea37366a442f048b4f953b061bf260
+      internalID: -2038087943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1008
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e622f541769eb943ac8394364ead1fc
+      internalID: -1651519544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1008
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e16236385fb1f304dbcd76238043c733
+      internalID: -1000721430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 1008
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec55dbf6a8163d94f8bea662e92770b6
+      internalID: -1835917959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 756
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f2b5f7914c31c40bc6c495e31373c9
+      internalID: 1299207982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 756
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da40296ee9f3fdc45be01afdbb38f613
+      internalID: -1317220867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 756
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c297f2391ba720d4697aeff775f4a781
+      internalID: 1148653796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 756
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9b8ce35e49aad4d806f289560d7b89
+      internalID: 341561468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 756
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ef5eaa7ceae3649964d0cde5e9e14d
+      internalID: 477469077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 756
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b82059e603bff47afa045df32282dc
+      internalID: 167576645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 504
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5e66a9ea327a414d9cad4a8c4ce1d22
+      internalID: 1657473771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 504
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf1f5fdfcba7924e9264071c38c874c
+      internalID: 2110957744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 504
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f8b37f7a6aaee469b4f953ceba4cc2
+      internalID: 166668438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 504
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839f196b616a6634494e8cb099c9d6bf
+      internalID: -662874397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 504
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6b5fdc6cd65374781f2f3a48472050
+      internalID: 1502557778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 504
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4115a49af16dd124cbdd142eece30e23
+      internalID: 1937295689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c3c776b8a09b4418a790730fc7341d
+      internalID: 461537831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 252
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d0751fc98f490f468c03d5e05b3a7c8
+      internalID: -1908189694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 252
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5d536d48162504882d04632f8f6f18
+      internalID: 167945160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 252
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d9a2048e57ded246a43ca512c61dff5
+      internalID: 1341157135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 252
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ffc150464dd894f807a84161244c47
+      internalID: -407311443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 252
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48303d02c357ce14b86a418213d7d6aa
+      internalID: 1063983798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ee00b7ff428a44aa58ab3d747db60c
+      internalID: -702711870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 0
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94aa596b43cb4ca4da8a5bd8d9aeccfd
+      internalID: 1457088317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 0
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c5b7742e90a0d4d89ae55c78e05719
+      internalID: -205532321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9f0902618ad36448af456794f1fe64
+      internalID: -273955703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a021215652a18e4479f9982ea46d0c01
+      internalID: 900764470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 276x252_FX_Damage_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1380
+        y: 0
+        width: 276
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f78f2b91f951d94685773d7bee7af34
+      internalID: 1755101220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      276x252_FX_Damage_Sheet_0: 1826939496
+      276x252_FX_Damage_Sheet_1: 201590329
+      276x252_FX_Damage_Sheet_10: 477469077
+      276x252_FX_Damage_Sheet_11: 167576645
+      276x252_FX_Damage_Sheet_12: 1657473771
+      276x252_FX_Damage_Sheet_13: 2110957744
+      276x252_FX_Damage_Sheet_14: 166668438
+      276x252_FX_Damage_Sheet_15: -662874397
+      276x252_FX_Damage_Sheet_16: 1502557778
+      276x252_FX_Damage_Sheet_17: 1937295689
+      276x252_FX_Damage_Sheet_18: 461537831
+      276x252_FX_Damage_Sheet_19: -1908189694
+      276x252_FX_Damage_Sheet_2: -2038087943
+      276x252_FX_Damage_Sheet_20: 167945160
+      276x252_FX_Damage_Sheet_21: 1341157135
+      276x252_FX_Damage_Sheet_22: -407311443
+      276x252_FX_Damage_Sheet_23: 1063983798
+      276x252_FX_Damage_Sheet_24: -702711870
+      276x252_FX_Damage_Sheet_25: 1457088317
+      276x252_FX_Damage_Sheet_26: -205532321
+      276x252_FX_Damage_Sheet_27: -273955703
+      276x252_FX_Damage_Sheet_28: 900764470
+      276x252_FX_Damage_Sheet_29: 1755101220
+      276x252_FX_Damage_Sheet_3: -1651519544
+      276x252_FX_Damage_Sheet_4: -1000721430
+      276x252_FX_Damage_Sheet_5: -1835917959
+      276x252_FX_Damage_Sheet_6: 1299207982
+      276x252_FX_Damage_Sheet_7: -1317220867
+      276x252_FX_Damage_Sheet_8: 1148653796
+      276x252_FX_Damage_Sheet_9: 341561468
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
