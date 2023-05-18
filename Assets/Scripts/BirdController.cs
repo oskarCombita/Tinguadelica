@@ -189,7 +189,7 @@ public class BirdController : MonoBehaviour
         //vfxCatch.transform.position = transform.position + vfxPos;
     }
 
-    void ShowVFXDamage()
+    public void ShowVFXDamage()
     {
         GameObject vfxDamage = VFXManager.Instance.RequestVfxDamage();
     }
@@ -214,7 +214,7 @@ public class BirdController : MonoBehaviour
         return jumpEnergy;
     }
 
-    IEnumerator BlinkColor()
+    public IEnumerator BlinkColor()
     {
         float elapsedTime = 0f;
 
@@ -236,7 +236,7 @@ public class BirdController : MonoBehaviour
         spriteRenderer.color = originalColor;
     }
 
-    void ResetColor()
+    public void ResetColor()
     {
         spriteRenderer.color = originalColor;
     }
