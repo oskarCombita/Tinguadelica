@@ -15,7 +15,6 @@ public class SpawnBadsManager : MonoBehaviour
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         InvokeRepeating("SpawnShark", startDelay, repeatRate);
     }
-
  
 
     void SpawnShark()
