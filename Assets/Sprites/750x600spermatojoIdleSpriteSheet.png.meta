@@ -1,0 +1,1215 @@
+fileFormatVersion: 2
+guid: 4e71471cf7fe70f4da64ce4cb191ee9a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 2
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90f525ee8d3d9c4ca6ab5b46c9a4d75
+      internalID: -886243642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 4200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba9071e0178cbb4ea2bca0218a2ed52
+      internalID: 65910394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 4200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f80bc8d5a4e17047b07c9b61c8ea997
+      internalID: 596152435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 4200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81eab8456bed62341b6789c44f72731e
+      internalID: -449968209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fcc49624da5fa141a26ffb46ca5fb93
+      internalID: -724269577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 4200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd78d76bfa4f7f4991c1a60a868d664
+      internalID: 1392380786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6b28f29e1112894b9a7272af45372b9
+      internalID: 1084154785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1e63c97c819564da0e9e807f45f2a4
+      internalID: -63721001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0db7b3d5182fca4da6aede21f4d623a
+      internalID: -1302757569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb38e96c38421d49a6f7c24ba720c09
+      internalID: 28406715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43e48444bfd4bf8458b5d95538c7b645
+      internalID: 323095645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 3600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e6bd3ed652d0843a92be304ea3eca7
+      internalID: -946978158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3000
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d67e03ff4b87f141ad597f12f711b94
+      internalID: -22739824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 3000
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba602e366bde2cb4ab7bc48b9671b6bf
+      internalID: 1528513562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3000
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01eefb9a9a6f20043b7ccd5b5f629406
+      internalID: 812130539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 3000
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e6b65a86cadd74b807d1d45e39d99e
+      internalID: 49399960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3000
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca3b4a8dab19d0846bfb3c5e7d6ba052
+      internalID: -683132849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 3000
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c390ba7f2e9ecf94d8025da759842538
+      internalID: -1878243126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2400
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a5aaa90dc64864783e6160a274590a
+      internalID: 279306472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 2400
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4b57fa4550b0b42a0ca3e484030c21
+      internalID: 1500913812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2400
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305b12da6b5a63542b2c13dd8ccd49c4
+      internalID: 831628907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 2400
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 620666ca64d1ce64495c80ff49544378
+      internalID: 887240952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2400
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0191be621ae3c004cb815aca9c51512e
+      internalID: 521898948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 2400
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8de007159f6dc45a869fae63fbbfb5
+      internalID: -85549308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4325fd35f71fc5d42b7ce3dc5eaaf4dd
+      internalID: -1989800916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1800
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d1b33141b0476a4da474d23f408d5c4
+      internalID: 1249492089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1800
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f350f2ba348c7a4e9e9f6c06bc15872
+      internalID: 198800433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1800
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811af77bbd78045439c76f4717d5fbe6
+      internalID: 1258034165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1800
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba48c52537d2244688185876823c891
+      internalID: -371064424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 1800
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f920c579a91876b408b2733b2a7a2f4e
+      internalID: -1802852909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e70f9af06b71e549b3e41a47279fb92
+      internalID: 1473168932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 1200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15fa5822d312c464a9b9aa4873aae518
+      internalID: -54670267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69768c4d8b88dc94b9f4c8152a425d7a
+      internalID: -217053229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 1200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90e10d9939282f4a9c38bcf2c4867a0
+      internalID: 1533535184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e35ce308a5e7df4e81a6be22b2b7757
+      internalID: 1545816422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 1200
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f9e38ccb1ab1742a40909347aa7849
+      internalID: 1523153275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0eee386bb7e9a3144a152167443c5719
+      internalID: 1406596347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5834b04f5c89d7e429a933d63009de64
+      internalID: -893653523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b6557c633e7a24ca34c8eb25b6c65f
+      internalID: -307154953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29cebb24ade3dd44188652f68d410333
+      internalID: -372575259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2068008a76a3d74593888f8a11bb509
+      internalID: 1470299795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 600
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 965a677f2069fdb4fa095ec58de53e34
+      internalID: 776633132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1806dec87288dd14db6b67e63146ba8a
+      internalID: -1103723136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 0
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3505f92b1fb65754d9bb57ba74efe3f8
+      internalID: -20180176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a5401bbb68990428ad03fc647e6b61
+      internalID: -78806364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 2250
+        y: 0
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef283f54d20ac454ca4e8397daee03f6
+      internalID: -456117206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a150f2d7891e647a581f6d01d65624
+      internalID: -2135574999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 750x600spermatojoIdleSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 3750
+        y: 0
+        width: 750
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600a3f1639bd57649afe3ffb5431cd6e
+      internalID: -337409899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      750x600spermatojoIdleSpriteSheet_0: -886243642
+      750x600spermatojoIdleSpriteSheet_1: 65910394
+      750x600spermatojoIdleSpriteSheet_10: 323095645
+      750x600spermatojoIdleSpriteSheet_11: -946978158
+      750x600spermatojoIdleSpriteSheet_12: -22739824
+      750x600spermatojoIdleSpriteSheet_13: 1528513562
+      750x600spermatojoIdleSpriteSheet_14: 812130539
+      750x600spermatojoIdleSpriteSheet_15: 49399960
+      750x600spermatojoIdleSpriteSheet_16: -683132849
+      750x600spermatojoIdleSpriteSheet_17: -1878243126
+      750x600spermatojoIdleSpriteSheet_18: 279306472
+      750x600spermatojoIdleSpriteSheet_19: 1500913812
+      750x600spermatojoIdleSpriteSheet_2: 596152435
+      750x600spermatojoIdleSpriteSheet_20: 831628907
+      750x600spermatojoIdleSpriteSheet_21: 887240952
+      750x600spermatojoIdleSpriteSheet_22: 521898948
+      750x600spermatojoIdleSpriteSheet_23: -85549308
+      750x600spermatojoIdleSpriteSheet_24: -1989800916
+      750x600spermatojoIdleSpriteSheet_25: 1249492089
+      750x600spermatojoIdleSpriteSheet_26: 198800433
+      750x600spermatojoIdleSpriteSheet_27: 1258034165
+      750x600spermatojoIdleSpriteSheet_28: -371064424
+      750x600spermatojoIdleSpriteSheet_29: -1802852909
+      750x600spermatojoIdleSpriteSheet_3: -449968209
+      750x600spermatojoIdleSpriteSheet_30: 1473168932
+      750x600spermatojoIdleSpriteSheet_31: -54670267
+      750x600spermatojoIdleSpriteSheet_32: -217053229
+      750x600spermatojoIdleSpriteSheet_33: 1533535184
+      750x600spermatojoIdleSpriteSheet_34: 1545816422
+      750x600spermatojoIdleSpriteSheet_35: 1523153275
+      750x600spermatojoIdleSpriteSheet_36: 1406596347
+      750x600spermatojoIdleSpriteSheet_37: -893653523
+      750x600spermatojoIdleSpriteSheet_38: -307154953
+      750x600spermatojoIdleSpriteSheet_39: -372575259
+      750x600spermatojoIdleSpriteSheet_4: -724269577
+      750x600spermatojoIdleSpriteSheet_40: 1470299795
+      750x600spermatojoIdleSpriteSheet_41: 776633132
+      750x600spermatojoIdleSpriteSheet_42: -1103723136
+      750x600spermatojoIdleSpriteSheet_43: -20180176
+      750x600spermatojoIdleSpriteSheet_44: -78806364
+      750x600spermatojoIdleSpriteSheet_45: -456117206
+      750x600spermatojoIdleSpriteSheet_46: -2135574999
+      750x600spermatojoIdleSpriteSheet_47: -337409899
+      750x600spermatojoIdleSpriteSheet_5: 1392380786
+      750x600spermatojoIdleSpriteSheet_6: 1084154785
+      750x600spermatojoIdleSpriteSheet_7: -63721001
+      750x600spermatojoIdleSpriteSheet_8: -1302757569
+      750x600spermatojoIdleSpriteSheet_9: 28406715
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
