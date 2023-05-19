@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5201480347052411851}
   - component: {fileID: 5201480347052411850}
   - component: {fileID: 5201480347052411849}
+  - component: {fileID: 4412585038849111432}
+  - component: {fileID: 4870112536767750552}
   m_Layer: 0
   m_Name: Mechanical Gripper
   m_TagString: Untagged
@@ -106,3 +108,115 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &4412585038849111432
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5201480347052411848}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &4870112536767750552
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5201480347052411848}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 6}
+    newSize: {x: 5, y: 6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.6875, y: -0.84375}
+      - {x: 2.109375, y: -0.2109375}
+      - {x: 2.390625, y: 0.328125}
+      - {x: 2.484375, y: 0.7734375}
+      - {x: 2.484375, y: 1.2421875}
+      - {x: 2.34375, y: 1.6640625}
+      - {x: 2.1796875, y: 2.015625}
+      - {x: 2.015625, y: 2.25}
+      - {x: 1.59375, y: 2.6953125}
+      - {x: 1.3125, y: 2.9296875}
+      - {x: 1.0546875, y: 2.9765625}
+      - {x: 0.7734375, y: 2.9765625}
+      - {x: 0.703125, y: 2.859375}
+      - {x: 0.75, y: 2.71875}
+      - {x: 1.03125, y: 2.3671875}
+      - {x: 0.9375, y: 2.0625}
+      - {x: 0.9375, y: 1.9921875}
+      - {x: 1.1953125, y: 1.6640625}
+      - {x: 1.21875, y: 1.3828125}
+      - {x: 1.1015625, y: 1.1953125}
+      - {x: 0.65625, y: 0.9375}
+      - {x: 0.4453125, y: 0.6328125}
+      - {x: 0.3046875, y: 0.7265625}
+      - {x: 0.46875, y: 1.171875}
+      - {x: 0.3984375, y: 1.359375}
+      - {x: 0.46875, y: 1.828125}
+      - {x: 0.328125, y: 1.8984375}
+      - {x: 0.046875, y: 1.734375}
+      - {x: -0.3046875, y: 1.359375}
+      - {x: -0.515625, y: 1.0078125}
+      - {x: -0.5859375, y: 0.5390625}
+      - {x: -0.3515625, y: -0.1171875}
+      - {x: -0.328125, y: -0.609375}
+      - {x: -0.328125, y: -1.078125}
+      - {x: -0.796875, y: -1.5}
+      - {x: -2.109375, y: -2.765625}
+      - {x: -2.3203125, y: -2.9765625}
+      - {x: -2.3203125, y: -3}
+      - {x: -0.140625, y: -3}
+      - {x: 0.1640625, y: -2.4609375}
+      - {x: 1.078125, y: -1.359375}
+    - - {x: -1.4296875, y: -2.7890625}
+      - {x: -1.1484375, y: -2.484375}
+      - {x: -1.125, y: -2.484375}
+      - {x: -0.84375, y: -2.203125}
+      - {x: -0.8203125, y: -2.203125}
+      - {x: -0.5859375, y: -1.96875}
+      - {x: -0.5625, y: -1.96875}
+      - {x: -0.2109375, y: -1.6171875}
+      - {x: -0.46875, y: -1.921875}
+      - {x: -0.46875, y: -1.9453125}
+      - {x: -0.8203125, y: -2.296875}
+      - {x: -0.84375, y: -2.296875}
+      - {x: -0.9609375, y: -2.390625}
+      - {x: -1.1484375, y: -2.5546875}
+      - {x: -1.2421875, y: -2.578125}
+      - {x: -1.265625, y: -2.625}
+      - {x: -1.2890625, y: -2.625}
+      - {x: -1.5, y: -2.7421875}
+      - {x: -1.5234375, y: -2.8125}
+      - {x: -1.4765625, y: -2.8125}
+    - - {x: 0.140625, y: -0.8203125}
+      - {x: 0.1640625, y: -0.7734375}
+      - {x: 0.140625, y: -1.0546875}
+      - {x: 0.1171875, y: -1.125}
+      - {x: 0.140625, y: -1.125}
