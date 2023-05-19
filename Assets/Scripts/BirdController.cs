@@ -155,27 +155,27 @@ public class BirdController : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.CompareTag("FlyLive"))
-        {
-            if (maxLives == 3)
-            {
-                live = 4;
-                maxLives = 4;
-                uiManager.DrawHearts();                
-                Destroy(collision.gameObject, 0.1f);
-                spriteRenderer.color = liveColor;
-                Invoke("ResetColor", 0.4f);
-                GameObject vfxLive = VFXManager.Instance.RequestVfxLive();
-            }else
-            {
-                live = 4;
-                uiManager.DrawHearts();
-                Destroy(collision.gameObject, 0.1f);
-                spriteRenderer.color = liveColor;
-                Invoke("ResetColor", 0.4f);
-                GameObject vfxLive = VFXManager.Instance.RequestVfxLive();
-            }
-        }
+    //    if (collision.gameObject.CompareTag("FlyLive"))
+    //    {
+    //        if (maxLives == 3)
+    //        {
+    //            live = 4;
+    //            maxLives = 4;
+    //            uiManager.DrawHearts();                
+    //            Destroy(collision.gameObject, 0.1f);
+    //            spriteRenderer.color = liveColor;
+    //            Invoke("ResetColor", 0.4f);
+    //            GameObject vfxLive = VFXManager.Instance.RequestVfxLive();
+    //        }else
+    //        {
+    //            live = 4;
+    //            uiManager.DrawHearts();
+    //            Destroy(collision.gameObject, 0.1f);
+    //            spriteRenderer.color = liveColor;
+    //            Invoke("ResetColor", 0.4f);
+    //            GameObject vfxLive = VFXManager.Instance.RequestVfxLive();
+    //        }
+    //    }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
