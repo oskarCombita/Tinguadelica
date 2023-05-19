@@ -6,10 +6,12 @@ public class VFXManager : MonoBehaviour
     [SerializeField] private GameObject vfxCatchPrefab;
     [SerializeField] private GameObject vfxDamagePref;
     [SerializeField] private GameObject vfxLivePref;
+    [SerializeField] private GameObject vfxLoseMushPref;
     private int poolSize = 1;
     [SerializeField] private List<GameObject> vfxCatchList;
     [SerializeField] private List<GameObject> vfxDamageList;
     [SerializeField] private List<GameObject> vfxLiveList;
+    [SerializeField] private List<GameObject> vfxLoseMushList;
 
 
     private static VFXManager instance;
@@ -32,7 +34,8 @@ public class VFXManager : MonoBehaviour
     {
         AddVfxCatchToPool(poolSize);
         AddVfxDamageToPool(poolSize);
-        AddVfxLive();
+        AddVfxLiveToPool(poolSize);
+        AddVfxLoseMushToPool(poolSize);
     }
 
     private void AddVfxCatchToPool(int amount)
@@ -57,13 +60,26 @@ public class VFXManager : MonoBehaviour
         }
     }
 
-    private void AddVfxLive()
+    private void AddVfxLiveToPool(int amount)
     {
-        GameObject vfxLive = Instantiate(vfxLivePref);
-        vfxLive.SetActive(false);
-        vfxLiveList.Add(vfxLive);
-        vfxLive.transform.parent = transform;
+        for (int i = 0; i < amount; i++)
+        {
+            GameObject vfxLive = Instantiate(vfxLivePref);
+            vfxLive.SetActive(false);
+            vfxLiveList.Add(vfxLive);
+            vfxLive.transform.parent = transform;
+        }
+    }
 
+    private void AddVfxLoseMushToPool(int amount)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            GameObject vfxLoseMush = Instantiate(vfxLoseMushPref);
+            vfxLoseMush.SetActive(false);
+            vfxLoseMushList.Add(vfxLoseMush);
+            vfxLoseMush.transform.parent = transform;
+        }
     }
 
     public GameObject RequestVfxCatch()
@@ -100,7 +116,33 @@ public class VFXManager : MonoBehaviour
 
     public GameObject RequestVfxLive()
     {
-        vfxLiveList[0].SetActive(true);
-        return vfxDamageList[0];
+        for (int i = 0; i < vfxLiveList.Count; i++)
+        {
+            if (!vfxLiveList[i].activeSelf)
+            {
+                vfxLiveList[0].SetActive(true);
+                return vfxDamageList[0];
+            }            
+        }
+
+        AddVfxLiveToPool(1);
+        vfxLiveList[vfxLiveList.Count - 1].SetActive(true);
+        return vfxLiveList[vfxLiveList.Count - 1];
+    }
+
+    public GameObject RequestVfxLoseMush()
+    {
+        for (int i = 0; i < vfxLoseMushList.Count; i++)
+        {
+            if (!vfxLoseMushList[i].activeSelf)
+            {
+                vfxLoseMushList[i].SetActive(true);
+                return vfxLoseMushList[i];
+            }
+        }
+
+        AddVfxLoseMushToPool(1);
+        vfxLoseMushList[vfxLoseMushList.Count - 1].SetActive(true);
+        return vfxLoseMushList[vfxLoseMushList.Count - 1];
     }
 }
