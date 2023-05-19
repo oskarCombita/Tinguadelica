@@ -1,0 +1,785 @@
+fileFormatVersion: 2
+guid: 92ffea45a68eef1478a7bcdb6442c911
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1328
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b841903ce11f474986cae95d01c54ab
+      internalID: 546678593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1328
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b85a95daa48b34591b55b618a2b2a8
+      internalID: 1174766712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 1328
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd0e640bc38bbb4bb749bbae0d4735c
+      internalID: -406816628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 1328
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae74962983f5e404fb3fc6668d356ab4
+      internalID: 2037802129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 1328
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ebc19ce7ff2e74cad52cf873f9da1e
+      internalID: -1542815155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 1328
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc14d5bc8f704e4ba9f8e9bb6f06ce6
+      internalID: 1591534622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 996
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a605dda695a38674eb6b6d0ca05e2415
+      internalID: -1461304505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 996
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672fc390f8824d14bb22138eab66cbba
+      internalID: 1348896372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 996
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c408ace239a2a4d998e456293e3adb
+      internalID: -254024097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 996
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864beba6523ea424fab12fed4ef0a366
+      internalID: 29627018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 996
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2031d35290c13544c975becafe3d6dd2
+      internalID: 363203456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 996
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aacced604e5585345971986a4407df7e
+      internalID: 1835905691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 664
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0471f7f147e9dfb49b5141d16d2dccbc
+      internalID: -173732049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 664
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b11dfb8a0a33bc48835c6d5f6d771ca
+      internalID: 581190535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 664
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6baf0be7c685cd040be27316ee429f7d
+      internalID: -1045261508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 664
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82afbb7ef80977c4483aff28fc28de1f
+      internalID: -1104166628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 664
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8be208ec7e3ad542a85844df00ca773
+      internalID: 216754261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 664
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d32a4750248bad4ca4e46bfeace2be3
+      internalID: 1565504876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 332
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8c180b5f20b8d40b6bea4ddc211fda
+      internalID: 2128408075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 332
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 755130b51f65b3045bd69111b8317bc2
+      internalID: -1106244176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 332
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539db6932dd61a14e8cb36fdc2cfb904
+      internalID: -1434151335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 332
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4aa608e87b5b34d84d8741bfa49b92
+      internalID: 831032659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 332
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd49da5509fe7e439092e0a8febbe86
+      internalID: 1100933429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 332
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beea6630eb2a0f64197d9ea4552f7e38
+      internalID: -7814583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdb51bfa6d996d4ea2556f7f7b56550
+      internalID: 1145456062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9517c7dae937f4bbf363039ed39653
+      internalID: -686760957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 0
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1288784e09566ee46a904ca63245f682
+      internalID: -1430415856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 0
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c767e462505145d4ba9b6d4f2fb6f33c
+      internalID: -561982988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 332x332_VFX_Life_X4_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 0
+        width: 332
+        height: 332
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7f03685f6759049921b4e383877d1e
+      internalID: 1413539799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      332x332_VFX_Life_X4_Sheet_0: 546678593
+      332x332_VFX_Life_X4_Sheet_1: 1174766712
+      332x332_VFX_Life_X4_Sheet_10: 363203456
+      332x332_VFX_Life_X4_Sheet_11: 1835905691
+      332x332_VFX_Life_X4_Sheet_12: -173732049
+      332x332_VFX_Life_X4_Sheet_13: 581190535
+      332x332_VFX_Life_X4_Sheet_14: -1045261508
+      332x332_VFX_Life_X4_Sheet_15: -1104166628
+      332x332_VFX_Life_X4_Sheet_16: 216754261
+      332x332_VFX_Life_X4_Sheet_17: 1565504876
+      332x332_VFX_Life_X4_Sheet_18: 2128408075
+      332x332_VFX_Life_X4_Sheet_19: -1106244176
+      332x332_VFX_Life_X4_Sheet_2: -406816628
+      332x332_VFX_Life_X4_Sheet_20: -1434151335
+      332x332_VFX_Life_X4_Sheet_21: 831032659
+      332x332_VFX_Life_X4_Sheet_22: 1100933429
+      332x332_VFX_Life_X4_Sheet_23: -7814583
+      332x332_VFX_Life_X4_Sheet_24: 1145456062
+      332x332_VFX_Life_X4_Sheet_25: -686760957
+      332x332_VFX_Life_X4_Sheet_26: -1430415856
+      332x332_VFX_Life_X4_Sheet_27: -561982988
+      332x332_VFX_Life_X4_Sheet_28: 1413539799
+      332x332_VFX_Life_X4_Sheet_3: 2037802129
+      332x332_VFX_Life_X4_Sheet_4: -1542815155
+      332x332_VFX_Life_X4_Sheet_5: 1591534622
+      332x332_VFX_Life_X4_Sheet_6: -1461304505
+      332x332_VFX_Life_X4_Sheet_7: 1348896372
+      332x332_VFX_Life_X4_Sheet_8: -254024097
+      332x332_VFX_Life_X4_Sheet_9: 29627018
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

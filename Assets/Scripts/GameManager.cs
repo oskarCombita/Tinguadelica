@@ -27,10 +27,12 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private int mushToComplete;
 
+
     void Start()
     {
         birdController = GameObject.Find("Bird").GetComponent<BirdController>();
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
+        
         gameOver = false;
         StartGame();
     }

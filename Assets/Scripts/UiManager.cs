@@ -41,6 +41,11 @@ public class UiManager : MonoBehaviour
         liveImage.gameObject.SetActive(false);
     }
 
+    public void DrawFourHeart()
+    {
+
+    }
+
     public void AnimMushroomCanvas()
     {
         Vector2 smallSize = mushCanvasTransform.localScale;
