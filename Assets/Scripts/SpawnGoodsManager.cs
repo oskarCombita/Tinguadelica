@@ -5,7 +5,10 @@ using UnityEngine;
 public class SpawnGoodsManager : MonoBehaviour
 {
     public GameObject[] goodsPrefab;
-    public GameObject heartShadowPref;
+    public GameObject[] heartShadowPrefs;
+    public GameObject flyHeartPref;
+    private float startDelayFlyH = 7;
+    private float repeatRateFlyH = 21;
     private float startDelay = 2;
     private float repeatRate = 2;
     private GameManager gameManager;
@@ -14,6 +17,7 @@ public class SpawnGoodsManager : MonoBehaviour
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         InvokeRepeating("SpawnMushroom", startDelay, repeatRate);
+        InvokeRepeating("SpawnFlyHeart", startDelayFlyH, repeatRateFlyH);
     }
 
 
@@ -36,12 +40,22 @@ public class SpawnGoodsManager : MonoBehaviour
             spawnPos = new Vector2(11, randomYPos);
 
             Vector2 spawnShadowPos = new Vector2(11, -3.2f);
-            Instantiate(heartShadowPref, spawnShadowPos, heartShadowPref.transform.rotation);
+            Instantiate(heartShadowPrefs[0], spawnShadowPos, heartShadowPrefs[0].transform.rotation);
         }
 
         if (!gameManager.gameOver)
         {
             Instantiate(goodsPrefab[mushroomIndex], spawnPos, goodsPrefab[mushroomIndex].transform.rotation);
         }        
+    }
+
+    void SpawnFlyHeart()
+    {
+        float randomYPos = Random.Range(2f, 9f);
+        Vector2 spawnFlyPos = new Vector2(11, randomYPos);
+        Instantiate(flyHeartPref, spawnFlyPos, flyHeartPref.transform.rotation);
+
+        Vector2 spawnShadowPos = new Vector2(11, -3.2f);
+        Instantiate(heartShadowPrefs[1], spawnShadowPos, heartShadowPrefs[1].transform.rotation);
     }
 }

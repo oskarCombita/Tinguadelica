@@ -17,11 +17,13 @@ public class SnakeAttack : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             birdController = other.GetComponent<BirdController>();
+
             birdController.live--;
             uiManager.LoseLife();
-            Debug.Log("El jugador ha sido golpeado por Snake");
-            //StartCoroutine(birdController.BlinkColor());
-            //birdController.ShowVFXDamage();
+            //Debug.Log("El jugador ha sido golpeado por Snake");
+            StartCoroutine(birdController.BlinkColor());
+            birdController.ShowVFXDamage();
+            Invoke("ShowVFXDamage", 0.1f);
         }
     }
 }
