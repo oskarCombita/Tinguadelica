@@ -1666,7 +1666,7 @@ MonoBehaviour:
   gameOver: 0
   pause: 0
   pauseScreen: {fileID: 554791515}
-  mushToComplete: 7
+  mushToComplete: 2
 --- !u!4 &1302617096
 Transform:
   m_ObjectHideFlags: 0
