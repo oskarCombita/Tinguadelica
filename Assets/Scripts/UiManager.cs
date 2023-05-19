@@ -14,7 +14,7 @@ public class UiManager : MonoBehaviour
     public TextMeshProUGUI countMushroomsText;
     private RectTransform mushCanvasTransform;
     private float timeAnimMushCanvas = 0.4f;
-    public int countMushrooms;
+    public int countMushrooms;  
 
 
     void Start()
@@ -27,9 +27,9 @@ public class UiManager : MonoBehaviour
         countMushroomsText.text = "x " + countMushrooms;
     }
 
-    void DrawHearts()
+    public void DrawHearts()
     {
-        for (int i = 0; i < birdController.live; i++)
+        for (int i = 0; i < birdController.maxLives; i++)
         {
             Image newLiveImage = Instantiate(liveImage, liveImage.transform.parent);
             newLiveImage.gameObject.SetActive(true);
@@ -54,7 +54,15 @@ public class UiManager : MonoBehaviour
 
     public void UpdateMushroomUiCount()
     {
-        countMushroomsText.text = "x " + countMushrooms;
+        if (countMushrooms >= 1)
+        {
+            countMushroomsText.text = "x " + countMushrooms;
+        }
+        else
+        {
+            countMushroomsText.text = "x 0";
+        }
+        
     }
 
     public void LoseLife()

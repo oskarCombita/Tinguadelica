@@ -12,6 +12,7 @@ TagManager:
   - Shark
   - Hole
   - Live
+  - FlyLive
   layers:
   - Default
   - TransparentFX
