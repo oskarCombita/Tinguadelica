@@ -43,7 +43,12 @@ public class UiManager : MonoBehaviour
 
     public void DrawFourHeart()
     {
+        Image newLiveImage = Instantiate(liveImage, liveImage.transform.parent);
+        newLiveImage.gameObject.SetActive(true);
+        newLiveImage.sprite = liveFull;
 
+        RectTransform rectTransform = newLiveImage.GetComponent<RectTransform>();
+        rectTransform.anchoredPosition += new Vector2(4 * -65, 0);
     }
 
     public void AnimMushroomCanvas()
