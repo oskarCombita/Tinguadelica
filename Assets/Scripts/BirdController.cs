@@ -43,14 +43,14 @@ public class BirdController : MonoBehaviour
     private void Awake()
     {
         live = maxLives;
-        birdAnimator = GetComponent<Animator>();
+        birdAudioSource = GetComponent<AudioSource>();        
     }
 
     void Start()
     {
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        birdAudioSource = GetComponent<AudioSource>();
+        birdAnimator = GetComponent<Animator>();
         birdRB = GetComponent<Rigidbody2D>();        
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
@@ -90,7 +90,7 @@ public class BirdController : MonoBehaviour
             isCatching = false;
 
             birdAudioSource.Stop();
-            birdAudioSource.PlayOneShot(jumpSound, 0.8f);
+            birdAudioSource.PlayOneShot(jumpSound, 0.6f);
         }
     }
 
@@ -128,8 +128,8 @@ public class BirdController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
-            birdAudioSource.PlayOneShot(fallSound, 0.8f);
-            Invoke("PlayBikeSound", 0.5f);
+            birdAudioSource.PlayOneShot(fallSound, 0.6f);
+            Invoke("PlayBikeSound", 0.45f);
         }  
 
         if (collision.gameObject.CompareTag("Hole"))

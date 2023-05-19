@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3240661140251245253}
   - component: {fileID: 3240661140251245254}
   - component: {fileID: 3240661140251245255}
-  - component: {fileID: 2185293902108956464}
+  - component: {fileID: 8593508795610853299}
   m_Layer: 0
   m_Name: Mushroom_Run
   m_TagString: Mushroom
@@ -177,7 +177,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!82 &2185293902108956464
+--- !u!82 &8593508795610853299
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
