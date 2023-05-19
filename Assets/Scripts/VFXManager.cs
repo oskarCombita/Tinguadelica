@@ -46,12 +46,15 @@ public class VFXManager : MonoBehaviour
         }
     }
 
-    private void AddVfxDamageToPool(int amout)
+    private void AddVfxDamageToPool(int amount)
     {
-        GameObject vfxDamage = Instantiate(vfxDamagePref);
-        vfxDamage.SetActive(false);
-        vfxDamageList.Add(vfxDamage);
-        vfxDamage.transform.parent = transform;
+        for (int i = 0; i < amount; i++)
+        {
+            GameObject vfxDamage = Instantiate(vfxDamagePref);
+            vfxDamage.SetActive(false);
+            vfxDamageList.Add(vfxDamage);
+            vfxDamage.transform.parent = transform;
+        }
     }
 
     private void AddVfxLive()
