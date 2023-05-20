@@ -9,13 +9,25 @@ public class SpawnBadsManager : MonoBehaviour
     private float startDelay = 2;
     private float repeatRate = 3;
     private GameManager gameManager;
+    private UiManager uiManager;
+    private SpawnSnake spawnSnake;
 
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
+        spawnSnake = GetComponent<SpawnSnake>();
         InvokeRepeating("SpawnShark", startDelay, repeatRate);
     }
- 
+
+    private void Update()
+    {
+        if (uiManager.countMushrooms == 2)
+        {
+            spawnSnake.InstantiateSnake();
+        }
+    }
+
 
     void SpawnShark()
     {

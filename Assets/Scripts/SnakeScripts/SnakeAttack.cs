@@ -24,7 +24,7 @@ public class SnakeAttack : MonoBehaviour
             //StartCoroutine(birdController.BlinkColor());
             birdController.StartBlinkColor();
             birdController.ShowVFXDamage();
-            Invoke("ShowVFXDamage", 0.1f);
+            //Invoke("ShowVFXDamage", 0.1f);
         }
         if (uiManager.countMushrooms >= 1)
         {

@@ -34,17 +34,24 @@ public class BirdController : MonoBehaviour
     private Color originalColor;
     private SpriteRenderer spriteRenderer;
 
+    private AudioSource birdAudioSource;
+    AudioClip playSound = null; 
+    public AudioClip bikeSound;
+    public AudioClip jumpSound;
+    public AudioClip fallSound;
+
     private void Awake()
     {
         live = maxLives;
+        birdAudioSource = GetComponent<AudioSource>();        
     }
 
     void Start()
     {
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        birdRB = GetComponent<Rigidbody2D>();
         birdAnimator = GetComponent<Animator>();
+        birdRB = GetComponent<Rigidbody2D>();        
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
         GameManager.originalGravity = Physics2D.gravity.y;
@@ -81,6 +88,9 @@ public class BirdController : MonoBehaviour
             birdRB.AddForce(Vector2.up * jumpForce * jumpEnergy, ForceMode2D.Impulse);
             isOnGround = false;
             isCatching = false;
+
+            birdAudioSource.Stop();
+            birdAudioSource.PlayOneShot(jumpSound, 0.6f);
         }
     }
 
@@ -118,6 +128,8 @@ public class BirdController : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             isOnGround = true;
+            birdAudioSource.PlayOneShot(fallSound, 0.6f);
+            Invoke("PlayBikeSound", 0.45f);
         }  
 
         if (collision.gameObject.CompareTag("Hole"))
@@ -292,5 +304,12 @@ public class BirdController : MonoBehaviour
     public void ResetColor()
     {
         spriteRenderer.color = originalColor;
+    }
+
+    void PlayBikeSound()
+    {
+        playSound = bikeSound;
+        birdAudioSource.clip = playSound;
+        birdAudioSource.Play();
     }
 }
