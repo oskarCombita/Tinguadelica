@@ -7,7 +7,7 @@ public class VFXManager : MonoBehaviour
     [SerializeField] private GameObject vfxDamagePref;
     [SerializeField] private GameObject vfxLivePref;
     [SerializeField] private GameObject vfxLoseMushPref;
-    private int poolSize = 1;
+    private int poolSize = 3;
     [SerializeField] private List<GameObject> vfxCatchList;
     [SerializeField] private List<GameObject> vfxDamageList;
     [SerializeField] private List<GameObject> vfxLiveList;

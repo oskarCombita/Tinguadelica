@@ -21,7 +21,7 @@ public class Glitch : MonoBehaviour
         {
             birdController.live--;
             uiManager.LoseLife();
-            //Coroutine coroutine = StartCoroutine(birdController.BlinkColor());
+
             birdController.StartBlinkColor();
             birdController.ShowVFXDamage();
 

@@ -5,17 +5,14 @@ using UnityEngine.UIElements;
 
 public class SpawnSnake : MonoBehaviour
 {
-    [SerializeField]private GameObject snake;
+    [SerializeField] private GameObject snake;
 
 
     public void InstantiateSnake()
     {
+        GameObject snakeInstance = Instantiate(snake, new Vector2(5, 2), Quaternion.identity);
 
-
-            GameObject snakeInstance = Instantiate(snake, new Vector2(5, 2), Quaternion.identity);
-
-            StartCoroutine(DestroyAfterAnimation(snakeInstance));
-        
+        StartCoroutine(DestroyAfterAnimation(snakeInstance));
     }
 
     private IEnumerator DestroyAfterAnimation(GameObject snakeInstance)

@@ -11,21 +11,19 @@ public class SpawnBadsManager : MonoBehaviour
     private GameManager gameManager;
     private UiManager uiManager;
     private SpawnSnake spawnSnake;
+    
 
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
         spawnSnake = GetComponent<SpawnSnake>();
-        InvokeRepeating("SpawnShark", startDelay, repeatRate);
-    }
+        //InvokeRepeating("SpawnShark", startDelay, repeatRate);        
+    }       
 
-    private void Update()
+    void SpawnSnake()
     {
-        if (uiManager.countMushrooms == 2)
-        {
-            spawnSnake.InstantiateSnake();
-        }
+        spawnSnake.InstantiateSnake();
     }
 
 
