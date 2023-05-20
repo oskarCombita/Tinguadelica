@@ -4,8 +4,6 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - LimitePiezas
-  - TileLimit
   - Background
   - Mushroom
   - Ground
@@ -13,6 +11,7 @@ TagManager:
   - Hole
   - Live
   - FlyLive
+  - FlyMushroom
   layers:
   - Default
   - TransparentFX

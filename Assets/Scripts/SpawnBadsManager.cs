@@ -18,7 +18,7 @@ public class SpawnBadsManager : MonoBehaviour
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
         spawnSnake = GetComponent<SpawnSnake>();
-        //InvokeRepeating("SpawnShark", startDelay, repeatRate);        
+        InvokeRepeating("SpawnShark", startDelay, repeatRate);        
     }       
 
     void SpawnSnake()

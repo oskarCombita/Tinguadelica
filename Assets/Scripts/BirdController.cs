@@ -35,7 +35,7 @@ public class BirdController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     private AudioSource birdAudioSource;
-    AudioClip playSound = null; 
+    AudioClip playSound = null;
     public AudioClip bikeSound;
     public AudioClip jumpSound;
     public AudioClip fallSound;
@@ -43,7 +43,7 @@ public class BirdController : MonoBehaviour
     private void Awake()
     {
         live = maxLives;
-        birdAudioSource = GetComponent<AudioSource>();        
+        birdAudioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -51,11 +51,11 @@ public class BirdController : MonoBehaviour
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         birdAnimator = GetComponent<Animator>();
-        birdRB = GetComponent<Rigidbody2D>();        
+        birdRB = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
         GameManager.originalGravity = Physics2D.gravity.y;
-        Physics2D.gravity *= gravityModifier;        
+        Physics2D.gravity *= gravityModifier;
     }
 
     void Update()
@@ -130,7 +130,7 @@ public class BirdController : MonoBehaviour
             isOnGround = true;
             birdAudioSource.PlayOneShot(fallSound, 0.6f);
             Invoke("PlayBikeSound", 0.45f);
-        }  
+        }
 
         if (collision.gameObject.CompareTag("Hole"))
         {
@@ -145,9 +145,6 @@ public class BirdController : MonoBehaviour
         {
             catchMushroom = true;
             StartCoroutine(AddMushDelay(0.3f));
-            //uiManager.AnimMushroomCanvas();
-            //uiManager.countMushrooms++;
-            //uiManager.UpdateMushroomUiCount();
             Destroy(collision.gameObject, 0.3f);
             Invoke("ShowVFXCatch", 0.3f);
             spriteRenderer.color = mushColor;
@@ -158,7 +155,7 @@ public class BirdController : MonoBehaviour
         {
             if (live < maxLives)
             {
-                live++;                
+                live++;
                 uiManager.RecoverLife();
                 Destroy(collision.gameObject, 0.1f);
                 spriteRenderer.color = liveColor;
@@ -167,27 +164,32 @@ public class BirdController : MonoBehaviour
             }
         }
 
-    //    if (collision.gameObject.CompareTag("FlyLive"))
-    //    {
-    //        if (maxLives == 3)
-    //        {
-    //            live = 4;
-    //            maxLives = 4;
-    //            uiManager.DrawHearts();                
-    //            Destroy(collision.gameObject, 0.1f);
-    //            spriteRenderer.color = liveColor;
-    //            Invoke("ResetColor", 0.4f);
-    //            GameObject vfxLive = VFXManager.Instance.RequestVfxLive();
-    //        }else
-    //        {
-    //            live = 4;
-    //            uiManager.DrawHearts();
-    //            Destroy(collision.gameObject, 0.1f);
-    //            spriteRenderer.color = liveColor;
-    //            Invoke("ResetColor", 0.4f);
-    //            GameObject vfxLive = VFXManager.Instance.RequestVfxLive();
-    //        }
-    //    }
+        if (collision.gameObject.CompareTag("FlyLive"))
+        {
+            if (maxLives == 3)
+            {
+                live = 4;
+                maxLives = 4;
+                uiManager.DrawFourHeart();
+                uiManager.RecoverFourLife();
+                Destroy(collision.gameObject, 0.1f);
+                spriteRenderer.color = liveColor;
+                Invoke("ResetColor", 0.4f);
+                GameObject vfxLifeX4 = VFXManager.Instance.RequestVfxLifeX4();
+            }
+            else
+            {
+                if (live < maxLives)
+                {
+                    live = 4;
+                    uiManager.RecoverFourLife();
+                    Destroy(collision.gameObject, 0.1f);
+                    spriteRenderer.color = liveColor;
+                    Invoke("ResetColor", 0.4f);
+                    GameObject vfxLifeX4 = VFXManager.Instance.RequestVfxLifeX4();
+                }               
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -213,8 +215,6 @@ public class BirdController : MonoBehaviour
     void ShowVFXCatch()
     {
         GameObject vfxCatch = VFXManager.Instance.RequestVfxCatch();
-        //Vector3 vfxPos = new Vector3(-0.5f, 0, 0);
-        //vfxCatch.transform.position = transform.position + vfxPos;
     }
 
     public void ShowVFXDamage()
@@ -224,7 +224,7 @@ public class BirdController : MonoBehaviour
 
     public void ShowVFXLoseMush()
     {
-        GameObject vfxLoseMush = VFXManager.Instance.RequestVfxLoseMush();    
+        GameObject vfxLoseMush = VFXManager.Instance.RequestVfxLoseMush();
     }
 
     float SetJumpEnergy()

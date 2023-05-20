@@ -60,7 +60,12 @@ public class UiManager : MonoBehaviour
 
     public void DrawFourHeart()
     {
+        Image newLiveImage = Instantiate(liveImage, liveImage.transform.parent);
+        newLiveImage.gameObject.SetActive(true);
+        newLiveImage.sprite = liveFull;
 
+        RectTransform rectTransform = newLiveImage.GetComponent<RectTransform>();
+        rectTransform.anchoredPosition += new Vector2(3 * -65, 0);
     }
 
     public void AnimMushroomCanvas()
@@ -100,5 +105,14 @@ public class UiManager : MonoBehaviour
     {
         Image[] lives = GetComponentsInChildren<Image>();
         lives[birdController.live - 1].sprite = liveFull;        
+    }
+
+    public void RecoverFourLife()
+    {
+        Image[] lives = GetComponentsInChildren<Image>();
+        foreach (Image lifeImage in lives)
+        {
+            lifeImage.sprite = liveFull;
+        }
     }
 }
