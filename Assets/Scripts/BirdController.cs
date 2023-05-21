@@ -144,8 +144,17 @@ public class BirdController : MonoBehaviour
         if (collision.gameObject.CompareTag("Mushroom") && isCatching)
         {
             catchMushroom = true;
-            StartCoroutine(AddMushDelay(0.3f));
+            StartCoroutine(AddMushDelay(0.3f, 1));
             Destroy(collision.gameObject, 0.3f);
+            Invoke("ShowVFXCatch", 0.3f);
+            spriteRenderer.color = mushColor;
+            Invoke("ResetColor", 0.4f);
+        }
+
+        if (collision.gameObject.CompareTag("FlyMushroom"))
+        {
+            StartCoroutine(AddMushDelay(0.3f, 3));
+            Destroy(collision.gameObject, 0.1f);
             Invoke("ShowVFXCatch", 0.3f);
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
@@ -270,34 +279,13 @@ public class BirdController : MonoBehaviour
         CancelInvoke("BlinkColor");
         spriteRenderer.color = originalColor;
     }
+  
 
-    //public IEnumerator BlinkColor()
-    //{
-    //    float elapsedTime = 0f;
-
-    //    while (elapsedTime < 0.6f)
-    //    {
-    //        if (spriteRenderer.color == damageColor)
-    //        {
-    //            spriteRenderer.color = damageColor2;
-    //        }
-    //        else
-    //        {
-    //            spriteRenderer.color = damageColor;
-    //        }
-
-    //        yield return new WaitForSeconds(0.2f);
-    //        elapsedTime += 0.2f;
-    //    }
-
-    //    spriteRenderer.color = originalColor;
-    //}
-
-    IEnumerator AddMushDelay(float delay)
+    IEnumerator AddMushDelay(float delay, int mushToAdd)
     {
         yield return new WaitForSeconds(delay);
         uiManager.AnimMushroomCanvas();
-        uiManager.countMushrooms++;
+        uiManager.countMushrooms += mushToAdd;
         uiManager.UpdateMushroomUiCount();
     }
 

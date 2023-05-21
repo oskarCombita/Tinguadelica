@@ -352,9 +352,11 @@ MonoBehaviour:
   - {fileID: 3240661140251245248, guid: 5dc036e34ebe9584fa386bd1c98d9169, type: 3}
   - {fileID: 267830309520718669, guid: 0d6b1c7163b830246b1f642ebb7b80b7, type: 3}
   - {fileID: 2386211855745470565, guid: 4c83d1c896f593c45836a1666132c996, type: 3}
-  heartShadowPrefs:
+  - {fileID: 5074088271448749611, guid: e4c5035ca1690324e96ef15954883128, type: 3}
+  ShadowPrefs:
   - {fileID: 1348606677741428225, guid: bb0f0f0cb588a6049bfff7bf8688bb6a, type: 3}
   - {fileID: 1348606677741428225, guid: 29a9941fd06d7ce4392623d8afe848c4, type: 3}
+  - {fileID: 4220934429860662981, guid: 39946a33d7334034884557d36b5179c3, type: 3}
   flyHeartPref: {fileID: 955110165299223450, guid: ccd653dc5acc5ef4695b822a892173ad, type: 3}
 --- !u!114 &312680830
 MonoBehaviour:
