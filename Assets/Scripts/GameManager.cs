@@ -4,6 +4,13 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System;
+
+public enum LevelArea
+{
+    Glitch,
+    Snake
+}
 
 public class GameManager : MonoBehaviour
 {
@@ -14,7 +21,7 @@ public class GameManager : MonoBehaviour
     public Button playBtn;
 
     private BirdController birdController;
-    private UiManager uiManager;
+    private SpawnBadsManager spawnBads;
 
     public TextMeshProUGUI startText;
 
@@ -25,21 +32,28 @@ public class GameManager : MonoBehaviour
 
     public static float originalGravity;
 
-    [SerializeField] private int mushToComplete;
+    [SerializeField] private int mushToCompleteLevel;
 
+    public LevelArea activeArea;
+
+    public int mushToChangeArea;
+
+    Dictionary<LevelArea, bool> areaSwitchDict = new Dictionary<LevelArea, bool>();
 
     void Start()
     {
         birdController = GameObject.Find("Bird").GetComponent<BirdController>();
-        uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
+        spawnBads = GameObject.Find("SpawnManager").GetComponent<SpawnBadsManager>(); 
         
         gameOver = false;
+        SetAreaSwitchDict();
         StartGame();
     }
     
     void Update()
     {
         EndGame();
+        AreaManager();
 
         if (Input.GetKeyDown(KeyCode.P) && !gameOver)
         {
@@ -49,14 +63,45 @@ public class GameManager : MonoBehaviour
 
     void StartGame()
     {
-        startText.text = "Recoge " + mushToComplete + " hongos";
+        activeArea = LevelArea.Glitch;
+        spawnBads.SpawnBadsByArea(activeArea);
+        startText.text = "Recoge " + mushToCompleteLevel + " hongos";
         StartCoroutine(TurnOffStartText(3));
+    }
+
+    void SetAreaSwitchDict()
+    {
+        foreach (LevelArea area in Enum.GetValues(typeof(LevelArea)))
+        {
+            areaSwitchDict.Add(area, false);
+        }
     }
 
     IEnumerator TurnOffStartText(float delay)
     {
         yield return new WaitForSeconds(delay);
         startText.gameObject.SetActive(false);
+    }
+
+    void AreaManager()
+    {
+        if (birdController.pickedMush >= mushToChangeArea && !areaSwitchDict[activeArea])
+        {
+            SwitchArea();
+            areaSwitchDict[activeArea] = true;
+        }        
+    }
+
+    void SwitchArea()
+    {
+        switch (activeArea)
+        {
+            case LevelArea.Glitch:
+                activeArea = LevelArea.Snake;
+                break;
+        }
+
+        spawnBads.SpawnBadsByArea(activeArea);
     }
 
     void EndGame()
@@ -67,7 +112,7 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
 
-        if (uiManager.countMushrooms == mushToComplete)
+        if (birdController.pickedMush >= mushToCompleteLevel)
         {
             gameOver = true;
             LevelComplete();
@@ -102,8 +147,6 @@ public class GameManager : MonoBehaviour
     {
         playBtn.gameObject.SetActive(true);
         levelCompleteText.gameObject.SetActive(true);
-
-        Debug.Log("Level Complete");
     }
 
     public void RestartGame()

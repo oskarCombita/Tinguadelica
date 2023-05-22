@@ -23,15 +23,15 @@ public class SnakeAttack : MonoBehaviour
             birdController.StartBlinkColor();
             birdController.ShowVFXDamage();
 
-            if (uiManager.countMushrooms == 1)
+            if (birdController.pickedMush == 1)
             {
-                uiManager.countMushrooms--;
+                birdController.pickedMush--;
                 uiManager.UpdateMushroomUiCount();
                 birdController.ShowVFXLoseMush();
             }
-            else if (uiManager.countMushrooms >= 2)
+            else if (birdController.pickedMush >= 2)
             {
-                uiManager.countMushrooms -= 2;
+                birdController.pickedMush -= 2;
                 uiManager.UpdateMushroomUiCount();
                 birdController.ShowVFXLoseMush();
             }

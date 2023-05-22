@@ -18,6 +18,8 @@ public class BirdController : MonoBehaviour
     [HideInInspector] public int live;
     public int maxLives = 3;
 
+    public int pickedMush;
+
     private bool catchMushroom;
 
     private UiManager uiManager;
@@ -82,7 +84,6 @@ public class BirdController : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.Space) && isOnGround)
         {
-            Debug.Log("Time Energy" + timeEnergy);
             SetJumpEnergy();
 
             birdRB.AddForce(Vector2.up * jumpForce * jumpEnergy, ForceMode2D.Impulse);
@@ -206,7 +207,7 @@ public class BirdController : MonoBehaviour
         if (collision.gameObject.CompareTag("Mushroom") && isCatching && !catchMushroom)
         {
             uiManager.AnimMushroomCanvas();
-            uiManager.countMushrooms++;
+            pickedMush++;
             uiManager.UpdateMushroomUiCount();
             Destroy(collision.gameObject, 0.1f);
             catchMushroom = true;
@@ -285,7 +286,7 @@ public class BirdController : MonoBehaviour
     {
         yield return new WaitForSeconds(delay);
         uiManager.AnimMushroomCanvas();
-        uiManager.countMushrooms += mushToAdd;
+        pickedMush += mushToAdd;
         uiManager.UpdateMushroomUiCount();
     }
 

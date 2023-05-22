@@ -69,11 +69,14 @@ public class SpawnGoodsManager : MonoBehaviour
 
     void SpawnFlyHeart()
     {
-        float randomYPos = Random.Range(2f, 9f);
-        Vector2 spawnFlyPos = new Vector2(11, randomYPos);
-        Instantiate(flyHeartPref, spawnFlyPos, flyHeartPref.transform.rotation);
+        if (!gameManager.gameOver)
+        {
+            float randomYPos = Random.Range(2f, 9f);
+            Vector2 spawnFlyPos = new Vector2(11, randomYPos);
+            Instantiate(flyHeartPref, spawnFlyPos, flyHeartPref.transform.rotation);
 
-        Vector2 spawnShadowPos = new Vector2(9.7f, -3.2f);
-        Instantiate(ShadowPrefs[1], spawnShadowPos, ShadowPrefs[1].transform.rotation);
+            Vector2 spawnShadowPos = new Vector2(9.7f, -3.2f);
+            Instantiate(ShadowPrefs[1], spawnShadowPos, ShadowPrefs[1].transform.rotation);
+        }        
     }
 }

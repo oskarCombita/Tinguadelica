@@ -12,6 +12,7 @@ TagManager:
   - Live
   - FlyLive
   - FlyMushroom
+  - Glitch
   layers:
   - Default
   - TransparentFX

@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1985808213938776357}
   - component: {fileID: 6674207466545573262}
+  - component: {fileID: -2564425186548359998}
   m_Layer: 0
   m_Name: Snake_Mecanics
   m_TagString: Untagged
@@ -54,6 +55,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &-2564425186548359998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290929176626521221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91f205308e549c34fa0798bd09713a3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8002298410192424116
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -109,7 +122,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -133931376040696377, guid: 10b73df9323d316418fee8a40f43724c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 10b73df9323d316418fee8a40f43724c, type: 3}
 --- !u!4 &8811878246770830556 stripped
 Transform:

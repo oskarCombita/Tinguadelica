@@ -300,7 +300,6 @@ GameObject:
   - component: {fileID: 312680828}
   - component: {fileID: 312680827}
   - component: {fileID: 312680829}
-  - component: {fileID: 312680830}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -320,7 +319,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18f40bc19ee536d45b4b5bddc93049b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharkPrefab: {fileID: 8835046307980819484, guid: eebb318ea6e0202439a04f6bcc33d5a7, type: 3}
+  glitchPrefab: {fileID: 8835046307980819484, guid: eebb318ea6e0202439a04f6bcc33d5a7, type: 3}
+  snakePrefab: {fileID: 1290929176626521221, guid: 2328d8093f30f9b439529867dddd22f5, type: 3}
 --- !u!4 &312680828
 Transform:
   m_ObjectHideFlags: 0
@@ -358,19 +358,6 @@ MonoBehaviour:
   - {fileID: 1348606677741428225, guid: 29a9941fd06d7ce4392623d8afe848c4, type: 3}
   - {fileID: 4220934429860662981, guid: 39946a33d7334034884557d36b5179c3, type: 3}
   flyHeartPref: {fileID: 955110165299223450, guid: ccd653dc5acc5ef4695b822a892173ad, type: 3}
---- !u!114 &312680830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312680826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91f205308e549c34fa0798bd09713a3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  snake: {fileID: 1290929176626521221, guid: 2328d8093f30f9b439529867dddd22f5, type: 3}
 --- !u!1 &323796602
 GameObject:
   m_ObjectHideFlags: 0
@@ -1684,7 +1671,9 @@ MonoBehaviour:
   gameOver: 0
   pause: 0
   pauseScreen: {fileID: 554791515}
-  mushToComplete: 10
+  mushToCompleteLevel: 10
+  activeArea: 0
+  mushToChangeArea: 7
 --- !u!4 &1302617096
 Transform:
   m_ObjectHideFlags: 0
@@ -1884,6 +1873,7 @@ MonoBehaviour:
   isCatching: 0
   live: 3
   maxLives: 3
+  pickedMush: 0
   speedX: 7
   xRange: 5.5
   damageColor: {r: 0.79607844, g: 0.13333334, b: 0.23529412, a: 0.6313726}
@@ -2243,8 +2233,6 @@ MonoBehaviour:
   liveFull: {fileID: 21300000, guid: 6acf1dc890bb26a4da60ae37dbe5b1a3, type: 3}
   liveEmpty: {fileID: 21300000, guid: fcd0356a0f898294fbdd0be7d645c4f4, type: 3}
   countMushroomsText: {fileID: 812332380}
-  countMushrooms: 0
-  mushToSpawnSnake: 7
 --- !u!114 &1916761181
 MonoBehaviour:
   m_ObjectHideFlags: 0
