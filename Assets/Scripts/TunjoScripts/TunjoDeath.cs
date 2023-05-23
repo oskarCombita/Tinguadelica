@@ -8,6 +8,7 @@ public class TunjoDeath : MonoBehaviour
     private UiManager uiManager;
     private GameManager gameManager;
     private Animator animator;
+    public int deathNumber;
 
     private void Start()
     {
@@ -16,19 +17,24 @@ public class TunjoDeath : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    private void Update()
+    {
+        Death();
+    }
+
     public void Death()
     {
-        if (uiManager.countMushrooms == 1 && animator != null)
+        if (uiManager.countMushrooms >= deathNumber)
         {
             animator.SetTrigger("DeathTrigger");
-            ///Invoke("DestroyTunjo", 2f);
-            DestroyTunjo();
+            Invoke("DestroyTunjo", 1f);
+            //DestroyTunjo();
         }
     }
 
     private void DestroyTunjo()
     {
-        //Destroy(gameObject);
+        Destroy(gameObject);
         Debug.Log("TunjoKill");
     }
 
