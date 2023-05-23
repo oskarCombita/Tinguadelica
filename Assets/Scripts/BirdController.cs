@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class BirdController : MonoBehaviour
 {
@@ -42,6 +43,8 @@ public class BirdController : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip fallSound;
 
+    public Slider jumpEnergySlider;
+
     private void Awake()
     {
         live = maxLives;
@@ -80,11 +83,14 @@ public class BirdController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && isOnGround)
         {
             timeEnergy += Time.deltaTime;
+            jumpEnergySlider.value = Mathf.Clamp01(timeEnergy);
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && isOnGround)
         {
             SetJumpEnergy();
+
+            jumpEnergySlider.value = 0f;
 
             birdRB.AddForce(Vector2.up * jumpForce * jumpEnergy, ForceMode2D.Impulse);
             isOnGround = false;
@@ -150,6 +156,7 @@ public class BirdController : MonoBehaviour
             Invoke("ShowVFXCatch", 0.3f);
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
+            Invoke("ResetCatchMush", 0.33f);
         }
 
         if (collision.gameObject.CompareTag("FlyMushroom"))
@@ -214,10 +221,11 @@ public class BirdController : MonoBehaviour
             Invoke("ShowVFXCatch", 0.1f);
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
+            Invoke("ResetCatchMush", 0.13f);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    void ResetCatchMush()
     {
         catchMushroom = false;
     }
@@ -242,17 +250,14 @@ public class BirdController : MonoBehaviour
         if (timeEnergy < 0.4f)
         {
             jumpEnergy = 1f;
-            Debug.Log("Jump Energy" + jumpEnergy);
         }
         else if (timeEnergy > 1.4f)
         {
             jumpEnergy = 2f;
-            Debug.Log("Jump Energy" + jumpEnergy);
         }
         else
         {
             jumpEnergy = 1f + (timeEnergy - 0.4f);
-            Debug.Log("Jump Energy" + jumpEnergy);
         }
         return jumpEnergy;
     }

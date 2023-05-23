@@ -26,6 +26,7 @@ public class SpawnBadsManager : MonoBehaviour
                 break;
             case LevelArea.Snake:
                 Invoke("SpawnSnake", startDelay);
+                CancelInvoke("SpawnGlitch");
                 break;
         }
     }

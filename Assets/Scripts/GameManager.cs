@@ -8,12 +8,15 @@ using System;
 
 public enum LevelArea
 {
+    Test,
     Glitch,
     Snake
 }
 
 public class GameManager : MonoBehaviour
 {
+    public Button playStartBtn;
+
     public TextMeshProUGUI gameOverText;
     public Button restartBtn;
 
@@ -22,13 +25,20 @@ public class GameManager : MonoBehaviour
 
     private BirdController birdController;
     private SpawnBadsManager spawnBads;
+    private SpawnGoodsManager spawnGoods;
+    private SpawnBgSkyManager spawnBgSky;
+    private SpawnBackgroundManager spawnBgMountain;
+    private SpawnBackgroundManager spawnBgHorizon;
+    private SpawnBackgroundManager spawnBgShrubbery;
 
     public TextMeshProUGUI startText;
 
+    public bool gameIsActive;
     public bool gameOver;
     public bool pause;
 
     public GameObject pauseScreen;
+    public GameObject testObjects;
 
     public static float originalGravity;
 
@@ -43,11 +53,18 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         birdController = GameObject.Find("Bird").GetComponent<BirdController>();
-        spawnBads = GameObject.Find("SpawnManager").GetComponent<SpawnBadsManager>(); 
-        
+        spawnBads = GameObject.Find("SpawnManager").GetComponent<SpawnBadsManager>();
+        spawnGoods = GameObject.Find("SpawnManager").GetComponent<SpawnGoodsManager>();
+
+        spawnBgSky = GameObject.Find("Bg_Sky_SpawnMger").GetComponent<SpawnBgSkyManager>();
+        spawnBgMountain = GameObject.Find("Bg_Mountain_SpawnMger").GetComponent<SpawnBackgroundManager>();
+        spawnBgHorizon = GameObject.Find("Bg_Horizon_SpawnMger").GetComponent<SpawnBackgroundManager>();
+        spawnBgShrubbery = GameObject.Find("Bg_Shrubbery_SpawnMger").GetComponent<SpawnBackgroundManager>();
+
         gameOver = false;
         SetAreaSwitchDict();
-        StartGame();
+        
+        //StartGame();
     }
     
     void Update()
@@ -61,10 +78,22 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void StartGame()
+    public void StartGame()
     {
-        activeArea = LevelArea.Glitch;
-        spawnBads.SpawnBadsByArea(activeArea);
+        Destroy(testObjects);
+        playStartBtn.gameObject.SetActive(false);
+        //activeArea = LevelArea.Glitch;
+        //spawnBads.SpawnBadsByArea(activeArea);
+        gameIsActive = true;
+        SwitchArea();
+
+        spawnBgSky.StartSpawnSkyBG();
+        spawnBgMountain.StartSpawnBG();
+        spawnBgHorizon.StartSpawnBG();
+        spawnBgShrubbery.StartSpawnBG();
+
+        spawnGoods.StartSpawnGoods();
+
         startText.text = "Recoge " + mushToCompleteLevel + " hongos";
         StartCoroutine(TurnOffStartText(3));
     }
@@ -96,6 +125,10 @@ public class GameManager : MonoBehaviour
     {
         switch (activeArea)
         {
+            case LevelArea.Test:
+                activeArea = LevelArea.Glitch;
+                break;
+
             case LevelArea.Glitch:
                 activeArea = LevelArea.Snake;
                 break;

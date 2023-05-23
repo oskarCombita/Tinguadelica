@@ -14,11 +14,6 @@ public class SpawnBgSkyManager : MonoBehaviour
     void Start()
     {
         startPos = transform.position;
-                
-        Instantiate(backgroundPrefab, startPos, backgroundPrefab.transform.rotation);
-
-        Instantiate(backgroundPrefab, startPos + secondPos, backgroundPrefab.transform.rotation);
-
     }
     
     void Update()
@@ -28,5 +23,12 @@ public class SpawnBgSkyManager : MonoBehaviour
             transform.position = startPos;            
             Instantiate(backgroundPrefab, startPos + secondPos, backgroundPrefab.transform.rotation);
         }
+    }
+
+    public void StartSpawnSkyBG()
+    {
+        Instantiate(backgroundPrefab, startPos, backgroundPrefab.transform.rotation);
+
+        Instantiate(backgroundPrefab, startPos + secondPos, backgroundPrefab.transform.rotation);
     }
 }

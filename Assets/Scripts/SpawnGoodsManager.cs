@@ -15,11 +15,14 @@ public class SpawnGoodsManager : MonoBehaviour
 
     void Start()
     {
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();        
+    }
+
+    public void StartSpawnGoods()
+    {
         InvokeRepeating("SpawnGoods", startDelay, repeatRate);
         InvokeRepeating("SpawnFlyHeart", startDelayFlyH, repeatRateFlyH);
     }
-
 
     void SpawnGoods()
     {
