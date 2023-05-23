@@ -27,9 +27,9 @@ public class Fire : MonoBehaviour
             birdController.StartBlinkColor(); // Llama al método "StartBlinkColor()" en el componente BirdController
             birdController.ShowVFXDamage(); // Llama al método "ShowVFXDamage()" en el componente BirdController
 
-            if (uiManager.countMushrooms >= 1) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual a 1
+            if (birdController.pickedMush >= 1) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual a 1
             {
-                uiManager.countMushrooms--; // Reduce en uno el valor de la variable "countMushrooms" en el componente UiManager
+                birdController.pickedMush--; // Reduce en uno el valor de la variable "countMushrooms" en el componente UiManager
                 uiManager.UpdateMushroomUiCount(); // Llama al método "UpdateMushroomUiCount()" en el componente UiManager
                 birdController.ShowVFXLoseMush(); // Llama al método "ShowVFXLoseMush()" en el componente BirdController
             }

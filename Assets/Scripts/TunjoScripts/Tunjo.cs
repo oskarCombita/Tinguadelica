@@ -35,15 +35,15 @@ public class Tunjo : MonoBehaviour
             birdController.StartBlinkColor(); // Llama al método "StartBlinkColor()" en el componente BirdController
             birdController.ShowVFXDamage(); // Llama al método "ShowVFXDamage()" en el componente BirdController
 
-            if (uiManager.countMushrooms == 1) // Comprueba si la variable "countMushrooms" en el componente UiManager es igual a 1
+            if (birdController.pickedMush == 1) // Comprueba si la variable "countMushrooms" en el componente UiManager es igual a 1
             {
-                uiManager.countMushrooms--; // Reduce en uno el valor de la variable "countMushrooms" en el componente UiManager
+                birdController.pickedMush--; // Reduce en uno el valor de la variable "countMushrooms" en el componente UiManager
                 uiManager.UpdateMushroomUiCount(); // Llama al método "UpdateMushroomUiCount()" en el componente UiManager
                 birdController.ShowVFXLoseMush(); // Llama al método "ShowVFXLoseMush()" en el componente BirdController
             }
-            else if (uiManager.countMushrooms >= 2) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual a 2
+            else if (birdController.pickedMush >= 2) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual a 2
             {
-                uiManager.countMushrooms -= 2; // Reduce en dos el valor de la variable "countMushrooms" en el componente UiManager
+                birdController.pickedMush -= 2; // Reduce en dos el valor de la variable "countMushrooms" en el componente UiManager
                 uiManager.UpdateMushroomUiCount(); // Llama al método "UpdateMushroomUiCount()" en el componente UiManager
                 birdController.ShowVFXLoseMush(); // Llama al método "ShowVFXLoseMush()" en el componente BirdController
             }
@@ -57,7 +57,7 @@ public class Tunjo : MonoBehaviour
 
     public void Death()
     {
-        if (uiManager.countMushrooms >= deathNumber) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual al número de muertes "deathNumber"
+        if (birdController.pickedMush >= deathNumber) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual al número de muertes "deathNumber"
         {
             animator.SetTrigger("DeathTrigger"); // Activa el trigger "DeathTrigger" en el componente Animator
             Invoke("DestroyTunjo", 1f); // Invoca el método "DestroyTunjo" después de 1 segundo
