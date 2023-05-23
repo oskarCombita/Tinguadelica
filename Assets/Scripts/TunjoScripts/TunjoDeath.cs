@@ -18,16 +18,18 @@ public class TunjoDeath : MonoBehaviour
 
     public void Death()
     {
-        if (uiManager.countMushrooms >= 1 && animator != null && !gameManager.gameOver)
+        if (uiManager.countMushrooms == 1 && animator != null)
         {
-            animator.SetBool("TunjoDeath", true);
-            Invoke("DestroyTunjo", 2f);
+            animator.SetTrigger("DeathTrigger");
+            ///Invoke("DestroyTunjo", 2f);
+            DestroyTunjo();
         }
     }
 
     private void DestroyTunjo()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
+        Debug.Log("TunjoKill");
     }
 
 }

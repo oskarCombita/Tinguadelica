@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8213733054863283088}
   - component: {fileID: 9136726745784777130}
   - component: {fileID: 8217222607161827176}
-  - component: {fileID: 5067776889347359006}
+  - component: {fileID: -4814370475605790085}
   m_Layer: 0
   m_Name: Tunjo
   m_TagString: Untagged
@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fire: {fileID: 3851515597538005439, guid: 07667bd852719e94fbc51ca8e0461dee, type: 3}
---- !u!114 &5067776889347359006
+--- !u!114 &-4814370475605790085
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,4 +182,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ee4d26494cf2cb40b8f497d617887eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mushroomToDestroyTheTunjo: 2

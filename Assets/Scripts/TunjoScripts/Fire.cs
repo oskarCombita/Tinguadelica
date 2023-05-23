@@ -6,6 +6,7 @@ public class Fire : MonoBehaviour
 {
     private BirdController birdController;
     private UiManager uiManager;
+    private Animator animator;
 
     [SerializeField]private float speed = 10;
     private float leftBound = -25;
@@ -13,6 +14,7 @@ public class Fire : MonoBehaviour
     private void Start()
     {
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     private void Update()
@@ -36,6 +38,8 @@ public class Fire : MonoBehaviour
 
             birdController.live--;
             uiManager.LoseLife();
+            animator.SetTrigger("FireImpact");
+            
 
             birdController.StartBlinkColor();
             birdController.ShowVFXDamage();
