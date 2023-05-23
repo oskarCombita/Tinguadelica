@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 2294583788692096514}
   - component: {fileID: 2294583788692096525}
   - component: {fileID: 2294583788692096524}
-  - component: {fileID: -5587170926679880170}
   - component: {fileID: 870258483761177737}
+  - component: {fileID: -5587170926679880170}
+  - component: {fileID: -3662687447287423032}
   m_Layer: 0
   m_Name: Green Booger Flying
   m_TagString: Untagged
@@ -108,6 +109,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!58 &870258483761177737
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2294583788692096527}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.010100722, y: -0.81815195}
+  serializedVersion: 2
+  m_Radius: 0.6515459
 --- !u!50 &-5587170926679880170
 Rigidbody2D:
   serializedVersion: 4
@@ -129,19 +146,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!58 &870258483761177737
-CircleCollider2D:
+--- !u!114 &-3662687447287423032
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2294583788692096527}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.010100722, y: -0.81815195}
-  serializedVersion: 2
-  m_Radius: 0.6515459
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33df22a914565884e8a1843e81aa0668, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 4.3

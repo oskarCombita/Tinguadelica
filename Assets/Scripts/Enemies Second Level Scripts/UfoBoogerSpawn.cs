@@ -13,11 +13,11 @@ public class UfoBoogerSpawn : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        InvokeRepeating("SpawnSpermeye", startDelay, repeatRate);
+        InvokeRepeating("SpawnUfoBooger", startDelay, repeatRate);
     }
 
     void SpawnUfoBooger(){
-        spawnPos = new Vector2(19, -2.6f);
+        spawnPos = new Vector2(19, 4);
         if (!gameManager.gameOver)
         {
             Instantiate(ufoBoogerPrefab, spawnPos, ufoBoogerPrefab.transform.rotation);

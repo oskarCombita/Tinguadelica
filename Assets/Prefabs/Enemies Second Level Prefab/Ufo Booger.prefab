@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 3894125542724588639}
   - component: {fileID: 3894125542724588638}
   - component: {fileID: 3894125542724588625}
+  - component: {fileID: 2771652073368104549}
+  - component: {fileID: 8076668968579775872}
   m_Layer: 0
   m_Name: Ufo Booger
   m_TagString: Untagged
@@ -106,3 +108,60 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &2771652073368104549
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894125542724588624}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5, y: 5}
+    newSize: {x: 5, y: 5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 1.7460319, y: -0.08547247}
+      - {x: 1.1746032, y: 0.2637339}
+      - {x: 0.73015875, y: 0.8034165}
+      - {x: 0.34920636, y: 1.0891308}
+      - {x: -0.12698413, y: 1.0891308}
+      - {x: -0.4761905, y: 0.8351625}
+      - {x: -0.5714286, y: 0.5811942}
+      - {x: -1.6507938, y: -0.18071057}
+      - {x: -1.6507938, y: -0.561663}
+      - {x: -1.5238097, y: -0.78388524}
+      - {x: -1.0158731, y: -0.9743614}
+      - {x: -0.6666667, y: -0.87912333}
+      - {x: -0.15873016, y: -0.9743614}
+      - {x: 0, y: -1.0695995}
+      - {x: 0.31746033, y: -1.0695995}
+      - {x: 0.6031746, y: -0.8156313}
+      - {x: 1.2063493, y: -1.0061074}
+      - {x: 1.7460319, y: -0.561663}
+--- !u!114 &8076668968579775872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3894125542724588624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0dddd6c1e05e0324e897f0af2f471ba4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Yellowbooger: {fileID: 5409185905266753004, guid: 98ce0627e43a5e3418cfcc0181006534, type: 3}
+  Greenbooger: {fileID: 2294583788692096527, guid: db1f65c95ca9ba244ab814f31565198a, type: 3}
