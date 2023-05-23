@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UfoBoogerSpawn : MonoBehaviour
 {
-    public GameObject ufoBoogerPrefab;
+    [SerializeField] public GameObject ufoBoogerPrefab;
     private GameManager gameManager;
     Vector2 spawnPos = Vector2.zero;
     private float startDelay = 3;
@@ -13,14 +13,21 @@ public class UfoBoogerSpawn : MonoBehaviour
     void Start()
     {
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        InvokeRepeating("SpawnUfoBooger", startDelay, repeatRate);
+        GameObject ufoBoogerInstance = Instantiate(ufoBoogerPrefab, new Vector2(19, 4), Quaternion.identity);
+        StartCoroutine(DestroyAfterAnimation(ufoBoogerInstance));
     }
+    
 
-    void SpawnUfoBooger(){
-        spawnPos = new Vector2(19, 4);
-        if (!gameManager.gameOver)
-        {
-            Instantiate(ufoBoogerPrefab, spawnPos, ufoBoogerPrefab.transform.rotation);
-        } 
+    private IEnumerator DestroyAfterAnimation(GameObject ufoBoogerInstance)
+    {
+        //if (!gameManager.gameOver){
+        Animator animator = ufoBoogerInstance.GetComponent<Animator>();
+
+        // Esperar hasta que la animaci�n termine
+        yield return new WaitForSeconds(animator.GetCurrentAnimatorStateInfo(0).length * 2);
+
+        // Destruir el objeto "UfoBooger"
+        Destroy(ufoBoogerInstance);
+        //}
     }
 }
