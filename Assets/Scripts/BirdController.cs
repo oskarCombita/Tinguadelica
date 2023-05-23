@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class BirdController : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class BirdController : MonoBehaviour
 
     [HideInInspector] public int live;
     public int maxLives = 3;
+
+    public int pickedMush;
 
     private bool catchMushroom;
 
@@ -35,15 +38,17 @@ public class BirdController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
 
     private AudioSource birdAudioSource;
-    AudioClip playSound = null; 
+    AudioClip playSound = null;
     public AudioClip bikeSound;
     public AudioClip jumpSound;
     public AudioClip fallSound;
 
+    public Slider jumpEnergySlider;
+
     private void Awake()
     {
         live = maxLives;
-        birdAudioSource = GetComponent<AudioSource>();        
+        birdAudioSource = GetComponent<AudioSource>();
     }
 
     void Start()
@@ -51,11 +56,11 @@ public class BirdController : MonoBehaviour
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         birdAnimator = GetComponent<Animator>();
-        birdRB = GetComponent<Rigidbody2D>();        
+        birdRB = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
         GameManager.originalGravity = Physics2D.gravity.y;
-        Physics2D.gravity *= gravityModifier;        
+        Physics2D.gravity *= gravityModifier;
     }
 
     void Update()
@@ -78,12 +83,14 @@ public class BirdController : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && isOnGround)
         {
             timeEnergy += Time.deltaTime;
+            jumpEnergySlider.value = Mathf.Clamp01(timeEnergy);
         }
 
         if (Input.GetKeyUp(KeyCode.Space) && isOnGround)
         {
-            Debug.Log("Time Energy" + timeEnergy);
             SetJumpEnergy();
+
+            jumpEnergySlider.value = 0f;
 
             birdRB.AddForce(Vector2.up * jumpForce * jumpEnergy, ForceMode2D.Impulse);
             isOnGround = false;
@@ -130,7 +137,7 @@ public class BirdController : MonoBehaviour
             isOnGround = true;
             birdAudioSource.PlayOneShot(fallSound, 0.6f);
             Invoke("PlayBikeSound", 0.45f);
-        }  
+        }
 
         if (collision.gameObject.CompareTag("Hole"))
         {
@@ -144,11 +151,18 @@ public class BirdController : MonoBehaviour
         if (collision.gameObject.CompareTag("Mushroom") && isCatching)
         {
             catchMushroom = true;
-            StartCoroutine(AddMushDelay(0.3f));
-            //uiManager.AnimMushroomCanvas();
-            //uiManager.countMushrooms++;
-            //uiManager.UpdateMushroomUiCount();
+            StartCoroutine(AddMushDelay(0.3f, 1));
             Destroy(collision.gameObject, 0.3f);
+            Invoke("ShowVFXCatch", 0.3f);
+            spriteRenderer.color = mushColor;
+            Invoke("ResetColor", 0.4f);
+            Invoke("ResetCatchMush", 0.33f);
+        }
+
+        if (collision.gameObject.CompareTag("FlyMushroom"))
+        {
+            StartCoroutine(AddMushDelay(0.3f, 3));
+            Destroy(collision.gameObject, 0.1f);
             Invoke("ShowVFXCatch", 0.3f);
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
@@ -158,7 +172,7 @@ public class BirdController : MonoBehaviour
         {
             if (live < maxLives)
             {
-                live++;                
+                live++;
                 uiManager.RecoverLife();
                 Destroy(collision.gameObject, 0.1f);
                 spriteRenderer.color = liveColor;
@@ -167,27 +181,32 @@ public class BirdController : MonoBehaviour
             }
         }
 
-    //    if (collision.gameObject.CompareTag("FlyLive"))
-    //    {
-    //        if (maxLives == 3)
-    //        {
-    //            live = 4;
-    //            maxLives = 4;
-    //            uiManager.DrawHearts();                
-    //            Destroy(collision.gameObject, 0.1f);
-    //            spriteRenderer.color = liveColor;
-    //            Invoke("ResetColor", 0.4f);
-    //            GameObject vfxLive = VFXManager.Instance.RequestVfxLive();
-    //        }else
-    //        {
-    //            live = 4;
-    //            uiManager.DrawHearts();
-    //            Destroy(collision.gameObject, 0.1f);
-    //            spriteRenderer.color = liveColor;
-    //            Invoke("ResetColor", 0.4f);
-    //            GameObject vfxLive = VFXManager.Instance.RequestVfxLive();
-    //        }
-    //    }
+        if (collision.gameObject.CompareTag("FlyLive"))
+        {
+            if (maxLives == 3)
+            {
+                live = 4;
+                maxLives = 4;
+                uiManager.DrawFourHeart();
+                uiManager.RecoverFourLife();
+                Destroy(collision.gameObject, 0.1f);
+                spriteRenderer.color = liveColor;
+                Invoke("ResetColor", 0.4f);
+                GameObject vfxLifeX4 = VFXManager.Instance.RequestVfxLifeX4();
+            }
+            else
+            {
+                if (live < maxLives)
+                {
+                    live = 4;
+                    uiManager.RecoverFourLife();
+                    Destroy(collision.gameObject, 0.1f);
+                    spriteRenderer.color = liveColor;
+                    Invoke("ResetColor", 0.4f);
+                    GameObject vfxLifeX4 = VFXManager.Instance.RequestVfxLifeX4();
+                }               
+            }
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision)
@@ -195,17 +214,18 @@ public class BirdController : MonoBehaviour
         if (collision.gameObject.CompareTag("Mushroom") && isCatching && !catchMushroom)
         {
             uiManager.AnimMushroomCanvas();
-            uiManager.countMushrooms++;
+            pickedMush++;
             uiManager.UpdateMushroomUiCount();
             Destroy(collision.gameObject, 0.1f);
             catchMushroom = true;
             Invoke("ShowVFXCatch", 0.1f);
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
+            Invoke("ResetCatchMush", 0.13f);
         }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    void ResetCatchMush()
     {
         catchMushroom = false;
     }
@@ -213,8 +233,6 @@ public class BirdController : MonoBehaviour
     void ShowVFXCatch()
     {
         GameObject vfxCatch = VFXManager.Instance.RequestVfxCatch();
-        //Vector3 vfxPos = new Vector3(-0.5f, 0, 0);
-        //vfxCatch.transform.position = transform.position + vfxPos;
     }
 
     public void ShowVFXDamage()
@@ -224,7 +242,7 @@ public class BirdController : MonoBehaviour
 
     public void ShowVFXLoseMush()
     {
-        GameObject vfxLoseMush = VFXManager.Instance.RequestVfxLoseMush();    
+        GameObject vfxLoseMush = VFXManager.Instance.RequestVfxLoseMush();
     }
 
     float SetJumpEnergy()
@@ -232,17 +250,14 @@ public class BirdController : MonoBehaviour
         if (timeEnergy < 0.4f)
         {
             jumpEnergy = 1f;
-            Debug.Log("Jump Energy" + jumpEnergy);
         }
         else if (timeEnergy > 1.4f)
         {
             jumpEnergy = 2f;
-            Debug.Log("Jump Energy" + jumpEnergy);
         }
         else
         {
             jumpEnergy = 1f + (timeEnergy - 0.4f);
-            Debug.Log("Jump Energy" + jumpEnergy);
         }
         return jumpEnergy;
     }
@@ -270,34 +285,13 @@ public class BirdController : MonoBehaviour
         CancelInvoke("BlinkColor");
         spriteRenderer.color = originalColor;
     }
+  
 
-    //public IEnumerator BlinkColor()
-    //{
-    //    float elapsedTime = 0f;
-
-    //    while (elapsedTime < 0.6f)
-    //    {
-    //        if (spriteRenderer.color == damageColor)
-    //        {
-    //            spriteRenderer.color = damageColor2;
-    //        }
-    //        else
-    //        {
-    //            spriteRenderer.color = damageColor;
-    //        }
-
-    //        yield return new WaitForSeconds(0.2f);
-    //        elapsedTime += 0.2f;
-    //    }
-
-    //    spriteRenderer.color = originalColor;
-    //}
-
-    IEnumerator AddMushDelay(float delay)
+    IEnumerator AddMushDelay(float delay, int mushToAdd)
     {
         yield return new WaitForSeconds(delay);
         uiManager.AnimMushroomCanvas();
-        uiManager.countMushrooms++;
+        pickedMush += mushToAdd;
         uiManager.UpdateMushroomUiCount();
     }
 

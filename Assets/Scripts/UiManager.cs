@@ -10,38 +10,20 @@ public class UiManager : MonoBehaviour
     public Sprite liveFull;
     public Sprite liveEmpty;
     private BirdController birdController;
-    private SpawnSnake spawnSnake;
 
     public TextMeshProUGUI countMushroomsText;
     private RectTransform mushCanvasTransform;
     private float timeAnimMushCanvas = 0.4f;
-    public int countMushrooms;
-    public int mushToSpawnSnake;
-    private bool hasSpawnSnake = false;
 
 
     void Start()
     {
         birdController = GameObject.Find("Bird").GetComponent<BirdController>();
         mushCanvasTransform = GameObject.Find("Mushroom Canvas").GetComponent<RectTransform>();
-        spawnSnake = GameObject.Find("SpawnManager").GetComponent<SpawnSnake>();
+
         DrawHearts();
 
-        countMushroomsText.text = "x " + countMushrooms;
-    }
-
-    private void Update()
-    {
-        SpawnSnake();
-    }
-
-    void SpawnSnake()
-    {
-        if (countMushrooms == mushToSpawnSnake && !hasSpawnSnake)
-        {
-            hasSpawnSnake = true;
-            spawnSnake.InstantiateSnake();
-        }
+        UpdateMushroomUiCount();
     }
 
     public void DrawHearts()
@@ -60,7 +42,12 @@ public class UiManager : MonoBehaviour
 
     public void DrawFourHeart()
     {
+        Image newLiveImage = Instantiate(liveImage, liveImage.transform.parent);
+        newLiveImage.gameObject.SetActive(true);
+        newLiveImage.sprite = liveFull;
 
+        RectTransform rectTransform = newLiveImage.GetComponent<RectTransform>();
+        rectTransform.anchoredPosition += new Vector2(3 * -65, 0);
     }
 
     public void AnimMushroomCanvas()
@@ -76,15 +63,7 @@ public class UiManager : MonoBehaviour
 
     public void UpdateMushroomUiCount()
     {
-        if (countMushrooms >= 1)
-        {
-            countMushroomsText.text = "x " + countMushrooms;
-        }
-        else
-        {
-            countMushroomsText.text = "x 0";
-        }
-        
+        countMushroomsText.text = "x " + birdController.pickedMush;
     }
 
     public void LoseLife()
@@ -100,5 +79,14 @@ public class UiManager : MonoBehaviour
     {
         Image[] lives = GetComponentsInChildren<Image>();
         lives[birdController.live - 1].sprite = liveFull;        
+    }
+
+    public void RecoverFourLife()
+    {
+        Image[] lives = GetComponentsInChildren<Image>();
+        foreach (Image lifeImage in lives)
+        {
+            lifeImage.sprite = liveFull;
+        }
     }
 }

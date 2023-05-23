@@ -4,34 +4,47 @@ using UnityEngine;
 
 public class SpawnBadsManager : MonoBehaviour
 {
-    public GameObject sharkPrefab;
+    public GameObject glitchPrefab;
+    public GameObject snakePrefab;
     private Vector2 spawnPos = new Vector2(11, -2.4f);
-    private float startDelay = 2;
-    private float repeatRate = 3;
+    private float startDelay = 3;
+    private float repeatRateGlitch = 3;
     private GameManager gameManager;
-    private UiManager uiManager;
-    private SpawnSnake spawnSnake;
     
 
     void Start()
     {
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
-        uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
-        spawnSnake = GetComponent<SpawnSnake>();
-        //InvokeRepeating("SpawnShark", startDelay, repeatRate);        
-    }       
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();              
+    }   
+    
+    public void SpawnBadsByArea(LevelArea area)
+    {
+        switch (area)
+        {
+            case LevelArea.Glitch:
+                InvokeRepeating("SpawnGlitch", startDelay, repeatRateGlitch);
+                break;
+            case LevelArea.Snake:
+                Invoke("SpawnSnake", startDelay);
+                CancelInvoke("SpawnGlitch");
+                break;
+        }
+    }
 
     void SpawnSnake()
     {
-        spawnSnake.InstantiateSnake();
+        if (!gameManager.gameOver)
+        {
+            Instantiate(snakePrefab, new Vector2(5, 2), Quaternion.identity);
+        }        
     }
 
 
-    void SpawnShark()
+    void SpawnGlitch()
     {
         if (!gameManager.gameOver)
         {
-            Instantiate(sharkPrefab, spawnPos, sharkPrefab.transform.rotation);
+            Instantiate(glitchPrefab, spawnPos, glitchPrefab.transform.rotation);
         }        
     }
 }

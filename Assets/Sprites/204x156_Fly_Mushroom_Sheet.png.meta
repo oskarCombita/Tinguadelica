@@ -1,0 +1,939 @@
+fileFormatVersion: 2
+guid: 5b0aa8e4584fcb740b802553480ef8f4
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 780
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45ef2aa91fb84d4abd30507de48c337
+      internalID: 1091473573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 780
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a525edd3c7dd8284684fce04a1e25c20
+      internalID: -992582070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 780
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2b2f9140853494b925ff5895729e69
+      internalID: -547393287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 780
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3dca80eed79004baa22dc9aa5e938a
+      internalID: -175566013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 780
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3e64ef97a740bf419b4e339c5ceeb96
+      internalID: -1960096873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 780
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea450afb5fa20954796d46f07c1b48db
+      internalID: 1227896919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 624
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50e299cce328fcd41bbf65cc5dc9bd0c
+      internalID: 2111738127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 624
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb34d2fc285617419052b262f7cedb7
+      internalID: -388949775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 624
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc8834ed30bfa344b914ae1efbc51f60
+      internalID: -551884764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 624
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b28f5b54e2007ea42b77a5cb0e953e78
+      internalID: -2071189293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 624
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d3eb96bc6f63244b713b692335ecd7
+      internalID: -716641855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 624
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e153281608be87d4b86ed7fd81d1c546
+      internalID: -206168679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 468
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 127b118680098114bbe4980ceffcc333
+      internalID: -78868244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 468
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894d6e64370b67843b4abd19be6ee7fc
+      internalID: 234222503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 468
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9cac493c897fa4894b5b7d79218511
+      internalID: 1580510326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 468
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69eea6946b486d840b5ee5a373db1d7f
+      internalID: 760845167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 468
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2319c5e28dec4c40961ec67e1f128ba
+      internalID: -2118212960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 468
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e18926672fe1d941961d9b60445992d
+      internalID: 407944394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 312
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24daed8374aeddd4d9db8ee59367e6f2
+      internalID: 948149549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 312
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d82cdc9629297439f57ddfae10d55f
+      internalID: -1169519842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 312
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbaf4c1b344eafc4bb1108ab0d042f61
+      internalID: -981006181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 312
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d636d63e75859ff4f951a47d9edcf252
+      internalID: -506582036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 312
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90a3c60b29aa6f459bcb1d29adf7d9b
+      internalID: 1209605381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 312
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0ea9ae95b64b843866eb5c2a8c596c
+      internalID: 1814547106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935a1b336d10f3846a0698de1ae55315
+      internalID: 1367845468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 156
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ea7eb50db5822b43907b6b16448c83b
+      internalID: -2136051246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 156
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476eebd1ca5448540b67ea189ccc39d6
+      internalID: 1504746225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 156
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6075b57205396a245a1ea5ba0e7eda08
+      internalID: 668301735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 156
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e62892fa7b07b864d8b06609a9790772
+      internalID: 1129362362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 156
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee29af895fbddc84dbd3906f7eda1d36
+      internalID: -477039467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b76530faed6a640be2e95997376d7a
+      internalID: 5342379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 0
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f08be9366208d449af9f8aa5fcedbf7
+      internalID: -411982494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4d6e0de4f39e342a3e38fed08b19fb
+      internalID: -2132729467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 0
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14b6cf1ab76b2e64b972e3a77ea5245d
+      internalID: -1284755194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 0
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75427c03708d6c64092b34d8e1a133b5
+      internalID: 337592930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 204x156_Fly_Mushroom_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 0
+        width: 204
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c34c8eaca41754ca341f8609c44f93
+      internalID: 641295428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      204x156_Fly_Mushroom_Sheet_0: 1091473573
+      204x156_Fly_Mushroom_Sheet_1: -992582070
+      204x156_Fly_Mushroom_Sheet_10: -716641855
+      204x156_Fly_Mushroom_Sheet_11: -206168679
+      204x156_Fly_Mushroom_Sheet_12: -78868244
+      204x156_Fly_Mushroom_Sheet_13: 234222503
+      204x156_Fly_Mushroom_Sheet_14: 1580510326
+      204x156_Fly_Mushroom_Sheet_15: 760845167
+      204x156_Fly_Mushroom_Sheet_16: -2118212960
+      204x156_Fly_Mushroom_Sheet_17: 407944394
+      204x156_Fly_Mushroom_Sheet_18: 948149549
+      204x156_Fly_Mushroom_Sheet_19: -1169519842
+      204x156_Fly_Mushroom_Sheet_2: -547393287
+      204x156_Fly_Mushroom_Sheet_20: -981006181
+      204x156_Fly_Mushroom_Sheet_21: -506582036
+      204x156_Fly_Mushroom_Sheet_22: 1209605381
+      204x156_Fly_Mushroom_Sheet_23: 1814547106
+      204x156_Fly_Mushroom_Sheet_24: 1367845468
+      204x156_Fly_Mushroom_Sheet_25: -2136051246
+      204x156_Fly_Mushroom_Sheet_26: 1504746225
+      204x156_Fly_Mushroom_Sheet_27: 668301735
+      204x156_Fly_Mushroom_Sheet_28: 1129362362
+      204x156_Fly_Mushroom_Sheet_29: -477039467
+      204x156_Fly_Mushroom_Sheet_3: -175566013
+      204x156_Fly_Mushroom_Sheet_30: 5342379
+      204x156_Fly_Mushroom_Sheet_31: -411982494
+      204x156_Fly_Mushroom_Sheet_32: -2132729467
+      204x156_Fly_Mushroom_Sheet_33: -1284755194
+      204x156_Fly_Mushroom_Sheet_34: 337592930
+      204x156_Fly_Mushroom_Sheet_35: 641295428
+      204x156_Fly_Mushroom_Sheet_4: -1960096873
+      204x156_Fly_Mushroom_Sheet_5: 1227896919
+      204x156_Fly_Mushroom_Sheet_6: 2111738127
+      204x156_Fly_Mushroom_Sheet_7: -388949775
+      204x156_Fly_Mushroom_Sheet_8: -551884764
+      204x156_Fly_Mushroom_Sheet_9: -2071189293
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

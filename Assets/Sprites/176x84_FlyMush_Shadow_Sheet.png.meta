@@ -1,0 +1,939 @@
+fileFormatVersion: 2
+guid: 2f37e9c467039684e91a2d39c9d9abb9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89848c3b8ac99940a41258e4d8c5950
+      internalID: -196958671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 420
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9091c2c196f9e7f4190a7349cb919a40
+      internalID: -837653915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 420
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62c1df281a49247409379e870a4e7415
+      internalID: -2077340457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 420
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7ad63dd81558c47a97d4b785e0edbc
+      internalID: -838837473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 420
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab2015338769f54ebbb7879fc39d259
+      internalID: 1910062002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 420
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9698b6b2e5fa28f478e9138a83996040
+      internalID: -1685254064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 336
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82259f2d80f1cd4598a099e86298c16
+      internalID: 1095170469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 336
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31435f4510d33724a833720e91df4ece
+      internalID: -1523200515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 336
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3390ef371792ac54b83ca3c34d8c2ac3
+      internalID: 1764743989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 336
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ace156b897d8e47a363d482c221d69
+      internalID: -257837614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 336
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b5b794757e2974bb097d2a07ce9fe2
+      internalID: 461845349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 336
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb1355f5f378cd45a2c74d7fa686592
+      internalID: -442890727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 252
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d95a421186b9a4c961ff4624585667
+      internalID: -1434499099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 252
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f558dba09e8340148807cd963ac27b27
+      internalID: 1157485329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 252
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca763033bdff72e4fa15b59648b5cebd
+      internalID: -1367702400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 252
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efd12f1b2687ef347ab084c9973a959c
+      internalID: -530698994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 252
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5b518ef1933be4d8d0519ae936d136
+      internalID: 2048060174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 252
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f3b42a2f47c7948a50a4017495f937
+      internalID: 120836086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 168
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef4a61274e644f48bdc9edba63aebb5
+      internalID: 475070008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 168
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d5c9d9c7bcadf844827ec65d15c8862
+      internalID: -1332435770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 168
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 634dd53cd4a03fd40b67b7b37bfdab89
+      internalID: -1352555252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 168
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6687ecd2335dd5d419c61e077d2f70be
+      internalID: -1723431265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 168
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6304bebb742a4934e87dd5d5c94957a9
+      internalID: -5896781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 168
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa7aa72c6d56e1247a3d29881e4559c2
+      internalID: 427278079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 84
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5773f75a64f9d7a489e2061780a2e0f8
+      internalID: 535330623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 84
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78cb04f0f5d20c04c90f48bbb10486f9
+      internalID: 1153880723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 84
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f435b711e0f2abe4989d6aecb4224167
+      internalID: -2144455445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 84
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0836877285837544bccebd41fe8bbbd
+      internalID: 1544012244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 84
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981a22f7574b8184c9c66068db91454b
+      internalID: -1582484655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 84
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7766b8ef64bcac24d90b4276d91b585f
+      internalID: 638402681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f9fa3ff2b0a2b43924b7aecbc6f71d
+      internalID: 1097786883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a72076bfe002c3244b20fd2fbeb7daba
+      internalID: -1625422669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44649231692beea449ed414b6fb922b0
+      internalID: 1233839584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b86e1de1b3aa9d0439ba7741d5dcfab7
+      internalID: -482445930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 0
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d40bb630caaa545b54318f5001a631
+      internalID: -217201893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 176x84_FlyMush_Shadow_Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 880
+        y: 0
+        width: 176
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e636bdf6bd1d344d9fb09f1eb7caba3
+      internalID: -1941760230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      176x84_FlyMush_Shadow_Sheet_0: -196958671
+      176x84_FlyMush_Shadow_Sheet_1: -837653915
+      176x84_FlyMush_Shadow_Sheet_10: 461845349
+      176x84_FlyMush_Shadow_Sheet_11: -442890727
+      176x84_FlyMush_Shadow_Sheet_12: -1434499099
+      176x84_FlyMush_Shadow_Sheet_13: 1157485329
+      176x84_FlyMush_Shadow_Sheet_14: -1367702400
+      176x84_FlyMush_Shadow_Sheet_15: -530698994
+      176x84_FlyMush_Shadow_Sheet_16: 2048060174
+      176x84_FlyMush_Shadow_Sheet_17: 120836086
+      176x84_FlyMush_Shadow_Sheet_18: 475070008
+      176x84_FlyMush_Shadow_Sheet_19: -1332435770
+      176x84_FlyMush_Shadow_Sheet_2: -2077340457
+      176x84_FlyMush_Shadow_Sheet_20: -1352555252
+      176x84_FlyMush_Shadow_Sheet_21: -1723431265
+      176x84_FlyMush_Shadow_Sheet_22: -5896781
+      176x84_FlyMush_Shadow_Sheet_23: 427278079
+      176x84_FlyMush_Shadow_Sheet_24: 535330623
+      176x84_FlyMush_Shadow_Sheet_25: 1153880723
+      176x84_FlyMush_Shadow_Sheet_26: -2144455445
+      176x84_FlyMush_Shadow_Sheet_27: 1544012244
+      176x84_FlyMush_Shadow_Sheet_28: -1582484655
+      176x84_FlyMush_Shadow_Sheet_29: 638402681
+      176x84_FlyMush_Shadow_Sheet_3: -838837473
+      176x84_FlyMush_Shadow_Sheet_30: 1097786883
+      176x84_FlyMush_Shadow_Sheet_31: -1625422669
+      176x84_FlyMush_Shadow_Sheet_32: 1233839584
+      176x84_FlyMush_Shadow_Sheet_33: -482445930
+      176x84_FlyMush_Shadow_Sheet_34: -217201893
+      176x84_FlyMush_Shadow_Sheet_35: -1941760230
+      176x84_FlyMush_Shadow_Sheet_4: 1910062002
+      176x84_FlyMush_Shadow_Sheet_5: -1685254064
+      176x84_FlyMush_Shadow_Sheet_6: 1095170469
+      176x84_FlyMush_Shadow_Sheet_7: -1523200515
+      176x84_FlyMush_Shadow_Sheet_8: 1764743989
+      176x84_FlyMush_Shadow_Sheet_9: -257837614
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

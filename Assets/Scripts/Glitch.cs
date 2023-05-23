@@ -25,9 +25,9 @@ public class Glitch : MonoBehaviour
             birdController.StartBlinkColor();
             birdController.ShowVFXDamage();
 
-            if (uiManager.countMushrooms >= 1)
+            if (birdController.pickedMush >= 1)
             {
-                uiManager.countMushrooms--;
+                birdController.pickedMush--;
                 uiManager.UpdateMushroomUiCount();
                 birdController.ShowVFXLoseMush();
             }            

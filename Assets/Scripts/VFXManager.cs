@@ -7,11 +7,13 @@ public class VFXManager : MonoBehaviour
     [SerializeField] private GameObject vfxDamagePref;
     [SerializeField] private GameObject vfxLivePref;
     [SerializeField] private GameObject vfxLoseMushPref;
-    private int poolSize = 3;
+    [SerializeField] private GameObject vfxLifeX4Prefab;
+    private int poolSize = 2;
     [SerializeField] private List<GameObject> vfxCatchList;
     [SerializeField] private List<GameObject> vfxDamageList;
     [SerializeField] private List<GameObject> vfxLiveList;
     [SerializeField] private List<GameObject> vfxLoseMushList;
+    [SerializeField] private List<GameObject> vfxLifeX4List;
 
 
     private static VFXManager instance;
@@ -36,6 +38,7 @@ public class VFXManager : MonoBehaviour
         AddVfxDamageToPool(poolSize);
         AddVfxLiveToPool(poolSize);
         AddVfxLoseMushToPool(poolSize);
+        AddVfxLifX4eToPool(poolSize);
     }
 
     private void AddVfxCatchToPool(int amount)
@@ -68,6 +71,17 @@ public class VFXManager : MonoBehaviour
             vfxLive.SetActive(false);
             vfxLiveList.Add(vfxLive);
             vfxLive.transform.parent = transform;
+        }
+    }
+
+    private void AddVfxLifX4eToPool(int amount)
+    {
+        for (int i = 0; i < amount; i++)
+        {
+            GameObject vfxLife = Instantiate(vfxLifeX4Prefab);
+            vfxLife.SetActive(false);
+            vfxLifeX4List.Add(vfxLife);
+            vfxLife.transform.parent = transform;
         }
     }
 
@@ -120,14 +134,30 @@ public class VFXManager : MonoBehaviour
         {
             if (!vfxLiveList[i].activeSelf)
             {
-                vfxLiveList[0].SetActive(true);
-                return vfxDamageList[0];
+                vfxLiveList[i].SetActive(true);
+                return vfxLiveList[i];
             }            
         }
 
         AddVfxLiveToPool(1);
         vfxLiveList[vfxLiveList.Count - 1].SetActive(true);
         return vfxLiveList[vfxLiveList.Count - 1];
+    }
+
+    public GameObject RequestVfxLifeX4()
+    {
+        for (int i = 0; i < vfxLifeX4List.Count; i++)
+        {
+            if (!vfxLifeX4List[i].activeSelf)
+            {
+                vfxLifeX4List[i].SetActive(true);
+                return vfxLifeX4List[i];
+            }
+        }
+
+        AddVfxLifX4eToPool(1);
+        vfxLifeX4List[vfxLifeX4List.Count - 1].SetActive(true);
+        return vfxLifeX4List[vfxLifeX4List.Count - 1];
     }
 
     public GameObject RequestVfxLoseMush()

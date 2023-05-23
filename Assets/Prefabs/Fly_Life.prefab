@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 955110165299223451}
   m_Layer: 0
   m_Name: Fly_Life
-  m_TagString: Untagged
+  m_TagString: FlyLive
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
