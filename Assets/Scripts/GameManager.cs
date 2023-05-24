@@ -10,7 +10,8 @@ public enum LevelArea
 {
     Test,
     Glitch,
-    Snake
+    Snake,
+    Tunjo
 }
 
 public class GameManager : MonoBehaviour
@@ -23,12 +24,16 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI levelCompleteText;
     public Button playBtn;
 
+    public GameObject uiMushAGlitch;
+    public TextMeshProUGUI uiMushAGlitchText;
+
     private BirdController birdController;
+    private UiManager uiManager;
     private SpawnBadsManager spawnBads;
     private SpawnGoodsManager spawnGoods;
     private SpawnBgSkyManager spawnBgSky;
     private SpawnBackgroundManager spawnBgMountain;
-    private SpawnBackgroundManager spawnBgHorizon;
+    private SpawnBGHorizonManager spawnBgHorizon;
     private SpawnBackgroundManager spawnBgShrubbery;
 
     public TextMeshProUGUI startText;
@@ -48,23 +53,29 @@ public class GameManager : MonoBehaviour
 
     public int mushToChangeArea;
 
+    private Transform imageMushGlitchA;
+    private Transform imageMushSnakeA;
+
     Dictionary<LevelArea, bool> areaSwitchDict = new Dictionary<LevelArea, bool>();
 
     void Start()
     {
         birdController = GameObject.Find("Bird").GetComponent<BirdController>();
+        uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
         spawnBads = GameObject.Find("SpawnManager").GetComponent<SpawnBadsManager>();
         spawnGoods = GameObject.Find("SpawnManager").GetComponent<SpawnGoodsManager>();
 
         spawnBgSky = GameObject.Find("Bg_Sky_SpawnMger").GetComponent<SpawnBgSkyManager>();
         spawnBgMountain = GameObject.Find("Bg_Mountain_SpawnMger").GetComponent<SpawnBackgroundManager>();
-        spawnBgHorizon = GameObject.Find("Bg_Horizon_SpawnMger").GetComponent<SpawnBackgroundManager>();
+        spawnBgHorizon = GameObject.Find("Bg_Horizon_SpawnMger").GetComponent<SpawnBGHorizonManager>();
         spawnBgShrubbery = GameObject.Find("Bg_Shrubbery_SpawnMger").GetComponent<SpawnBackgroundManager>();
 
         gameOver = false;
         SetAreaSwitchDict();
+
+        imageMushGlitchA = startText.transform.GetChild(0);
+        imageMushSnakeA = startText.transform.GetChild(1);
         
-        //StartGame();
     }
     
     void Update()
@@ -78,12 +89,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    void SetAreaSwitchDict()
+    {
+        foreach (LevelArea area in Enum.GetValues(typeof(LevelArea)))
+        {
+            areaSwitchDict.Add(area, false);
+        }
+    }
+
     public void StartGame()
     {
         Destroy(testObjects);
         playStartBtn.gameObject.SetActive(false);
-        //activeArea = LevelArea.Glitch;
-        //spawnBads.SpawnBadsByArea(activeArea);
         gameIsActive = true;
         SwitchArea();
 
@@ -94,16 +111,9 @@ public class GameManager : MonoBehaviour
 
         spawnGoods.StartSpawnGoods();
 
-        startText.text = "Recoge " + mushToCompleteLevel + " hongos";
+        imageMushGlitchA.gameObject.SetActive(true);
+        startText.text = "Recoge " + mushToChangeArea + " hongos";
         StartCoroutine(TurnOffStartText(3));
-    }
-
-    void SetAreaSwitchDict()
-    {
-        foreach (LevelArea area in Enum.GetValues(typeof(LevelArea)))
-        {
-            areaSwitchDict.Add(area, false);
-        }
     }
 
     IEnumerator TurnOffStartText(float delay)
@@ -116,8 +126,8 @@ public class GameManager : MonoBehaviour
     {
         if (birdController.pickedMush >= mushToChangeArea && !areaSwitchDict[activeArea])
         {
-            SwitchArea();
             areaSwitchDict[activeArea] = true;
+            SwitchArea();            
         }        
     }
 
@@ -131,10 +141,51 @@ public class GameManager : MonoBehaviour
 
             case LevelArea.Glitch:
                 activeArea = LevelArea.Snake;
+                StartSnakeArea();               
+                break;
+
+            case LevelArea.Snake:
+                activeArea = LevelArea.Tunjo;
+                StartTunjoArea();
                 break;
         }
 
+        SetMushCountAtSwitchArea();  
+
         spawnBads.SpawnBadsByArea(activeArea);
+    }
+
+    void SetMushCountAtSwitchArea()
+    {
+        if (birdController.pickedMush >= mushToChangeArea)
+        {
+            birdController.pickedMush = birdController.pickedMush - mushToChangeArea;
+        }
+        else
+        {
+            birdController.pickedMush = 0;
+        }
+
+        uiManager.AnimMushroomCanvas();
+        uiManager.UpdateMushroomUiCount();
+    }
+
+    void StartSnakeArea()
+    {
+        uiMushAGlitchText.text = "x " + mushToChangeArea;
+        uiMushAGlitch.gameObject.SetActive(true);
+
+        imageMushSnakeA.gameObject.SetActive(true);
+        startText.gameObject.SetActive(true);
+        StartCoroutine(TurnOffStartText(3));
+        Debug.Log("Area: " + activeArea + " Bool: " + areaSwitchDict[activeArea]);
+    }
+
+    void StartTunjoArea()
+    {
+        startText.text = "Tunjo Area";
+        startText.gameObject.SetActive(true);
+        StartCoroutine(TurnOffStartText(3));
     }
 
     void EndGame()
@@ -154,6 +205,8 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        spawnGoods.spriteRendererMush.color = spawnGoods.originalMushColor;
+        spawnGoods.spriteRendererMushFly.color = spawnGoods.originalMushColor;
         restartBtn.gameObject.SetActive(true);
         gameOverText.gameObject.SetActive(true);
 
@@ -178,6 +231,8 @@ public class GameManager : MonoBehaviour
 
     public void LevelComplete()
     {
+        spawnGoods.spriteRendererMush.color = spawnGoods.originalMushColor;
+        spawnGoods.spriteRendererMushFly.color = spawnGoods.originalMushColor;
         playBtn.gameObject.SetActive(true);
         levelCompleteText.gameObject.SetActive(true);
     }

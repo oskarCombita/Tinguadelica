@@ -9,6 +9,9 @@ public class SpawnBadsManager : MonoBehaviour
     private Vector2 spawnPos = new Vector2(11, -2.4f);
     private float startDelay = 3;
     private float repeatRateGlitch = 3;
+
+    [SerializeField] private float repeatRateSnake;
+
     private GameManager gameManager;
     
 
@@ -24,9 +27,15 @@ public class SpawnBadsManager : MonoBehaviour
             case LevelArea.Glitch:
                 InvokeRepeating("SpawnGlitch", startDelay, repeatRateGlitch);
                 break;
+
             case LevelArea.Snake:
-                Invoke("SpawnSnake", startDelay);
                 CancelInvoke("SpawnGlitch");
+                InvokeRepeating("SpawnSnake", startDelay, repeatRateSnake);                
+                break;
+
+            case LevelArea.Tunjo:
+                CancelInvoke("SpawnSnake");
+                InvokeRepeating("SpawnGlitch", startDelay, repeatRateGlitch);
                 break;
         }
     }

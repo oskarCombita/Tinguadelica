@@ -10,6 +10,6 @@ public class DestroySnake : MonoBehaviour
     void Start()
     {
         snakeAnimator = GetComponent<Animator>();
-        Destroy(gameObject, snakeAnimator.GetCurrentAnimatorStateInfo(0).length * 2);
+        Destroy(gameObject, snakeAnimator.GetCurrentAnimatorStateInfo(0).length);
     }
 }

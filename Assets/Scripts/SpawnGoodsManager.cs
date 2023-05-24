@@ -4,18 +4,36 @@ using UnityEngine;
 
 public class SpawnGoodsManager : MonoBehaviour
 {
-    public GameObject[] goodsPrefab;
+    public GameObject[] goodsPrefabs;
     public GameObject[] ShadowPrefs;
     public GameObject flyHeartPref;
+
     private float startDelayFlyH = 7;
     private float repeatRateFlyH = 21;
     private float startDelay = 2;
     private float repeatRate = 2;
+
     private GameManager gameManager;
+
+    private Color currentMushColor;
+    public Color originalMushColor;
+    [SerializeField] private Color mushColorASnake;    
+    [HideInInspector] public SpriteRenderer spriteRendererMush;
+    [HideInInspector] public SpriteRenderer spriteRendererMushFly;
 
     void Start()
     {
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();        
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        spriteRendererMush = goodsPrefabs[0].GetComponent<SpriteRenderer>();
+        spriteRendererMushFly = goodsPrefabs[3].GetComponentInChildren<SpriteRenderer>();
+        currentMushColor = originalMushColor;
+        spriteRendererMush.color = originalMushColor;
+        spriteRendererMushFly.color = originalMushColor;
+    }
+
+    void Update()
+    {
+        SetMushColor(gameManager.activeArea);
     }
 
     public void StartSpawnGoods()
@@ -26,18 +44,19 @@ public class SpawnGoodsManager : MonoBehaviour
 
     void SpawnGoods()
     {
-        int goodsIndex = Random.Range(0, goodsPrefab.Length);
+        int goodsIndex = Random.Range(0, goodsPrefabs.Length);
         Vector2 spawnPos = Vector2.zero;
 
-        if (goodsIndex == 0)
+        if (goodsIndex == 0) // Mushroom Run
         {
             spawnPos = new Vector2(11, -2.6f);
+            spriteRendererMush.color = currentMushColor;
         }
-        else if (goodsIndex == 1)
+        else if (goodsIndex == 1) // Mushroom
         {
             spawnPos = new Vector2(11, 0.26f);
         } 
-        else if(goodsIndex == 2)
+        else if(goodsIndex == 2) // Heart
         {
             float randomYPos = Random.Range(1f, 9f);
             spawnPos = new Vector2(11, randomYPos);
@@ -45,10 +64,11 @@ public class SpawnGoodsManager : MonoBehaviour
             Vector2 spawnShadowPos = new Vector2(9.7f, -3.2f);
             Instantiate(ShadowPrefs[0], spawnShadowPos, ShadowPrefs[0].transform.rotation);
         }
-        else
+        else // Fly Mushroom
         {
-            float randomYPos = Random.Range(5f, 10f);
+            float randomYPos = Random.Range(5f, 9.5f);
             spawnPos = new Vector2(15, randomYPos);
+            spriteRendererMushFly.color = currentMushColor;
 
             Vector2 spawnShadowPos = Vector2.zero;
             if (randomYPos < 6f)
@@ -66,7 +86,7 @@ public class SpawnGoodsManager : MonoBehaviour
 
         if (!gameManager.gameOver)
         {
-            Instantiate(goodsPrefab[goodsIndex], spawnPos, goodsPrefab[goodsIndex].transform.rotation);
+            Instantiate(goodsPrefabs[goodsIndex], spawnPos, goodsPrefabs[goodsIndex].transform.rotation);
         }        
     }
 
@@ -81,5 +101,23 @@ public class SpawnGoodsManager : MonoBehaviour
             Vector2 spawnShadowPos = new Vector2(9.7f, -3.2f);
             Instantiate(ShadowPrefs[1], spawnShadowPos, ShadowPrefs[1].transform.rotation);
         }        
+    }
+
+    void SetMushColor(LevelArea area)
+    {
+        switch (area)
+        {
+            case LevelArea.Test:
+                currentMushColor = originalMushColor;
+                break;
+
+            case LevelArea.Glitch:
+                currentMushColor = originalMushColor;
+                break;
+
+            case LevelArea.Snake:
+                currentMushColor = mushColorASnake;
+                break;           
+        }
     }
 }
