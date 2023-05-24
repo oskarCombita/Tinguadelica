@@ -25,7 +25,8 @@ public class GameManager : MonoBehaviour
     public Button playBtn;
 
     public GameObject uiMushAGlitch;
-    public TextMeshProUGUI uiMushAGlitchText;
+    public GameObject uiMushASnake;
+    public GameObject uiMushATunjo;
 
     private BirdController birdController;
     private UiManager uiManager;
@@ -47,7 +48,7 @@ public class GameManager : MonoBehaviour
 
     public static float originalGravity;
 
-    [SerializeField] private int mushToCompleteLevel;
+    public int mushToCompleteLevel;
 
     public LevelArea activeArea;
 
@@ -55,6 +56,7 @@ public class GameManager : MonoBehaviour
 
     private Transform imageMushGlitchA;
     private Transform imageMushSnakeA;
+    private Transform imageMushTunjoA;
 
     Dictionary<LevelArea, bool> areaSwitchDict = new Dictionary<LevelArea, bool>();
 
@@ -75,6 +77,7 @@ public class GameManager : MonoBehaviour
 
         imageMushGlitchA = startText.transform.GetChild(0);
         imageMushSnakeA = startText.transform.GetChild(1);
+        imageMushTunjoA = startText.transform.GetChild(2);
         
     }
     
@@ -124,7 +127,7 @@ public class GameManager : MonoBehaviour
 
     void AreaManager()
     {
-        if (birdController.pickedMush >= mushToChangeArea && !areaSwitchDict[activeArea])
+        if (birdController.pickedMush >= mushToChangeArea && !areaSwitchDict[activeArea] && activeArea != LevelArea.Tunjo)
         {
             areaSwitchDict[activeArea] = true;
             SwitchArea();            
@@ -156,34 +159,26 @@ public class GameManager : MonoBehaviour
     }
 
     void SetMushCountAtSwitchArea()
-    {
-        if (birdController.pickedMush >= mushToChangeArea)
-        {
-            birdController.pickedMush = birdController.pickedMush - mushToChangeArea;
-        }
-        else
-        {
-            birdController.pickedMush = 0;
-        }
+    {       
+        birdController.pickedMush = 0;
 
         uiManager.AnimMushroomCanvas();
-        uiManager.UpdateMushroomUiCount();
+        uiManager.UpdateMushroomUiCount();        
     }
 
     void StartSnakeArea()
     {
-        uiMushAGlitchText.text = "x " + mushToChangeArea;
         uiMushAGlitch.gameObject.SetActive(true);
-
         imageMushSnakeA.gameObject.SetActive(true);
         startText.gameObject.SetActive(true);
         StartCoroutine(TurnOffStartText(3));
-        Debug.Log("Area: " + activeArea + " Bool: " + areaSwitchDict[activeArea]);
     }
 
     void StartTunjoArea()
     {
-        startText.text = "Tunjo Area";
+        uiMushASnake.gameObject.SetActive(true);
+        imageMushTunjoA.gameObject.SetActive(true);
+        startText.text = "Recoge " + mushToCompleteLevel + " hongos";
         startText.gameObject.SetActive(true);
         StartCoroutine(TurnOffStartText(3));
     }

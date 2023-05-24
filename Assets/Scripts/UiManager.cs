@@ -10,6 +10,7 @@ public class UiManager : MonoBehaviour
     public Sprite liveFull;
     public Sprite liveEmpty;
     private BirdController birdController;
+    private GameManager gameManager;
 
     public TextMeshProUGUI countMushroomsText;
     private RectTransform mushCanvasTransform;
@@ -19,6 +20,8 @@ public class UiManager : MonoBehaviour
     void Start()
     {
         birdController = GameObject.Find("Bird").GetComponent<BirdController>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        
         mushCanvasTransform = GameObject.Find("Mushroom Canvas").GetComponent<RectTransform>();
 
         DrawHearts();
@@ -63,7 +66,20 @@ public class UiManager : MonoBehaviour
 
     public void UpdateMushroomUiCount()
     {
-        countMushroomsText.text = "x " + birdController.pickedMush;
+        int number;
+        if (gameManager.activeArea == LevelArea.Test)
+        {
+            number = 2;
+        }
+        else if(gameManager.activeArea != LevelArea.Tunjo)
+        {
+            number = gameManager.mushToChangeArea;
+        }
+        else
+        {
+            number = gameManager.mushToCompleteLevel;
+        }
+        countMushroomsText.text = birdController.pickedMush + " / " + number;
     }
 
     public void LoseLife()

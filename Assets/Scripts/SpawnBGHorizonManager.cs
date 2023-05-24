@@ -42,13 +42,4 @@ public class SpawnBGHorizonManager : MonoBehaviour
         int bGIndex2 = Random.Range(0, backgroundPrefabs.Length - 1);
         Instantiate(backgroundPrefabs[bGIndex2], startPos + secondPos, backgroundPrefabs[bGIndex2].transform.rotation);
     }
-
-    public void StartSpawnBgAreaSnake()
-    {
-        int bGIndex = Random.Range(1, backgroundPrefabs.Length);
-        Instantiate(backgroundPrefabs[bGIndex], startPos, backgroundPrefabs[bGIndex].transform.rotation);
-
-        int bGIndex2 = Random.Range(1, backgroundPrefabs.Length);
-        Instantiate(backgroundPrefabs[bGIndex2], startPos + secondPos, backgroundPrefabs[bGIndex2].transform.rotation);
-    }
 }

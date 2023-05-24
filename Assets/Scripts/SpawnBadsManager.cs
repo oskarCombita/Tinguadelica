@@ -6,7 +6,8 @@ public class SpawnBadsManager : MonoBehaviour
 {
     public GameObject glitchPrefab;
     public GameObject snakePrefab;
-    private Vector2 spawnPos = new Vector2(11, -2.4f);
+    public GameObject tunjoPrefab;
+    private Vector2 spawnGlitchPos = new Vector2(11, -2.4f);
     private float startDelay = 3;
     private float repeatRateGlitch = 3;
 
@@ -35,9 +36,17 @@ public class SpawnBadsManager : MonoBehaviour
 
             case LevelArea.Tunjo:
                 CancelInvoke("SpawnSnake");
-                InvokeRepeating("SpawnGlitch", startDelay, repeatRateGlitch);
+                Invoke("SpawnTunjo", startDelay);
                 break;
         }
+    }   
+
+    void SpawnGlitch()
+    {
+        if (!gameManager.gameOver)
+        {
+            Instantiate(glitchPrefab, spawnGlitchPos, glitchPrefab.transform.rotation);
+        }        
     }
 
     void SpawnSnake()
@@ -45,15 +54,11 @@ public class SpawnBadsManager : MonoBehaviour
         if (!gameManager.gameOver)
         {
             Instantiate(snakePrefab, new Vector2(5, 2), Quaternion.identity);
-        }        
+        }
     }
 
-
-    void SpawnGlitch()
+    void SpawnTunjo()
     {
-        if (!gameManager.gameOver)
-        {
-            Instantiate(glitchPrefab, spawnPos, glitchPrefab.transform.rotation);
-        }        
+        Instantiate(tunjoPrefab, new Vector2(7, 0), Quaternion.identity);
     }
 }

@@ -9,16 +9,17 @@ public class Tunjo : MonoBehaviour
     [SerializeField] private GameObject fire; // Objeto de juego para instanciar fuego
     private Animator animator; // Referencia al componente Animator
     private GameManager gameManager; // Referencia al componente GameManager
-    public int deathNumber; // Número de muertes
+    
 
     private void Start()
     {
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>(); // Obtiene una referencia al componente UiManager del objeto "Lives UI"
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>(); // Obtiene una referencia al componente GameManager del objeto "Game Manager"
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        birdController = GameObject.Find("Bird").GetComponent<BirdController>();// Obtiene una referencia al componente GameManager del objeto "Game Manager"
         animator = GetComponent<Animator>(); // Obtiene una referencia al componente Animator adjunto a este objeto
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         Death(); // Llama al método Death()
     }
@@ -26,9 +27,7 @@ public class Tunjo : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) // Verifica si el objeto colisionado tiene la etiqueta "Player"
-        {
-            birdController = other.GetComponent<BirdController>(); // Obtiene una referencia al componente BirdController del objeto colisionado
-
+        {       
             birdController.live--; // Reduce en uno el valor de la variable "live" en el componente BirdController
             uiManager.LoseLife(); // Llama al método "LoseLife()" en el componente UiManager
 
@@ -57,11 +56,13 @@ public class Tunjo : MonoBehaviour
 
     public void Death()
     {
-        if (birdController.pickedMush >= deathNumber) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual al número de muertes "deathNumber"
+        if (birdController.pickedMush >= gameManager.mushToCompleteLevel) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual al número de muertes "deathNumber"
         {
+            Debug.Log("Inside if ");
             animator.SetTrigger("DeathTrigger"); // Activa el trigger "DeathTrigger" en el componente Animator
-            Invoke("DestroyTunjo", 1f); // Invoca el método "DestroyTunjo" después de 1 segundo
-        }
+            Destroy(gameObject, 1f);
+            //Invoke("DestroyTunjo", 1f); // Invoca el método "DestroyTunjo" después de 1 segundo
+        }        
     }
 
     private void DestroyTunjo()

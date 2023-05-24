@@ -18,6 +18,7 @@ public class SpawnGoodsManager : MonoBehaviour
     private Color currentMushColor;
     public Color originalMushColor;
     [SerializeField] private Color mushColorASnake;    
+    [SerializeField] private Color mushColorATunjo;    
     [HideInInspector] public SpriteRenderer spriteRendererMush;
     [HideInInspector] public SpriteRenderer spriteRendererMushFly;
 
@@ -117,7 +118,11 @@ public class SpawnGoodsManager : MonoBehaviour
 
             case LevelArea.Snake:
                 currentMushColor = mushColorASnake;
-                break;           
+                break;
+
+            case LevelArea.Tunjo:
+                currentMushColor = mushColorATunjo;
+                break;
         }
     }
 }
