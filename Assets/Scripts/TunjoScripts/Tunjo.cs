@@ -58,15 +58,9 @@ public class Tunjo : MonoBehaviour
     {
         if (birdController.pickedMush >= gameManager.mushToCompleteLevel) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual al número de muertes "deathNumber"
         {
-            Debug.Log("Inside if ");
             animator.SetTrigger("DeathTrigger"); // Activa el trigger "DeathTrigger" en el componente Animator
             Destroy(gameObject, 1f);
-            //Invoke("DestroyTunjo", 1f); // Invoca el método "DestroyTunjo" después de 1 segundo
         }        
     }
 
-    private void DestroyTunjo()
-    {
-        Destroy(gameObject); // Destruye el objeto al que está adjunto este script
-    }
 }

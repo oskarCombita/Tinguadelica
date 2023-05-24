@@ -202,6 +202,7 @@ public class GameManager : MonoBehaviour
     {
         spawnGoods.spriteRendererMush.color = spawnGoods.originalMushColor;
         spawnGoods.spriteRendererMushFly.color = spawnGoods.originalMushColor;
+
         restartBtn.gameObject.SetActive(true);
         gameOverText.gameObject.SetActive(true);
 
@@ -226,8 +227,11 @@ public class GameManager : MonoBehaviour
 
     public void LevelComplete()
     {
+        uiMushATunjo.gameObject.SetActive(true);
+
         spawnGoods.spriteRendererMush.color = spawnGoods.originalMushColor;
         spawnGoods.spriteRendererMushFly.color = spawnGoods.originalMushColor;
+
         playBtn.gameObject.SetActive(true);
         levelCompleteText.gameObject.SetActive(true);
     }

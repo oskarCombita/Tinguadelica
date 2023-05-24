@@ -3342,7 +3342,7 @@ MonoBehaviour:
   testObjects: {fileID: 1402723275}
   mushToCompleteLevel: 10
   activeArea: 0
-  mushToChangeArea: 4
+  mushToChangeArea: 7
 --- !u!4 &1302617096
 Transform:
   m_ObjectHideFlags: 0
