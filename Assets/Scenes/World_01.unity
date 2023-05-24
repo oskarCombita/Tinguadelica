@@ -746,7 +746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glitchPrefab: {fileID: 8835046307980819484, guid: eebb318ea6e0202439a04f6bcc33d5a7, type: 3}
   snakePrefab: {fileID: 1290929176626521221, guid: 2328d8093f30f9b439529867dddd22f5, type: 3}
-  tunjoPrefab: {fileID: 0}
+  tunjoPrefab: {fileID: 3071967959977435399, guid: 5e63443d236906f41909df9125a3403b, type: 3}
   repeatRateSnake: 25
 --- !u!4 &312680828
 Transform:
