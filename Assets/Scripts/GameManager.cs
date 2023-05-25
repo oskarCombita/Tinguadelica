@@ -168,17 +168,30 @@ public class GameManager : MonoBehaviour
 
     void StartSnakeArea()
     {
+        uiManager.mushCountImage.sprite = uiManager.mushSnake;
         uiMushAGlitch.gameObject.SetActive(true);
-        imageMushSnakeA.gameObject.SetActive(true);
-        startText.gameObject.SetActive(true);
-        StartCoroutine(TurnOffStartText(3));
+        Invoke("ShowStartAreaInfo", 1.4f);
     }
 
     void StartTunjoArea()
     {
+        uiManager.mushCountImage.sprite = uiManager.mushTunjo;
         uiMushASnake.gameObject.SetActive(true);
-        imageMushTunjoA.gameObject.SetActive(true);
-        startText.text = "Recoge " + mushToCompleteLevel + " hongos";
+        Invoke("ShowStartAreaInfo", 1.4f);
+    }
+
+    void ShowStartAreaInfo()
+    {
+        if (activeArea == LevelArea.Snake)
+        {
+            imageMushSnakeA.gameObject.SetActive(true);
+        }
+        else
+        {
+            imageMushTunjoA.gameObject.SetActive(true);
+            startText.text = "Recoge " + mushToCompleteLevel + " hongos";
+        }
+        
         startText.gameObject.SetActive(true);
         StartCoroutine(TurnOffStartText(3));
     }
@@ -191,7 +204,7 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
 
-        if (birdController.pickedMush >= mushToCompleteLevel)
+        if (birdController.pickedMush >= mushToCompleteLevel && !gameOver)
         {
             gameOver = true;
             LevelComplete();
@@ -202,6 +215,8 @@ public class GameManager : MonoBehaviour
     {
         spawnGoods.spriteRendererMush.color = spawnGoods.originalMushColor;
         spawnGoods.spriteRendererMushFly.color = spawnGoods.originalMushColor;
+
+        startText.gameObject.SetActive(false);
 
         restartBtn.gameObject.SetActive(true);
         gameOverText.gameObject.SetActive(true);

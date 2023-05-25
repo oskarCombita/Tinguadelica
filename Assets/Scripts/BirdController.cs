@@ -68,8 +68,12 @@ public class BirdController : MonoBehaviour
         birdAnimator.SetBool("onGround", isOnGround);
         birdAnimator.SetBool("catch", isCatching);
 
-        CatchControl();
-        JumpControl();
+        if (!gameManager.gameOver)
+        {
+            CatchControl();
+            JumpControl();
+        }
+        
         MoveControl();
     }
 

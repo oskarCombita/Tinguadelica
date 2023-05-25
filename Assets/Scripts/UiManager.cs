@@ -9,6 +9,12 @@ public class UiManager : MonoBehaviour
     public Image liveImage;
     public Sprite liveFull;
     public Sprite liveEmpty;
+
+    public Image mushCountImage;
+    public Sprite mushGlitch;
+    public Sprite mushSnake;
+    public Sprite mushTunjo;
+
     private BirdController birdController;
     private GameManager gameManager;
 
@@ -25,6 +31,8 @@ public class UiManager : MonoBehaviour
         mushCanvasTransform = GameObject.Find("Mushroom Canvas").GetComponent<RectTransform>();
 
         DrawHearts();
+
+        mushCountImage.sprite = mushGlitch;
 
         UpdateMushroomUiCount();
     }

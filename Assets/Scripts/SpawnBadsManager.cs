@@ -8,7 +8,7 @@ public class SpawnBadsManager : MonoBehaviour
     public GameObject snakePrefab;
     public GameObject tunjoPrefab;
     private Vector2 spawnGlitchPos = new Vector2(11, -2.4f);
-    private float startDelay = 3;
+    private float startDelay = 4;
     private float repeatRateGlitch = 3;
 
     [SerializeField] private float repeatRateSnake;
