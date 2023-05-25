@@ -3345,6 +3345,7 @@ MonoBehaviour:
   mushToCompleteLevel: 11
   activeArea: 0
   mushToChangeArea: 7
+  jumpIcon: {fileID: 2100767142}
 --- !u!4 &1302617096
 Transform:
   m_ObjectHideFlags: 0

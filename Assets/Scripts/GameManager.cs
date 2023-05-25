@@ -58,6 +58,8 @@ public class GameManager : MonoBehaviour
     private Transform imageMushSnakeA;
     private Transform imageMushTunjoA;
 
+    public Image jumpIcon;
+
     Dictionary<LevelArea, bool> areaSwitchDict = new Dictionary<LevelArea, bool>();
 
     void Start()
@@ -103,6 +105,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         Destroy(testObjects);
+        jumpIcon.gameObject.SetActive(false);
         playStartBtn.gameObject.SetActive(false);
         gameIsActive = true;
         SwitchArea();
