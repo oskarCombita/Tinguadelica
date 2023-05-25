@@ -45,6 +45,7 @@ public class BirdController : MonoBehaviour
 
     public AudioClip lifeSound;
     public AudioClip mushroomSound;
+    public AudioClip yellowLifeSound;
 
     public Slider jumpEnergySlider;
 
@@ -203,6 +204,7 @@ public class BirdController : MonoBehaviour
                 spriteRenderer.color = liveColor;
                 Invoke("ResetColor", 0.4f);
                 GameObject vfxLifeX4 = VFXManager.Instance.RequestVfxLifeX4();
+                birdAudioSource.PlayOneShot(yellowLifeSound, 0.8f);
             }
             else
             {

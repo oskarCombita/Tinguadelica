@@ -751,7 +751,7 @@ MonoBehaviour:
   repeatRateSnake: 25
   glitchSound: {fileID: 8300000, guid: 3a1c69ba69238ad4bb09fb9918322033, type: 3}
   snakeSound: {fileID: 8300000, guid: 1a54a85a7a9fe0445a340ae76d7c789f, type: 3}
-  tunjoSound: {fileID: 8300000, guid: c5cf5952be0957349ab11718d8c378a4, type: 3}
+  tunjoSound: {fileID: 8300000, guid: 824d8c046a3b12c4a82c793d6c26bb23, type: 3}
 --- !u!4 &312680828
 Transform:
   m_ObjectHideFlags: 0
@@ -812,7 +812,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 84
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -3447,7 +3447,7 @@ MonoBehaviour:
   activeArea: 0
   mushToChangeArea: 7
   jumpIcon: {fileID: 2100767142}
-  levelOneThemeSong: {fileID: 8300000, guid: b6776e43697ae9845935a505c4f2f2e8, type: 3}
+  levelOneThemeSong: {fileID: 8300000, guid: 7f081134b0db20e4294e0172e870051b, type: 3}
 --- !u!4 &1302617096
 Transform:
   m_ObjectHideFlags: 0
@@ -3476,7 +3476,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4136,6 +4136,7 @@ MonoBehaviour:
   fallSound: {fileID: 8300000, guid: 3e4ebd11f1667b54fa542d82051c5612, type: 3}
   lifeSound: {fileID: 8300000, guid: c2025bb65ded425479485c3d97261c4d, type: 3}
   mushroomSound: {fileID: 8300000, guid: c9db5ece4f58cfb4fb1464b487f35c43, type: 3}
+  yellowLifeSound: {fileID: 8300000, guid: 4fb32986da284374eb9ea1bdd4c41fa4, type: 3}
   jumpEnergySlider: {fileID: 784592057}
 --- !u!60 &1513715411
 PolygonCollider2D:
@@ -4233,7 +4234,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.65
+  m_Volume: 0.55
   m_Pitch: 1
   Loop: 1
   Mute: 0
