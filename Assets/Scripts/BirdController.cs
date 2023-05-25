@@ -43,6 +43,9 @@ public class BirdController : MonoBehaviour
     public AudioClip jumpSound;
     public AudioClip fallSound;
 
+    public AudioClip lifeSound;
+    public AudioClip mushroomSound;
+
     public Slider jumpEnergySlider;
 
     private void Awake()
@@ -140,7 +143,7 @@ public class BirdController : MonoBehaviour
         {
             isOnGround = true;
             birdAudioSource.PlayOneShot(fallSound, 0.6f);
-            Invoke("PlayBikeSound", 0.45f);
+            Invoke("PlayBikeSound", 0.25f);
         }
 
         if (collision.gameObject.CompareTag("Hole"))
@@ -161,6 +164,7 @@ public class BirdController : MonoBehaviour
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
             Invoke("ResetCatchMush", 0.33f);
+            birdAudioSource.PlayOneShot(mushroomSound, 0.7f);
         }
 
         if (collision.gameObject.CompareTag("FlyMushroom"))
@@ -170,6 +174,7 @@ public class BirdController : MonoBehaviour
             Invoke("ShowVFXCatch", 0.3f);
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
+            birdAudioSource.PlayOneShot(mushroomSound, 0.8f);
         }
 
         if (collision.gameObject.CompareTag("Live"))
@@ -182,6 +187,7 @@ public class BirdController : MonoBehaviour
                 spriteRenderer.color = liveColor;
                 Invoke("ResetColor", 0.4f);
                 GameObject vfxLive = VFXManager.Instance.RequestVfxLive();
+                birdAudioSource.PlayOneShot(lifeSound, 0.8f);
             }
         }
 

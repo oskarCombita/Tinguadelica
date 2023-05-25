@@ -8,6 +8,15 @@ public class Fire : MonoBehaviour
     private UiManager uiManager; // Referencia al componente UiManager
     private Animator animator; // Referencia al componente Animator
 
+    private AudioSource fireAudioSource;
+    public AudioClip soundLossLife;
+    //public AudioClip soundLossmushroom;
+
+    private void Awake()
+    {
+        fireAudioSource = GetComponent<AudioSource>();
+    }  
+
     private void Start()
     {
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>(); // Obtiene una referencia al componente UiManager del objeto "Lives UI"
@@ -21,17 +30,20 @@ public class Fire : MonoBehaviour
             birdController = other.GetComponent<BirdController>(); // Obtiene una referencia al componente BirdController del objeto colisionado
 
             birdController.live--; // Reduce en uno el valor de la variable "live" en el componente BirdController
-            uiManager.LoseLife(); // Llama al método "LoseLife()" en el componente UiManager
+            uiManager.LoseLife(); // Llama al mï¿½todo "LoseLife()" en el componente UiManager
             animator.SetTrigger("FireImpact"); // Activa el trigger "FireImpact" en el componente Animator
 
-            birdController.StartBlinkColor(); // Llama al método "StartBlinkColor()" en el componente BirdController
-            birdController.ShowVFXDamage(); // Llama al método "ShowVFXDamage()" en el componente BirdController
+            fireAudioSource.PlayOneShot(soundLossLife, 0.8f);  //reproduccion perdida de una vida
+            //glitchAudioSource.PlayOneShot(soundLossmushroom, 0.8f);
+
+            birdController.StartBlinkColor(); // Llama al mï¿½todo "StartBlinkColor()" en el componente BirdController
+            birdController.ShowVFXDamage(); // Llama al mï¿½todo "ShowVFXDamage()" en el componente BirdController
 
             if (birdController.pickedMush >= 1) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual a 1
             {
                 birdController.pickedMush--; // Reduce en uno el valor de la variable "countMushrooms" en el componente UiManager
-                uiManager.UpdateMushroomUiCount(); // Llama al método "UpdateMushroomUiCount()" en el componente UiManager
-                birdController.ShowVFXLoseMush(); // Llama al método "ShowVFXLoseMush()" en el componente BirdController
+                uiManager.UpdateMushroomUiCount(); // Llama al mï¿½todo "UpdateMushroomUiCount()" en el componente UiManager
+                birdController.ShowVFXLoseMush(); // Llama al mï¿½todo "ShowVFXLoseMush()" en el componente BirdController
             }
         }
     }

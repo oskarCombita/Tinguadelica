@@ -725,6 +725,7 @@ GameObject:
   - component: {fileID: 312680828}
   - component: {fileID: 312680827}
   - component: {fileID: 312680829}
+  - component: {fileID: 312680830}
   m_Layer: 0
   m_Name: SpawnManager
   m_TagString: Untagged
@@ -748,6 +749,9 @@ MonoBehaviour:
   snakePrefab: {fileID: 1290929176626521221, guid: 2328d8093f30f9b439529867dddd22f5, type: 3}
   tunjoPrefab: {fileID: 3071967959977435399, guid: 5e63443d236906f41909df9125a3403b, type: 3}
   repeatRateSnake: 25
+  glitchSound: {fileID: 8300000, guid: 3a1c69ba69238ad4bb09fb9918322033, type: 3}
+  snakeSound: {fileID: 8300000, guid: 1a54a85a7a9fe0445a340ae76d7c789f, type: 3}
+  tunjoSound: {fileID: 8300000, guid: c5cf5952be0957349ab11718d8c378a4, type: 3}
 --- !u!4 &312680828
 Transform:
   m_ObjectHideFlags: 0
@@ -790,6 +794,102 @@ MonoBehaviour:
   mushColorATunjo: {r: 0, g: 1, b: 0.78431374, a: 1}
   spriteRendererMush: {fileID: 0}
   spriteRendererMushFly: {fileID: 0}
+--- !u!82 &312680830
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312680826}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &317805503
 GameObject:
   m_ObjectHideFlags: 0
@@ -3309,6 +3409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1302617096}
   - component: {fileID: 1302617095}
+  - component: {fileID: 1302617097}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -3346,6 +3447,7 @@ MonoBehaviour:
   activeArea: 0
   mushToChangeArea: 7
   jumpIcon: {fileID: 2100767142}
+  levelOneThemeSong: {fileID: 8300000, guid: b6776e43697ae9845935a505c4f2f2e8, type: 3}
 --- !u!4 &1302617096
 Transform:
   m_ObjectHideFlags: 0
@@ -3362,6 +3464,102 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1302617097
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302617094}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 256
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1307417037
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,6 +4134,8 @@ MonoBehaviour:
   bikeSound: {fileID: 8300000, guid: 8f897172c39979149a0605c3356120e6, type: 3}
   jumpSound: {fileID: 8300000, guid: 0165cac3fe6960f4491bacf3c6e855ea, type: 3}
   fallSound: {fileID: 8300000, guid: 3e4ebd11f1667b54fa542d82051c5612, type: 3}
+  lifeSound: {fileID: 8300000, guid: c2025bb65ded425479485c3d97261c4d, type: 3}
+  mushroomSound: {fileID: 8300000, guid: c9db5ece4f58cfb4fb1464b487f35c43, type: 3}
   jumpEnergySlider: {fileID: 784592057}
 --- !u!60 &1513715411
 PolygonCollider2D:

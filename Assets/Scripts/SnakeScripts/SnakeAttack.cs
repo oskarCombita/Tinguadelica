@@ -5,7 +5,16 @@ using UnityEngine;
 public class SnakeAttack : MonoBehaviour
 {
     private BirdController birdController;
-    private UiManager uiManager;    
+    private UiManager uiManager;
+
+    private AudioSource snakeAudioSource;
+    public AudioClip soundLossLife;
+    public AudioClip soundLossmushroom;
+
+    private void Awake()
+    {
+        snakeAudioSource = GetComponent<AudioSource>();
+    }    
 
     private void Start()
     {
@@ -19,6 +28,9 @@ public class SnakeAttack : MonoBehaviour
 
             birdController.live--;
             uiManager.LoseLife();
+
+            snakeAudioSource.PlayOneShot(soundLossLife, 0.8f);
+            snakeAudioSource.PlayOneShot(soundLossmushroom, 0.8f);
 
             birdController.StartBlinkColor();
             birdController.ShowVFXDamage();

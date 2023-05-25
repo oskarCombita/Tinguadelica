@@ -7,6 +7,15 @@ public class MechanicGripperAttack : MonoBehaviour
     private BirdController birdController;
     private UiManager uiManager;
 
+    private AudioSource GripperAudioSource;
+    public AudioClip soundLossLife;
+    //public AudioClip soundLossmushroom;
+
+    private void Awake()
+    {
+        GripperAudioSource = GetComponent<AudioSource>();
+    }  
+
     void Start()
     {
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
@@ -19,6 +28,9 @@ public class MechanicGripperAttack : MonoBehaviour
 
             birdController.live--;
             uiManager.LoseLife();
+
+            GripperAudioSource.PlayOneShot(soundLossLife, 0.8f);
+            //glitchAudioSource.PlayOneShot(soundLossmushroom, 0.8f);
 
             birdController.StartBlinkColor();
             birdController.ShowVFXDamage();

@@ -14,6 +14,21 @@ public class SpawnBadsManager : MonoBehaviour
     [SerializeField] private float repeatRateSnake;
 
     private GameManager gameManager;
+
+    AudioClip playGlitchSound = null;
+    private AudioSource enemyAudioSource;
+    public AudioClip glitchSound;
+
+    AudioClip playSnakeSound = null;
+    public AudioClip snakeSound;
+
+    AudioClip playTunjoSound = null;
+    public AudioClip tunjoSound;
+
+    private void Awake()
+    {
+        enemyAudioSource = GetComponent<AudioSource>();
+    }
     
 
     void Start()
@@ -46,6 +61,9 @@ public class SpawnBadsManager : MonoBehaviour
         if (!gameManager.gameOver)
         {
             Instantiate(glitchPrefab, spawnGlitchPos, glitchPrefab.transform.rotation);
+            playGlitchSound = glitchSound;
+            enemyAudioSource.clip = playGlitchSound;
+            enemyAudioSource.Play();
         }        
     }
 
@@ -54,11 +72,17 @@ public class SpawnBadsManager : MonoBehaviour
         if (!gameManager.gameOver)
         {
             Instantiate(snakePrefab, new Vector2(5, 2), Quaternion.identity);
+            playSnakeSound = snakeSound;
+            enemyAudioSource.clip = playSnakeSound;
+            enemyAudioSource.Play();
         }
     }
 
     void SpawnTunjo()
     {
         Instantiate(tunjoPrefab, new Vector2(7, 0), Quaternion.identity);
+        playTunjoSound = tunjoSound;
+        enemyAudioSource.clip = playTunjoSound;
+        enemyAudioSource.Play();
     }
 }

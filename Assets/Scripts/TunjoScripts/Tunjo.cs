@@ -9,6 +9,16 @@ public class Tunjo : MonoBehaviour
     [SerializeField] private GameObject fire; // Objeto de juego para instanciar fuego
     private Animator animator; // Referencia al componente Animator
     private GameManager gameManager; // Referencia al componente GameManager
+
+    private AudioSource tunjoAudioSource;
+    public AudioClip soundLossLife;
+    public AudioClip tunjoFire;
+    //public AudioClip soundLossmushroom;
+
+    private void Awake()
+    {
+        tunjoAudioSource = GetComponent<AudioSource>();
+    }  
     
 
     private void Start()
@@ -21,7 +31,7 @@ public class Tunjo : MonoBehaviour
 
     private void LateUpdate()
     {
-        Death(); // Llama al método Death()
+        Death(); // Llama al mï¿½todo Death()
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -29,34 +39,38 @@ public class Tunjo : MonoBehaviour
         if (other.CompareTag("Player")) // Verifica si el objeto colisionado tiene la etiqueta "Player"
         {       
             birdController.live--; // Reduce en uno el valor de la variable "live" en el componente BirdController
-            uiManager.LoseLife(); // Llama al método "LoseLife()" en el componente UiManager
+            uiManager.LoseLife(); // Llama al mï¿½todo "LoseLife()" en el componente UiManager
 
-            birdController.StartBlinkColor(); // Llama al método "StartBlinkColor()" en el componente BirdController
-            birdController.ShowVFXDamage(); // Llama al método "ShowVFXDamage()" en el componente BirdController
+            tunjoAudioSource.PlayOneShot(soundLossLife, 0.8f);
+            //glitchAudioSource.PlayOneShot(soundLossmushroom, 0.8f);
+
+            birdController.StartBlinkColor(); // Llama al mï¿½todo "StartBlinkColor()" en el componente BirdController
+            birdController.ShowVFXDamage(); // Llama al mï¿½todo "ShowVFXDamage()" en el componente BirdController
 
             if (birdController.pickedMush == 1) // Comprueba si la variable "countMushrooms" en el componente UiManager es igual a 1
             {
                 birdController.pickedMush--; // Reduce en uno el valor de la variable "countMushrooms" en el componente UiManager
-                uiManager.UpdateMushroomUiCount(); // Llama al método "UpdateMushroomUiCount()" en el componente UiManager
-                birdController.ShowVFXLoseMush(); // Llama al método "ShowVFXLoseMush()" en el componente BirdController
+                uiManager.UpdateMushroomUiCount(); // Llama al mï¿½todo "UpdateMushroomUiCount()" en el componente UiManager
+                birdController.ShowVFXLoseMush(); // Llama al mï¿½todo "ShowVFXLoseMush()" en el componente BirdController
             }
             else if (birdController.pickedMush >= 2) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual a 2
             {
                 birdController.pickedMush -= 2; // Reduce en dos el valor de la variable "countMushrooms" en el componente UiManager
-                uiManager.UpdateMushroomUiCount(); // Llama al método "UpdateMushroomUiCount()" en el componente UiManager
-                birdController.ShowVFXLoseMush(); // Llama al método "ShowVFXLoseMush()" en el componente BirdController
+                uiManager.UpdateMushroomUiCount(); // Llama al mï¿½todo "UpdateMushroomUiCount()" en el componente UiManager
+                birdController.ShowVFXLoseMush(); // Llama al mï¿½todo "ShowVFXLoseMush()" en el componente BirdController
             }
         }
     }
 
     private void InstantiateFire()
     {
-        Instantiate(fire, transform.position, Quaternion.identity); // Instancia el objeto de juego "fire" en la posición actual del objeto con la rotación por defecto
+        Instantiate(fire, transform.position, Quaternion.identity); // Instancia el objeto de juego "fire" en la posiciï¿½n actual del objeto con la rotaciï¿½n por defecto
+        tunjoAudioSource.PlayOneShot(tunjoFire, 0.8f);
     }
 
     public void Death()
     {
-        if (birdController.pickedMush >= gameManager.mushToCompleteLevel) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual al número de muertes "deathNumber"
+        if (birdController.pickedMush >= gameManager.mushToCompleteLevel) // Comprueba si la variable "countMushrooms" en el componente UiManager es mayor o igual al nï¿½mero de muertes "deathNumber"
         {
             animator.SetTrigger("DeathTrigger"); // Activa el trigger "DeathTrigger" en el componente Animator
             Destroy(gameObject, 1f);

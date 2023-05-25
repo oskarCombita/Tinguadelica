@@ -8,6 +8,15 @@ public class Glitch : MonoBehaviour
     private UiManager uiManager;
     private GameManager gameManager;
 
+    private AudioSource glitchAudioSource;
+    public AudioClip soundLossLife;
+    //public AudioClip soundLossmushroom;
+
+    private void Awake()
+    {
+        glitchAudioSource = GetComponent<AudioSource>();
+    }
+
     void Start()
     {
         birdController = GameObject.Find("Bird").GetComponent<BirdController>();
@@ -19,8 +28,12 @@ public class Glitch : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player") && !gameManager.gameOver)
         {
+            
             birdController.live--;
             uiManager.LoseLife();
+
+            glitchAudioSource.PlayOneShot(soundLossLife, 0.8f);
+            //glitchAudioSource.PlayOneShot(soundLossmushroom, 0.8f);
 
             birdController.StartBlinkColor();
             birdController.ShowVFXDamage();

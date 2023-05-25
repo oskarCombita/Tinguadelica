@@ -62,6 +62,15 @@ public class GameManager : MonoBehaviour
 
     Dictionary<LevelArea, bool> areaSwitchDict = new Dictionary<LevelArea, bool>();
 
+    private AudioSource gameManagerAudioSource;
+    AudioClip playTheme = null;
+    public AudioClip levelOneThemeSong;
+    
+    private void Awake()
+    {
+        gameManagerAudioSource = GetComponent<AudioSource>();
+    } 
+
     void Start()
     {
         birdController = GameObject.Find("Bird").GetComponent<BirdController>();
@@ -119,6 +128,7 @@ public class GameManager : MonoBehaviour
 
         imageMushGlitchA.gameObject.SetActive(true);
         startText.text = "Recoge " + mushToChangeArea + " hongos";
+        PlayThemeSong();
         StartCoroutine(TurnOffStartText(3));
     }
 
@@ -258,6 +268,13 @@ public class GameManager : MonoBehaviour
     {
         Physics2D.gravity = new Vector2(0f, originalGravity);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    void PlayThemeSong()
+    {
+        playTheme = levelOneThemeSong;
+        gameManagerAudioSource.clip = playTheme;
+        gameManagerAudioSource.Play();
     }
 
 }
