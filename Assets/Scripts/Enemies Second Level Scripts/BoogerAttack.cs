@@ -6,6 +6,8 @@ public class BoogerAttack : MonoBehaviour
 {
     private BirdController birdController;
     private UiManager uiManager;
+    private GameManager gameManager;
+
     [SerializeField]private float speed = 4.3f;
     private float lowerBound = -1.7f;
 
@@ -13,6 +15,7 @@ public class BoogerAttack : MonoBehaviour
     void Start()
     {
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -23,7 +26,7 @@ public class BoogerAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !gameManager.gameOver)
         {
             birdController = other.GetComponent<BirdController>();
 

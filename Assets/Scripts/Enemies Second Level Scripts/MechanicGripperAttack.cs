@@ -6,6 +6,7 @@ public class MechanicGripperAttack : MonoBehaviour
 {
     private BirdController birdController;
     private UiManager uiManager;
+    private GameManager gameManager;
 
     private AudioSource GripperAudioSource;
     public AudioClip soundLossLife;
@@ -14,6 +15,7 @@ public class MechanicGripperAttack : MonoBehaviour
     private void Awake()
     {
         GripperAudioSource = GetComponent<AudioSource>();
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }  
 
     void Start()
@@ -22,7 +24,7 @@ public class MechanicGripperAttack : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !gameManager.gameOver)
         {
             birdController = other.GetComponent<BirdController>();
 

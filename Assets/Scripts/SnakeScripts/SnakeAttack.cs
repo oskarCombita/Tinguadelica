@@ -22,7 +22,7 @@ public class SnakeAttack : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !gameManager.gameOver)
         {            
             birdController = other.GetComponent<BirdController>();
 
