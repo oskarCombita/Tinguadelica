@@ -6,6 +6,7 @@ public class SnakeAttack : MonoBehaviour
 {
     private BirdController birdController;
     private UiManager uiManager;
+    private GameManager gameManager;
 
     private AudioSource snakeAudioSource;
     public AudioClip soundLossLife;
@@ -19,6 +20,7 @@ public class SnakeAttack : MonoBehaviour
     private void Start()
     {
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
+        gameManager = GetComponent<GameManager>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
