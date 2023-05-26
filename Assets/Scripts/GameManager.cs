@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public GameObject uiMushATunjo;
 
     private BirdController birdController;
+    private Animator birdAnimator;
     private UiManager uiManager;
     private SpawnBadsManager spawnBads;
     private SpawnGoodsManager spawnGoods;
@@ -65,6 +66,7 @@ public class GameManager : MonoBehaviour
     private AudioSource gameManagerAudioSource;
     AudioClip playTheme = null;
     public AudioClip levelOneThemeSong;
+
     
     private void Awake()
     {
@@ -74,6 +76,7 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         birdController = GameObject.Find("Bird").GetComponent<BirdController>();
+        birdAnimator = birdController.gameObject.GetComponent<Animator>();
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
         spawnBads = GameObject.Find("SpawnManager").GetComponent<SpawnBadsManager>();
         spawnGoods = GameObject.Find("SpawnManager").GetComponent<SpawnGoodsManager>();
@@ -234,7 +237,7 @@ public class GameManager : MonoBehaviour
         restartBtn.gameObject.SetActive(true);
         gameOverText.gameObject.SetActive(true);
 
-        Debug.Log("GameOver");
+        birdAnimator.SetTrigger("gameOverTrigger");
     }
 
     void SetPause()
@@ -262,6 +265,8 @@ public class GameManager : MonoBehaviour
 
         playBtn.gameObject.SetActive(true);
         levelCompleteText.gameObject.SetActive(true);
+
+        birdAnimator.SetTrigger("levelCompleteTrigger");
     }
 
     public void RestartGame()

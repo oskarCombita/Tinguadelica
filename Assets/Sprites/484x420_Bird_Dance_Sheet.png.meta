@@ -1,0 +1,851 @@
+fileFormatVersion: 2
+guid: a32449815302f9a49aff7f264a37952e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e7f0e98e4103748bd7317ac14ef0ab
+      internalID: -1120482527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16e08040a16886941b3f7aaa6c9c4423
+      internalID: 1283098420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7a7d64394539a4fa75e5b8db037667
+      internalID: -1946190105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7b09adba6806846895ce833b65dbeb
+      internalID: -2120170690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990878f7861f23a4b8f5f35a8123749d
+      internalID: -146485694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d49eaa3b1bbd54ea2264f701491860
+      internalID: 1921009450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5046da365cacb734a87691ac534e9eb8
+      internalID: 587824787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95bab4c2f3619b4a9e4e8de65886e93
+      internalID: -1457240223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77fe290e70e8ed44fb95c249c9f6aae8
+      internalID: -1303167909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f0361826a6bb874bab8cf4fbe096606
+      internalID: -1611726080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4da70eb8626047468893b67a893917a
+      internalID: -660692214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e573e2e207bd741a6b957cd03240c4
+      internalID: 1532736684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e3d2ba5893ee974f95824eca8c73783
+      internalID: -1004134540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c44254b39259943adb1719ec0578a9
+      internalID: -113579104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7d46cde6266ce4397bf0f3147a3394
+      internalID: 1018951640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bae51ac1e48c35438a92997c9573832
+      internalID: -211253286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b923320cffee7ca409b80305de59997f
+      internalID: 683249181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfec8bb20eeba84ebd3096b9cebcc85
+      internalID: -1103835099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0293d5dfcc70a94ca4a43a471173433
+      internalID: -700748650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef448dc92f56514aa9c18d6d7751f68
+      internalID: 1974586946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c6f8d3c28fa3c40b298460cddd2e7b
+      internalID: -1184009996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b374572376ef1d4b8162a2fa3606a29
+      internalID: 1645209990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48d313dc640dba44a9c35832190da0a
+      internalID: -1683547176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf89ead0e8cfc05499338fa55e8237e7
+      internalID: -358044286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5049c629775288f48a35a8457b01151d
+      internalID: -1543258327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc06c4a1af936241a7644ff6d7d9f19
+      internalID: -1572050806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cbcc812969787d449352797f0ab6b7e
+      internalID: 427807366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97a542ba38df6e44e8ff96a43d442d92
+      internalID: 2103091507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5af9d0c64d7a122448a0d634c99a65ce
+      internalID: 1065952301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b395e5e548aaea459dfe7d75035f741
+      internalID: 323292856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecd167ddd8049d54a875a8d9c6ecf065
+      internalID: -98069283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_Dance_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 0
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa4fd230ca03d949a18b1959c28d688
+      internalID: 1515673346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      484x420_Bird_Dance_Sheet_0: -1120482527
+      484x420_Bird_Dance_Sheet_1: 1283098420
+      484x420_Bird_Dance_Sheet_10: -660692214
+      484x420_Bird_Dance_Sheet_11: 1532736684
+      484x420_Bird_Dance_Sheet_12: -1004134540
+      484x420_Bird_Dance_Sheet_13: -113579104
+      484x420_Bird_Dance_Sheet_14: 1018951640
+      484x420_Bird_Dance_Sheet_15: -211253286
+      484x420_Bird_Dance_Sheet_16: 683249181
+      484x420_Bird_Dance_Sheet_17: -1103835099
+      484x420_Bird_Dance_Sheet_18: -700748650
+      484x420_Bird_Dance_Sheet_19: 1974586946
+      484x420_Bird_Dance_Sheet_2: -1946190105
+      484x420_Bird_Dance_Sheet_20: -1184009996
+      484x420_Bird_Dance_Sheet_21: 1645209990
+      484x420_Bird_Dance_Sheet_22: -1683547176
+      484x420_Bird_Dance_Sheet_23: -358044286
+      484x420_Bird_Dance_Sheet_24: -1543258327
+      484x420_Bird_Dance_Sheet_25: -1572050806
+      484x420_Bird_Dance_Sheet_26: 427807366
+      484x420_Bird_Dance_Sheet_27: 2103091507
+      484x420_Bird_Dance_Sheet_28: 1065952301
+      484x420_Bird_Dance_Sheet_29: 323292856
+      484x420_Bird_Dance_Sheet_3: -2120170690
+      484x420_Bird_Dance_Sheet_30: -98069283
+      484x420_Bird_Dance_Sheet_31: 1515673346
+      484x420_Bird_Dance_Sheet_4: -146485694
+      484x420_Bird_Dance_Sheet_5: 1921009450
+      484x420_Bird_Dance_Sheet_6: 587824787
+      484x420_Bird_Dance_Sheet_7: -1457240223
+      484x420_Bird_Dance_Sheet_8: -1303167909
+      484x420_Bird_Dance_Sheet_9: -1611726080
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

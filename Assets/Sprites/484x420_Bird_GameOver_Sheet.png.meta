@@ -1,0 +1,851 @@
+fileFormatVersion: 2
+guid: 2deab9ae5fb29a647bc77548a65ac0cf
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be66975a10cde79459dece71705ed68d
+      internalID: -745754464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7967d1cbe04f2d9469a9b92199d697ad
+      internalID: -479174766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59586b17a83d695408cc010d3d0ab5bc
+      internalID: -1542864896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0d6a2d51c182e468ce2449f2b468ac
+      internalID: -1003298092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c23efaf3070b22489c4e74340488126
+      internalID: 1108971882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 2100
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e116b27ae9a2ce478aca6dd3e00a9fd
+      internalID: 2067135061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 146064f2893c0d94898f477180143b16
+      internalID: 877529149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a03a8e9caee1c642acffec240a23725
+      internalID: 1430752028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f788eada9a72d249aec7ce7e1f9917a
+      internalID: 1864142865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ae9b233f7865a848b05a9e76973b4ef
+      internalID: 440471101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3a11180b85bd44d8945866de8b0110
+      internalID: 659013292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1680
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 486d8b23a5c1d93469c1351f5abfc763
+      internalID: -1691245019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb1decdc93a9ef459b9a236a6afb8f8
+      internalID: 1541442099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ddb947de7c4714f89d152bb7de3490
+      internalID: -121751286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e28e6999502ca4b81e996322b60f42
+      internalID: -781807465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d442b3ff235ba4b9cb437a44a990d0
+      internalID: -1829297514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf41dd93bdce0c4c8646b9be9952bab
+      internalID: -720072892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 1260
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62fcfdd4a34c3a245b7c8f9db1767871
+      internalID: -1295960538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97232e0f6c5623d4b909f15670000183
+      internalID: 1901412459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6827656df76977a43bd52d30f8f8a9ff
+      internalID: 706554105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0baceba46701ddc4cb94d60a17bc30aa
+      internalID: -1549968453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc609ded11c47d459e66ae458252683
+      internalID: 2087330485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72a0431430a6f14087cde473d09b522
+      internalID: -669881743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 840
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d4c0f82a72b014fb3303f15f52d6f7
+      internalID: -1831484974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79bdc91546f064a4c9893a67de922a5b
+      internalID: 1039788542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20015e7d38f86314ba794c02ab481921
+      internalID: -962288724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99c14f44a33ed9f4a8cd894759c722e1
+      internalID: -1690836688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad2e09f94871d05419dd14cdb738b230
+      internalID: 1822763576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1936
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6789b7ff423400f4b93be4c15414f169
+      internalID: -1413341904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 2420
+        y: 420
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084d447baf6475845b5d76c1c9f18ba4
+      internalID: -1964166457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e37b72be274cc514f9c287a1fb160f05
+      internalID: 2112956704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 484x420_Bird_GameOver_Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 0
+        width: 484
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 974e8b28bfb91ef48884e18c0b238ab5
+      internalID: 260260678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      484x420_Bird_GameOver_Sheet_0: -745754464
+      484x420_Bird_GameOver_Sheet_1: -479174766
+      484x420_Bird_GameOver_Sheet_10: 659013292
+      484x420_Bird_GameOver_Sheet_11: -1691245019
+      484x420_Bird_GameOver_Sheet_12: 1541442099
+      484x420_Bird_GameOver_Sheet_13: -121751286
+      484x420_Bird_GameOver_Sheet_14: -781807465
+      484x420_Bird_GameOver_Sheet_15: -1829297514
+      484x420_Bird_GameOver_Sheet_16: -720072892
+      484x420_Bird_GameOver_Sheet_17: -1295960538
+      484x420_Bird_GameOver_Sheet_18: 1901412459
+      484x420_Bird_GameOver_Sheet_19: 706554105
+      484x420_Bird_GameOver_Sheet_2: -1542864896
+      484x420_Bird_GameOver_Sheet_20: -1549968453
+      484x420_Bird_GameOver_Sheet_21: 2087330485
+      484x420_Bird_GameOver_Sheet_22: -669881743
+      484x420_Bird_GameOver_Sheet_23: -1831484974
+      484x420_Bird_GameOver_Sheet_24: 1039788542
+      484x420_Bird_GameOver_Sheet_25: -962288724
+      484x420_Bird_GameOver_Sheet_26: -1690836688
+      484x420_Bird_GameOver_Sheet_27: 1822763576
+      484x420_Bird_GameOver_Sheet_28: -1413341904
+      484x420_Bird_GameOver_Sheet_29: -1964166457
+      484x420_Bird_GameOver_Sheet_3: -1003298092
+      484x420_Bird_GameOver_Sheet_30: 2112956704
+      484x420_Bird_GameOver_Sheet_31: 260260678
+      484x420_Bird_GameOver_Sheet_4: 1108971882
+      484x420_Bird_GameOver_Sheet_5: 2067135061
+      484x420_Bird_GameOver_Sheet_6: 877529149
+      484x420_Bird_GameOver_Sheet_7: 1430752028
+      484x420_Bird_GameOver_Sheet_8: 1864142865
+      484x420_Bird_GameOver_Sheet_9: 440471101
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
