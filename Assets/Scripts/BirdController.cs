@@ -156,7 +156,7 @@ public class BirdController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Mushroom") && isCatching)
+        if (collision.gameObject.CompareTag("Mushroom") && isCatching && !gameManager.gameOver)
         {
             catchMushroom = true;
             StartCoroutine(AddMushDelay(0.3f, 1));
@@ -168,7 +168,7 @@ public class BirdController : MonoBehaviour
             birdAudioSource.PlayOneShot(mushroomSound, 0.7f);
         }
 
-        if (collision.gameObject.CompareTag("FlyMushroom"))
+        if (collision.gameObject.CompareTag("FlyMushroom") && !gameManager.gameOver)
         {
             StartCoroutine(AddMushDelay(0.3f, 3));
             Destroy(collision.gameObject, 0.1f);
@@ -178,7 +178,7 @@ public class BirdController : MonoBehaviour
             birdAudioSource.PlayOneShot(mushroomSound, 0.8f);
         }
 
-        if (collision.gameObject.CompareTag("Live"))
+        if (collision.gameObject.CompareTag("Live") && !gameManager.gameOver)
         {
             if (live < maxLives)
             {
@@ -192,7 +192,7 @@ public class BirdController : MonoBehaviour
             }
         }
 
-        if (collision.gameObject.CompareTag("FlyLive"))
+        if (collision.gameObject.CompareTag("FlyLive") && !gameManager.gameOver)
         {
             if (maxLives == 3)
             {
