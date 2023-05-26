@@ -147,7 +147,7 @@ public class BirdController : MonoBehaviour
             Invoke("PlayBikeSound", 0.25f);
         }
 
-        if (collision.gameObject.CompareTag("Hole"))
+        if (collision.gameObject.CompareTag("Hole") && !gameManager.gameOver)
         {
             gameManager.gameOver = true;
             gameManager.GameOver();
