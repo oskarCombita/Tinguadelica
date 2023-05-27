@@ -5842,7 +5842,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Entrenamiento
+  m_text: 'Prueba los mandos
 
 '
   m_isRightToLeft: 0
