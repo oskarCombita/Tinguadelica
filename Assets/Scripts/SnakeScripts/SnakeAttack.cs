@@ -9,7 +9,7 @@ public class SnakeAttack : MonoBehaviour
     private GameManager gameManager;
 
     private AudioSource snakeAudioSource;
-    public AudioClip soundLossLife; 
+    public AudioClip soundLossLife;
     public AudioClip soundLossmushroom;
 
     private void Awake()
@@ -20,7 +20,7 @@ public class SnakeAttack : MonoBehaviour
     private void Start()
     {
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>();
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gameManager = GetComponent<GameManager>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
