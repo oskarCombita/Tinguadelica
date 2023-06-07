@@ -165,7 +165,7 @@ public class BirdController : MonoBehaviour
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
             Invoke("ResetCatchMush", 0.33f);
-            birdAudioSource.PlayOneShot(mushroomSound, 0.7f);
+            birdAudioSource.PlayOneShot(mushroomSound, 1f);
         }
 
         if (collision.gameObject.CompareTag("FlyMushroom") && !gameManager.gameOver)
@@ -175,7 +175,7 @@ public class BirdController : MonoBehaviour
             Invoke("ShowVFXCatch", 0.3f);
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
-            birdAudioSource.PlayOneShot(mushroomSound, 0.8f);
+            birdAudioSource.PlayOneShot(mushroomSound, 1f);
         }
 
         if (collision.gameObject.CompareTag("Live") && !gameManager.gameOver)
@@ -235,6 +235,7 @@ public class BirdController : MonoBehaviour
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
             Invoke("ResetCatchMush", 0.13f);
+            birdAudioSource.PlayOneShot(mushroomSound, 1f);
         }
     }
 

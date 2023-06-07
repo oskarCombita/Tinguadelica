@@ -3448,6 +3448,7 @@ MonoBehaviour:
   mushToChangeArea: 7
   jumpIcon: {fileID: 2100767142}
   levelOneThemeSong: {fileID: 8300000, guid: 7f081134b0db20e4294e0172e870051b, type: 3}
+  soundSwitchArea: {fileID: 8300000, guid: 0add1a088eb2a2e4fb4da0440b8c087c, type: 3}
 --- !u!4 &1302617096
 Transform:
   m_ObjectHideFlags: 0
@@ -4135,7 +4136,7 @@ MonoBehaviour:
   jumpSound: {fileID: 8300000, guid: 0165cac3fe6960f4491bacf3c6e855ea, type: 3}
   fallSound: {fileID: 8300000, guid: 3e4ebd11f1667b54fa542d82051c5612, type: 3}
   lifeSound: {fileID: 8300000, guid: c2025bb65ded425479485c3d97261c4d, type: 3}
-  mushroomSound: {fileID: 8300000, guid: c9db5ece4f58cfb4fb1464b487f35c43, type: 3}
+  mushroomSound: {fileID: 8300000, guid: d9f60d2712fe5fb40905a367d6e3cd7d, type: 3}
   yellowLifeSound: {fileID: 8300000, guid: 4fb32986da284374eb9ea1bdd4c41fa4, type: 3}
   jumpEnergySlider: {fileID: 784592057}
 --- !u!60 &1513715411
