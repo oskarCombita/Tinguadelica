@@ -66,7 +66,7 @@ public class GameManager : MonoBehaviour
     private AudioSource gameManagerAudioSource;
     AudioClip playTheme = null;
     public AudioClip levelOneThemeSong;
-
+    public AudioClip soundSwitchArea;
     
     private void Awake()
     {
@@ -146,7 +146,8 @@ public class GameManager : MonoBehaviour
         if (birdController.pickedMush >= mushToChangeArea && !areaSwitchDict[activeArea] && activeArea != LevelArea.Tunjo)
         {
             areaSwitchDict[activeArea] = true;
-            SwitchArea();            
+            SwitchArea();
+            gameManagerAudioSource.PlayOneShot(soundSwitchArea, 0.8f);            
         }        
     }
 
