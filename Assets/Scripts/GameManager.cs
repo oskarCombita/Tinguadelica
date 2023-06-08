@@ -239,6 +239,12 @@ public class GameManager : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
 
         birdAnimator.SetTrigger("gameOverTrigger");
+        InvokeRepeating("BirdGameOverColor", 0f, 0.7f);
+    }
+
+    void BirdGameOverColor()
+    {
+        birdController.BlinkColor();        
     }
 
     void SetPause()
@@ -268,6 +274,12 @@ public class GameManager : MonoBehaviour
         levelCompleteText.gameObject.SetActive(true);
 
         birdAnimator.SetTrigger("levelCompleteTrigger");
+        InvokeRepeating("BirdLevelCompleteColor", 0f, 0.2f);
+    }
+
+    void BirdLevelCompleteColor()
+    {
+        birdController.LevelCompleteColor();
     }
 
     public void RestartGame()

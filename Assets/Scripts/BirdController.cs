@@ -282,7 +282,7 @@ public class BirdController : MonoBehaviour
         Invoke("StopBlinkColor", 0.6f);
     }
 
-    void BlinkColor()
+    public void BlinkColor()
     {
         if (spriteRenderer.color == damageColor)
         {
@@ -298,6 +298,26 @@ public class BirdController : MonoBehaviour
     {
         CancelInvoke("BlinkColor");
         spriteRenderer.color = originalColor;
+    }
+
+    public void LevelCompleteColor()
+    {
+        Color color1 = new Color32(255, 177, 0, 255);
+        Color color2 = new Color32(255, 0, 255, 255);
+        Color color3 = Color.cyan;
+
+        if(spriteRenderer.color == color1)
+        {
+            spriteRenderer.color = color2;
+        }
+        else if(spriteRenderer.color == color2)
+        {
+            spriteRenderer.color = color3;
+        }
+        else
+        {
+            spriteRenderer.color = color1;
+        }
     }
   
 
