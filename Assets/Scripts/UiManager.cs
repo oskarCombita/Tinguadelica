@@ -22,6 +22,10 @@ public class UiManager : MonoBehaviour
     private RectTransform mushCanvasTransform;
     private float timeAnimMushCanvas = 0.4f;
 
+    [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI hiScoreText;
+    [SerializeField] private TextMeshProUGUI hiScorePlayerText;
+
 
     void Start()
     {
@@ -112,5 +116,20 @@ public class UiManager : MonoBehaviour
         {
             lifeImage.sprite = liveFull;
         }
+    }
+
+    public void UpdateScoreCount()
+    {
+        scoreText.text = gameManager.score.ToString();
+    }
+
+    public void UpdateHiScoreCount(float hiScore)
+    {
+        hiScoreText.text = hiScore.ToString();
+    }
+
+    public void UpdateHiScorePlayer(string name)
+    {
+        hiScorePlayerText.text = name;
     }
 }

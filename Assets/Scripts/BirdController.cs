@@ -64,7 +64,7 @@ public class BirdController : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
         GameManager.originalGravity = Physics2D.gravity.y;
-        Physics2D.gravity *= gravityModifier;
+        Physics2D.gravity *= gravityModifier;        
     }
 
     void Update()
@@ -166,6 +166,7 @@ public class BirdController : MonoBehaviour
             Invoke("ResetColor", 0.4f);
             Invoke("ResetCatchMush", 0.33f);
             birdAudioSource.PlayOneShot(mushroomSound, 1f);
+            gameManager.scoreBonus += (gameManager.scoreIncrement * 3);
         }
 
         if (collision.gameObject.CompareTag("FlyMushroom") && !gameManager.gameOver)
@@ -176,6 +177,7 @@ public class BirdController : MonoBehaviour
             spriteRenderer.color = mushColor;
             Invoke("ResetColor", 0.4f);
             birdAudioSource.PlayOneShot(mushroomSound, 1f);
+            gameManager.scoreBonus += (gameManager.scoreIncrement * 9);
         }
 
         if (collision.gameObject.CompareTag("Live") && !gameManager.gameOver)
@@ -189,6 +191,7 @@ public class BirdController : MonoBehaviour
                 Invoke("ResetColor", 0.4f);
                 GameObject vfxLive = VFXManager.Instance.RequestVfxLive();
                 birdAudioSource.PlayOneShot(lifeSound, 0.8f);
+                gameManager.scoreBonus += (gameManager.scoreIncrement * 2);
             }
         }
 
@@ -205,11 +208,25 @@ public class BirdController : MonoBehaviour
                 Invoke("ResetColor", 0.4f);
                 GameObject vfxLifeX4 = VFXManager.Instance.RequestVfxLifeX4();
                 birdAudioSource.PlayOneShot(yellowLifeSound, 0.8f);
+                gameManager.scoreBonus += (gameManager.scoreIncrement * 8);
             }
             else
             {
                 if (live < maxLives)
                 {
+                    switch (live)
+                    {
+                        case 1:
+                            gameManager.scoreBonus += (gameManager.scoreIncrement * 6);
+                            break;
+                        case 2:
+                            gameManager.scoreBonus += (gameManager.scoreIncrement * 4);
+                            break;
+                        case 3:
+                            gameManager.scoreBonus += (gameManager.scoreIncrement * 2);
+                            break;
+                    }
+
                     live = 4;
                     uiManager.RecoverFourLife();
                     Destroy(collision.gameObject, 0.1f);
@@ -236,6 +253,7 @@ public class BirdController : MonoBehaviour
             Invoke("ResetColor", 0.4f);
             Invoke("ResetCatchMush", 0.13f);
             birdAudioSource.PlayOneShot(mushroomSound, 1f);
+            gameManager.scoreBonus += (gameManager.scoreIncrement * 3);
         }
     }
 

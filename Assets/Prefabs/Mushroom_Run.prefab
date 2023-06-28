@@ -102,6 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 8.5
+  isBonusBg: 0
 --- !u!50 &3240661140251245253
 Rigidbody2D:
   serializedVersion: 4

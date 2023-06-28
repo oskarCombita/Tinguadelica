@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public GameObject uiMushAGlitch;
     public GameObject uiMushASnake;
     public GameObject uiMushATunjo;
+    public GameObject uiScore;
 
     private BirdController birdController;
     private Animator birdAnimator;
@@ -46,6 +47,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject pauseScreen;
     public GameObject testObjects;
+    public GameObject playerNameWindow;
 
     public static float originalGravity;
 
@@ -67,11 +69,26 @@ public class GameManager : MonoBehaviour
     AudioClip playTheme = null;
     public AudioClip levelOneThemeSong;
     public AudioClip soundSwitchArea;
-    
+
+    public int score;
+    public int scoreBonus;
+    private float timer;
+    public int scoreIncrement = 7;
+
+    public TMP_Text inputPlayerName;
+
+    string hiScorePlayerName;
+    int hiScore;
+    int startHiScore;
+
+    string playerName = "Nombre";
+
+    Transform playerNameTextUi;
+
     private void Awake()
     {
         gameManagerAudioSource = GetComponent<AudioSource>();
-    } 
+    }
 
     void Start()
     {
@@ -92,18 +109,31 @@ public class GameManager : MonoBehaviour
         imageMushGlitchA = startText.transform.GetChild(0);
         imageMushSnakeA = startText.transform.GetChild(1);
         imageMushTunjoA = startText.transform.GetChild(2);
-        
+
+        hiScore = PlayerPrefs.GetInt("hiScore", 0);
+        hiScorePlayerName = PlayerPrefs.GetString("hiScorePlayerName");
+        startHiScore = hiScore;
+
+        playerNameTextUi = uiScore.transform.GetChild(4);
     }
-    
+
     void Update()
     {
         EndGame();
         AreaManager();
+        UpdateScore();
+        UpdateHiScore();
 
         if (Input.GetKeyDown(KeyCode.P) && !gameOver)
         {
             SetPause();
         }
+
+        //if (Input.GetKeyDown(KeyCode.R) && Input.GetKeyDown(KeyCode.R))
+        //{
+        //    PlayerPrefs.DeleteAll();
+        //    Debug.Log("Valores de PlayerPrefs borrados.");
+        //}
     }
 
     void SetAreaSwitchDict()
@@ -129,6 +159,10 @@ public class GameManager : MonoBehaviour
 
         spawnGoods.StartSpawnGoods();
 
+        uiScore.gameObject.SetActive(true);
+        playerNameTextUi.gameObject.SetActive(true);
+        uiManager.UpdateHiScorePlayer(hiScorePlayerName);
+
         imageMushGlitchA.gameObject.SetActive(true);
         startText.text = "Recoge " + mushToChangeArea + " hongos";
         PlayThemeSong();
@@ -147,8 +181,8 @@ public class GameManager : MonoBehaviour
         {
             areaSwitchDict[activeArea] = true;
             SwitchArea();
-            gameManagerAudioSource.PlayOneShot(soundSwitchArea, 0.8f);            
-        }        
+            gameManagerAudioSource.PlayOneShot(soundSwitchArea, 0.8f);
+        }
     }
 
     void SwitchArea()
@@ -161,26 +195,28 @@ public class GameManager : MonoBehaviour
 
             case LevelArea.Glitch:
                 activeArea = LevelArea.Snake;
-                StartSnakeArea();               
+                scoreBonus += 2500;
+                StartSnakeArea();
                 break;
 
             case LevelArea.Snake:
                 activeArea = LevelArea.Tunjo;
+                scoreBonus += 5000;
                 StartTunjoArea();
                 break;
         }
 
-        SetMushCountAtSwitchArea();  
+        SetMushCountAtSwitchArea();
 
         spawnBads.SpawnBadsByArea(activeArea);
     }
 
     void SetMushCountAtSwitchArea()
-    {       
+    {
         birdController.pickedMush = 0;
 
         uiManager.AnimMushroomCanvas();
-        uiManager.UpdateMushroomUiCount();        
+        uiManager.UpdateMushroomUiCount();
     }
 
     void StartSnakeArea()
@@ -208,7 +244,7 @@ public class GameManager : MonoBehaviour
             imageMushTunjoA.gameObject.SetActive(true);
             startText.text = "Recoge " + mushToCompleteLevel + " hongos";
         }
-        
+
         startText.gameObject.SetActive(true);
         StartCoroutine(TurnOffStartText(3));
     }
@@ -223,6 +259,9 @@ public class GameManager : MonoBehaviour
 
         if (birdController.pickedMush >= mushToCompleteLevel && !gameOver)
         {
+            scoreBonus += 7500;
+            UpdateScore();
+            UpdateHiScore();
             gameOver = true;
             LevelComplete();
         }
@@ -234,17 +273,24 @@ public class GameManager : MonoBehaviour
         spawnGoods.spriteRendererMushFly.color = spawnGoods.originalMushColor;
 
         startText.gameObject.SetActive(false);
-
-        restartBtn.gameObject.SetActive(true);
+                
         gameOverText.gameObject.SetActive(true);
 
         birdAnimator.SetTrigger("gameOverTrigger");
         InvokeRepeating("BirdGameOverColor", 0f, 0.7f);
+
+        if (score > startHiScore)
+        {
+            playerNameWindow.gameObject.SetActive(true);
+        }else
+        {
+            restartBtn.gameObject.SetActive(true);
+        }
     }
 
     void BirdGameOverColor()
     {
-        birdController.BlinkColor();        
+        birdController.BlinkColor();
     }
 
     void SetPause()
@@ -269,12 +315,19 @@ public class GameManager : MonoBehaviour
 
         spawnGoods.spriteRendererMush.color = spawnGoods.originalMushColor;
         spawnGoods.spriteRendererMushFly.color = spawnGoods.originalMushColor;
-
-        playBtn.gameObject.SetActive(true);
+        
         levelCompleteText.gameObject.SetActive(true);
 
         birdAnimator.SetTrigger("levelCompleteTrigger");
         InvokeRepeating("BirdLevelCompleteColor", 0f, 0.2f);
+
+        if (score > startHiScore)
+        {
+            playerNameWindow.gameObject.SetActive(true);
+        }else
+        {
+            playBtn.gameObject.SetActive(true);
+        }
     }
 
     void BirdLevelCompleteColor()
@@ -293,6 +346,45 @@ public class GameManager : MonoBehaviour
         playTheme = levelOneThemeSong;
         gameManagerAudioSource.clip = playTheme;
         gameManagerAudioSource.Play();
+    }
+
+    void UpdateScore()
+    {
+        if (gameIsActive && !gameOver)
+        {
+            timer += Time.deltaTime;
+            score = (int)((timer * scoreIncrement) + scoreBonus);
+            uiManager.UpdateScoreCount();
+        }
+    }
+
+    void UpdateHiScore()
+    {
+        if (score > hiScore)
+        {
+            hiScore = score;
+            PlayerPrefs.SetInt("hiScore", hiScore);
+            PlayerPrefs.Save();
+        }
+
+        uiManager.UpdateHiScoreCount(hiScore);
+
+        if (score > startHiScore && !gameOver)
+        { 
+            playerNameTextUi.gameObject.SetActive(false);
+        }
+    }
+
+    public void SavePlayerName()
+    {
+        playerName = inputPlayerName.text;
+
+        PlayerPrefs.SetString("hiScorePlayerName", playerName);
+        PlayerPrefs.Save();
+        playerNameTextUi.gameObject.SetActive(true);
+        uiManager.UpdateHiScorePlayer(playerName);
+        restartBtn.gameObject.SetActive(true);
+        playerNameWindow.gameObject.SetActive(false);
     }
 
 }

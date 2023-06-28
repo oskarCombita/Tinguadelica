@@ -8,6 +8,7 @@ public class MoveLeft : MonoBehaviour
     public float speed = 20;
     private float leftBound = -25;
     private GameManager gameManager;
+    public bool isBonusBg = false;
 
     private void Start()
     {
@@ -23,6 +24,12 @@ public class MoveLeft : MonoBehaviour
 
         if (transform.position.x < leftBound)
         {
+            if (isBonusBg)
+            {
+                gameManager.scoreBonus += gameManager.scoreIncrement * 2;
+                Debug.Log("Bonus Socre for hole bacground passed");
+            }
+
             Destroy(gameObject);
         }
     }

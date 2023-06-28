@@ -32,6 +32,8 @@ public class Glitch : MonoBehaviour
             birdController.live--;
             uiManager.LoseLife();
 
+            gameManager.scoreBonus += -gameManager.scoreIncrement;
+
             glitchAudioSource.PlayOneShot(soundLossLife, 0.8f);
             //glitchAudioSource.PlayOneShot(soundLossmushroom, 0.8f);
 

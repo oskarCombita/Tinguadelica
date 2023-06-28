@@ -31,6 +31,8 @@ public class SnakeAttack : MonoBehaviour
             birdController.live--;
             uiManager.LoseLife();
 
+            gameManager.scoreBonus += -(gameManager.scoreIncrement * 2);
+
             snakeAudioSource.PlayOneShot(soundLossLife, 0.8f);
             snakeAudioSource.PlayOneShot(soundLossmushroom, 0.8f);
 

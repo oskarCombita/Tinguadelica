@@ -41,6 +41,8 @@ public class Tunjo : MonoBehaviour
             birdController.live--; // Reduce en uno el valor de la variable "live" en el componente BirdController
             uiManager.LoseLife(); // Llama al m�todo "LoseLife()" en el componente UiManager
 
+            gameManager.scoreBonus += -(gameManager.scoreIncrement * 3);
+
             tunjoAudioSource.PlayOneShot(soundLossLife, 0.8f);
             //glitchAudioSource.PlayOneShot(soundLossmushroom, 0.8f);
 

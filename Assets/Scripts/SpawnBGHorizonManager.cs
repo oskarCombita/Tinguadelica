@@ -32,6 +32,8 @@ public class SpawnBGHorizonManager : MonoBehaviour
             if (bGIndex == 3)
             {
                 Instantiate(flyHoleShadow, flyHolePos + secondPos, Quaternion.identity);
+                MoveLeft moveLeft = backgroundPrefabs[bGIndex].GetComponent<MoveLeft>();
+                moveLeft.isBonusBg = true;
             }
         }
         else if(transform.position.x < startPos.x - destroyPos)
@@ -43,6 +45,8 @@ public class SpawnBGHorizonManager : MonoBehaviour
             if (bGIndex == 3)
             {
                 Instantiate(flyHoleShadow, flyHolePos + secondPos, Quaternion.identity);
+                MoveLeft moveLeft = backgroundPrefabs[bGIndex].GetComponent<MoveLeft>();
+                moveLeft.isBonusBg = true;
             }
         }
     }
@@ -55,6 +59,8 @@ public class SpawnBGHorizonManager : MonoBehaviour
         if (bGIndex == 3)
         {
             Instantiate(flyHoleShadow, flyHolePos, Quaternion.identity);
+            MoveLeft moveLeft = backgroundPrefabs[bGIndex].GetComponent<MoveLeft>();
+            moveLeft.isBonusBg = true;
         }
 
         int bGIndex2 = Random.Range(0, backgroundPrefabs.Length - 1);
@@ -63,6 +69,8 @@ public class SpawnBGHorizonManager : MonoBehaviour
         if (bGIndex2 == 3)
         {
             Instantiate(flyHoleShadow, flyHolePos + secondPos, Quaternion.identity);
+            MoveLeft moveLeft = backgroundPrefabs[bGIndex].GetComponent<MoveLeft>();
+            moveLeft.isBonusBg = true;
         }
     }
 }
