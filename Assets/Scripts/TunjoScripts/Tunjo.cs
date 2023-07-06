@@ -39,7 +39,7 @@ public class Tunjo : MonoBehaviour
         if (other.CompareTag("Player") && !gameManager.gameOver) // Verifica si el objeto colisionado tiene la etiqueta "Player"
         {       
             birdController.live--; // Reduce en uno el valor de la variable "live" en el componente BirdController
-            uiManager.LoseLife(); // Llama al m�todo "LoseLife()" en el componente UiManager
+            uiManager.LoseLife(); // Llama al metodo "LoseLife()" en el componente UiManager
 
             gameManager.scoreBonus += -(gameManager.scoreIncrement * 3);
 

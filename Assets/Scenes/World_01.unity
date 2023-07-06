@@ -4324,7 +4324,7 @@ MonoBehaviour:
   soundSwitchArea: {fileID: 8300000, guid: 0add1a088eb2a2e4fb4da0440b8c087c, type: 3}
   score: 0
   scoreBonus: 0
-  scoreIncrement: 7
+  scoreIncrement: 27
   inputPlayerName: {fileID: 780875027}
 --- !u!4 &1302617096
 Transform:

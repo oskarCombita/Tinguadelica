@@ -7,6 +7,7 @@ public class Fire : MonoBehaviour
     private BirdController birdController; // Referencia al componente BirdController
     private UiManager uiManager; // Referencia al componente UiManager
     private Animator animator; // Referencia al componente Animator
+    private GameManager gameManager;
 
     private AudioSource fireAudioSource;
     public AudioClip soundLossLife;
@@ -21,6 +22,7 @@ public class Fire : MonoBehaviour
     {
         uiManager = GameObject.Find("Lives UI").GetComponent<UiManager>(); // Obtiene una referencia al componente UiManager del objeto "Lives UI"
         animator = gameObject.GetComponent<Animator>(); // Obtiene una referencia al componente Animator adjunto a este objeto
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -32,6 +34,8 @@ public class Fire : MonoBehaviour
             birdController.live--; // Reduce en uno el valor de la variable "live" en el componente BirdController
             uiManager.LoseLife(); // Llama al m�todo "LoseLife()" en el componente UiManager
             animator.SetTrigger("FireImpact"); // Activa el trigger "FireImpact" en el componente Animator
+
+            gameManager.scoreBonus += -(gameManager.scoreIncrement * 2);
 
             fireAudioSource.PlayOneShot(soundLossLife, 0.8f);  //reproduccion perdida de una vida
             //glitchAudioSource.PlayOneShot(soundLossmushroom, 0.8f);
