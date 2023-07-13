@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public class BirdController : MonoBehaviour
 {
@@ -27,6 +28,7 @@ public class BirdController : MonoBehaviour
     private GameManager gameManager;
 
     private float horizontalInput;
+    private Vector2 horizontalInputV2;
     [SerializeField] float speedX;
     [SerializeField] float xRange;
 
@@ -49,6 +51,8 @@ public class BirdController : MonoBehaviour
 
     public Slider jumpEnergySlider;
 
+    private PlayerInput playerInput;
+
     private void Awake()
     {
         live = maxLives;
@@ -62,9 +66,10 @@ public class BirdController : MonoBehaviour
         birdAnimator = GetComponent<Animator>();
         birdRB = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerInput = GetComponent<PlayerInput>();
         originalColor = spriteRenderer.color;
         GameManager.originalGravity = Physics2D.gravity.y;
-        Physics2D.gravity *= gravityModifier;        
+        Physics2D.gravity *= gravityModifier;
     }
 
     void Update()
@@ -74,27 +79,50 @@ public class BirdController : MonoBehaviour
 
         if (!gameManager.gameOver)
         {
-            CatchControl();
-            JumpControl();
+            //CatchControl();
+            JumpControlEnergy();
         }
-        
+
         MoveControl();
     }
 
-    void JumpControl()
+    //void JumpControl() //old
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        timeEnergy = 0f;
+    //    }
+
+    //    if (Input.GetKey(KeyCode.Space) && isOnGround)
+    //    {
+    //        timeEnergy += Time.deltaTime;
+    //        jumpEnergySlider.value = Mathf.Clamp01(timeEnergy);
+    //    }
+
+    //    if (Input.GetKeyUp(KeyCode.Space) && isOnGround)
+    //    {
+    //        SetJumpEnergy();
+
+    //        jumpEnergySlider.value = 0f;
+
+    //        birdRB.AddForce(Vector2.up * jumpForce * jumpEnergy, ForceMode2D.Impulse);
+    //        isOnGround = false;
+    //        isCatching = false;
+
+    //        birdAudioSource.Stop();
+    //        birdAudioSource.PlayOneShot(jumpSound, 0.6f);
+    //    }
+    //}
+
+    public void JumpControl(InputAction.CallbackContext callbackContext)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (callbackContext.started)
         {
             timeEnergy = 0f;
-        }
+            Debug.Log("Jump Started");
+        }        
 
-        if (Input.GetKey(KeyCode.Space) && isOnGround)
-        {
-            timeEnergy += Time.deltaTime;
-            jumpEnergySlider.value = Mathf.Clamp01(timeEnergy);
-        }
-
-        if (Input.GetKeyUp(KeyCode.Space) && isOnGround)
+        if (callbackContext.canceled && isOnGround)
         {
             SetJumpEnergy();
 
@@ -106,23 +134,47 @@ public class BirdController : MonoBehaviour
 
             birdAudioSource.Stop();
             birdAudioSource.PlayOneShot(jumpSound, 0.6f);
+            Debug.Log("Jump Canceled");
         }
     }
 
-    void CatchControl()
+    void JumpControlEnergy()
     {
-        if (Input.GetKeyDown(KeyCode.DownArrow) && !isCatching)
+        if (playerInput.actions["Jump"].ReadValue<float>() > 0 && isOnGround)
+        {
+            timeEnergy += Time.deltaTime;
+            jumpEnergySlider.value = Mathf.Clamp01(timeEnergy);
+            Debug.Log("Jump Performed");
+        }
+    }
+
+    //void CatchControl() //old
+    //{
+    //    if (Input.GetKeyDown(KeyCode.DownArrow) && !isCatching)
+    //    {
+    //        isCatching = true;
+    //    }
+
+    //    if (Input.GetKeyUp(KeyCode.DownArrow))
+    //    {
+    //        isCatching = false;
+    //    }
+    //}
+
+    public void CatchControl(InputAction.CallbackContext callbackContext)
+    {
+        if (callbackContext.started && !isCatching && !gameManager.gameOver)
         {
             isCatching = true;
         }
 
-        if (Input.GetKeyUp(KeyCode.DownArrow))
+        if (callbackContext.canceled)
         {
             isCatching = false;
         }
     }
 
-    void MoveControl()
+    public void MoveControl()
     {
         if (transform.position.x < -xRange)
         {
@@ -134,9 +186,16 @@ public class BirdController : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
 
-        horizontalInput = Input.GetAxis("Horizontal");
+        //horizontalInput = Input.GetAxis("Horizontal");
+
+        horizontalInput = playerInput.actions["Move"].ReadValue<float>();
         transform.Translate(Vector2.right * horizontalInput * speedX * Time.deltaTime);
+
+        //horizontalInputV2 = playerInput.actions["Move2"].ReadValue<Vector2>();        
+        //transform.Translate(horizontalInputV2 * speedX * Time.deltaTime);
+
     }
+
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -234,7 +293,7 @@ public class BirdController : MonoBehaviour
                     Invoke("ResetColor", 0.4f);
                     GameObject vfxLifeX4 = VFXManager.Instance.RequestVfxLifeX4();
                     birdAudioSource.PlayOneShot(yellowLifeSound, 0.8f);
-                }               
+                }
             }
         }
     }
@@ -291,6 +350,7 @@ public class BirdController : MonoBehaviour
         {
             jumpEnergy = 1f + (timeEnergy - 0.4f);
         }
+        Debug.Log("Jump Energy: " + jumpEnergy);
         return jumpEnergy;
     }
 
@@ -324,11 +384,11 @@ public class BirdController : MonoBehaviour
         Color color2 = new Color32(255, 0, 255, 255);
         Color color3 = Color.cyan;
 
-        if(spriteRenderer.color == color1)
+        if (spriteRenderer.color == color1)
         {
             spriteRenderer.color = color2;
         }
-        else if(spriteRenderer.color == color2)
+        else if (spriteRenderer.color == color2)
         {
             spriteRenderer.color = color3;
         }
@@ -337,7 +397,7 @@ public class BirdController : MonoBehaviour
             spriteRenderer.color = color1;
         }
     }
-  
+
 
     IEnumerator AddMushDelay(float delay, int mushToAdd)
     {
