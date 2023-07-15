@@ -122,7 +122,7 @@ public class BirdController : MonoBehaviour
             Debug.Log("Jump Started");
         }        
 
-        if (callbackContext.canceled && isOnGround)
+        if (callbackContext.canceled && isOnGround && !gameManager.gameOver)
         {
             SetJumpEnergy();
 
