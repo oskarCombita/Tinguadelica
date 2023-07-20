@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class UiManager : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class UiManager : MonoBehaviour
     public Sprite mushTunjo;
 
     private BirdController birdController;
+    private PlayerInput birdPlayerInput;
     private GameManager gameManager;
 
     public TextMeshProUGUI countMushroomsText;
@@ -26,10 +28,13 @@ public class UiManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI hiScoreText;
     [SerializeField] private TextMeshProUGUI hiScorePlayerText;
 
+    public TextMeshProUGUI activeControlSchText;
+
 
     void Start()
     {
         birdController = GameObject.Find("Bird").GetComponent<BirdController>();
+        birdPlayerInput = GameObject.Find("Bird").GetComponent<PlayerInput>();
         gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
         
         mushCanvasTransform = GameObject.Find("Mushroom Canvas").GetComponent<RectTransform>();
@@ -39,6 +44,11 @@ public class UiManager : MonoBehaviour
         mushCountImage.sprite = mushGlitch;
 
         UpdateMushroomUiCount();
+    }
+
+    private void Update()
+    {
+        activeControlSchText.text = birdPlayerInput.currentControlScheme.ToString();
     }
 
     public void DrawHearts()

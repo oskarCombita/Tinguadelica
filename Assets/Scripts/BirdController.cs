@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 
@@ -9,6 +8,7 @@ public class BirdController : MonoBehaviour
 {
     private Rigidbody2D birdRB;
     private Animator birdAnimator;
+    private PlayerInput birdPlayerInput;
 
     private float jumpEnergy = 1f;
     private float timeEnergy = 0f;
@@ -57,6 +57,7 @@ public class BirdController : MonoBehaviour
     {
         live = maxLives;
         birdAudioSource = GetComponent<AudioSource>();
+        birdPlayerInput = GetComponent<PlayerInput>();
     }
 
     void Start()
@@ -84,6 +85,7 @@ public class BirdController : MonoBehaviour
         }
 
         MoveControl();
+
     }
 
     //void JumpControl() //old

@@ -181,7 +181,7 @@
                     "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad;Mobile",
+                    "groups": "Gamepad",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -193,6 +193,17 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "faebe08f-04e0-46ba-b33b-33201d8eee1e",
+                    "path": "<Gamepad>/buttonNorth",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Mobile",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -261,12 +272,17 @@
             "bindingGroup": "Mobile",
             "devices": [
                 {
-                    "devicePath": "<Gamepad>",
+                    "devicePath": "<Touchscreen>",
                     "isOptional": false,
                     "isOR": false
                 },
                 {
-                    "devicePath": "<AndroidJoystick>",
+                    "devicePath": "<Joystick>",
+                    "isOptional": false,
+                    "isOR": false
+                },
+                {
+                    "devicePath": "<Gamepad>",
                     "isOptional": false,
                     "isOR": false
                 }
